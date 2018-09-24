@@ -1,0 +1,1 @@
+Out of all the processes the weighted quick union path compression method is is better because as here we are making every node in path point to ots grandparent and it has only N+Mlog * N array accesses(time complexity is only log*n).
