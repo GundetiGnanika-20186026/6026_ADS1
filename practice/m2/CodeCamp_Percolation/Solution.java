@@ -37,7 +37,8 @@ class Percolation {
 	 *
 	 * @param      gridsize  The gridsize
 	 */
-	public Percolation(int gridsize) { // create n-by-n grid, with all sites blocked
+	public Percolation(final int gridsize) {
+	 // create n-by-n grid, with all sites blocked
 		grid = new boolean[gridsize][gridsize];
 		unionobj = new WeightedQuickUnionUF(gridsize * gridsize + 2);
 		openblocks = 0;
@@ -61,7 +62,8 @@ class Percolation {
 	 * @param      row   The row number
 	 * @param      col   The col number
 	 */
-	public void open(int row, int col) { // open site (row, col) if it is not open already
+	public void open(final int row, final int col) {
+	 // open site (row, col) if it is not open already
 		if (grid[row][col] == true) {
 			return;
 		}
@@ -70,39 +72,39 @@ class Percolation {
 
 		//checking wether the top block is opened and
 		// then connects the present and the open block present.
-		if (row - 1 >= 0 && isOpen(row - 1, col) == true) {
-			unionobj.union(size * row + col, size * (row - 1) + col);
-		}
+	if (row - 1 >= 0 && isOpen(row - 1, col) == true) {
+		unionobj.union(size * row + col, size * (row - 1) + col);
+	}
 
 		//checking wether the bottom block is opened and
 		// then connects the present and the open block present.
-		if (row + 1 < size && isOpen(row + 1, col) == true) {
-			unionobj.union(size * row + col, size * (row + 1) + col);
-		}
+	if (row + 1 < size && isOpen(row + 1, col) == true) {
+		unionobj.union(size * row + col, size * (row + 1) + col);
+	}
 
 		//checking wether the left block is opened and
 		// then connects the present and the open block present.
 
-		if (col - 1 >= 0 && isOpen(row, col - 1) == true) {
-			unionobj.union(size * row + col, size * row + (col - 1));
-		}
+	if (col - 1 >= 0 && isOpen(row, col - 1) == true) {
+		unionobj.union(size * row + col, size * row + (col - 1));
+	}
 
 		//checking wether the right block is opened and
 		// then connects the present and the open block present.
 
-		if (col + 1 < size && isOpen(row, col + 1) == true) {
-			unionobj.union(size * row + col, size * row + (col + 1));
-		}
+	if (col + 1 < size && isOpen(row, col + 1) == true) {
+		unionobj.union(size * row + col, size * row + (col + 1));
+	}
 
 		//connecting the zero row to top virtual node.
-		if (row == 0) {
-			unionobj.union(size * row + col, virtualtop);
-		}
+	if (row == 0) {
+		unionobj.union(size * row + col, virtualtop);
+	}
 
 		//connecting the last row to bottom virtual node.
-		if (row == size - 1) {
-			unionobj.union(size * row + col, virtualbottom);
-		}
+	if (row == size - 1) {
+		unionobj.union(size * row + col, virtualbottom);
+	  }
 	}
 
 	/**
@@ -113,7 +115,8 @@ class Percolation {
 	 *
 	 * @return     True if open, False otherwise.
 	 */
-	public boolean isOpen(int row, int col) { // is site (row, col) open?
+	public boolean isOpen(final int row, final int col) {
+	// is site (row, col) open?
 		if (grid[row][col] == true) {
 			return true;
 		}
@@ -167,7 +170,7 @@ class Solution {
 	 *
 	 * @param      args  The arguments
 	 */
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 
 		Scanner scn = new Scanner(System.in);
 		int order = Integer.parseInt(scn.nextLine());
