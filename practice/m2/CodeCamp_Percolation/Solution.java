@@ -130,10 +130,10 @@ class Percolation {
 	// 			if (isOpen(i, j)) {
 	// 				if (i < n - 1 && j < n - 1) {
 	// 					if (isOpen(i, j + 1)) {
-	// 						union(i * n + j, i * n + j + 1);
+	// 				union(i * n + j, i * n + j + 1);
 	// 					}
 	// 					if (isOpen(i + 1, j)) {
-	// 						union(i * n + j, (i + 1) * n + j);
+	// 				union(i * n + j, (i + 1) * n + j);
 
 	// 					}
 	// 				}
@@ -158,7 +158,7 @@ class Percolation {
 /**
  * Class for solution(contains main method).
  */
-class Solution {
+final class Solution {
 	/**
 	 * Constructor for solution.
 	 */
@@ -177,7 +177,7 @@ class Solution {
 		Percolation obj = new Percolation(order);
 		while (scn.hasNext()) {
 			String[] openvalues = scn.nextLine().split(" ");
-			obj.open((Integer.parseInt(openvalues[0])) - 1, (Integer.parseInt(openvalues[1])) - 1);
+obj.open((Integer.parseInt(openvalues[0])) - 1, (Integer.parseInt(openvalues[1])) - 1);
 		}
 		System.out.println(obj.percolate());
 
