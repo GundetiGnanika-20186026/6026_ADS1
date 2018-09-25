@@ -64,7 +64,7 @@ class Percolation {
 	 */
 	public void open(final int row, final int col) {
 	 // open site (row, col) if it is not open already
-		if (grid[row][col] == true) {
+		if (grid[row][col]) {
 			return;
 		}
 		grid[row][col] = true;
@@ -72,27 +72,27 @@ class Percolation {
 
 		//checking wether the top block is opened and
 		// then connects the present and the open block present.
-	if (row - 1 >= 0 && isOpen(row - 1, col) == true) {
+	if (row - 1 >= 0 && isOpen(row - 1, col)) {
 		unionobj.union(size * row + col, size * (row - 1) + col);
 	}
 
 		//checking wether the bottom block is opened and
 		// then connects the present and the open block present.
-	if (row + 1 < size && isOpen(row + 1, col) == true) {
+	if (row + 1 < size && isOpen(row + 1, col)) {
 		unionobj.union(size * row + col, size * (row + 1) + col);
 	}
 
 		//checking wether the left block is opened and
 		// then connects the present and the open block present.
 
-	if (col - 1 >= 0 && isOpen(row, col - 1) == true) {
+	if (col - 1 >= 0 && isOpen(row, col - 1)) {
 		unionobj.union(size * row + col, size * row + (col - 1));
 	}
 
 		//checking wether the right block is opened and
 		// then connects the present and the open block present.
 
-	if (col + 1 < size && isOpen(row, col + 1) == true) {
+	if (col + 1 < size && isOpen(row, col + 1)) {
 		unionobj.union(size * row + col, size * row + (col + 1));
 	}
 
@@ -177,7 +177,8 @@ final class Solution {
 		Percolation obj = new Percolation(order);
 		while (scn.hasNext()) {
 			String[] openvalues = scn.nextLine().split(" ");
-obj.open((Integer.parseInt(openvalues[0])) - 1, (Integer.parseInt(openvalues[1])) - 1);
+           obj.open((Integer.parseInt(openvalues[0])) - 1,
+             (Integer.parseInt(openvalues[1])) - 1);
 		}
 		System.out.println(obj.percolate());
 
