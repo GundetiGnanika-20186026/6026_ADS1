@@ -1,5 +1,9 @@
 /**
  * Author:Gnanika.
+ * Date : 25th September,2018.
+ */
+/**
+ * Util Package.
  */
 import java.util.Scanner;
 /**
@@ -30,7 +34,6 @@ class Percolation {
      * virtual bottom node.
      */
     private int virtualbottom;
-    //int[] onedim;
 
     /**
      * Constructer of percolation class.
