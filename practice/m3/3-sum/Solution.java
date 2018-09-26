@@ -58,10 +58,10 @@ class Solution {
 			array[i] = scan.nextInt();
 		}
 		Arrays.sort(array);
-		for(int i= 0;i<arraysize;i++){
-			for(int j = i+1;j<arraysize ;j++){
-				int k = Arrays.binarySearch(array, -(array[i]+array[j]));
-				if(k>j)count=count+1;
+		for (int i = 0; i < arraysize; i++) {
+			for (int j = i + 1; j < arraysize ; j++) {
+				int k = Arrays.binarySearch(array, -(array[i] + array[j]));
+				if (k > j)count = count + 1;
 			}
 		}
 		System.out.println(count);
