@@ -81,7 +81,7 @@ final class Solution {
     //sending the values to the binary search and
     // searching wether it is present.
 int k = Arrays.binarySearch(array, -(array[i] + array[j]));
-                if (k > j) {
+                if (k >= 0) {
                     count = count + 1;
                 }
             }
