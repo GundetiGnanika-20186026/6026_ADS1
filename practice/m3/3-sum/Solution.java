@@ -46,22 +46,41 @@ import java.util.*;
 
 
 // }
+
+/**
+ * Class for solution.
+ */
 class Solution {
+	/**
+	 * Constructor for solution class.
+	 */
+	private Solution() {
+
+	}
+	/**
+	 * main function.
+	 *
+	 * @param      args  The arguments
+	 */
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int arraysize = scan.nextInt();
 		int count = 0;
-		//Threesum object1 = new Threesum(arraysize);
+//Threesum object1 = new Threesum(arraysize);
 		int array[] = new int[arraysize];
-		for (int i = 0; i < arraysize ; i++) {
+		for (int i = 0; i < arraysize; i++) {
 			//object1.add(scan.nextInt());
 			array[i] = scan.nextInt();
 		}
 		Arrays.sort(array);
 		for (int i = 0; i < arraysize; i++) {
-			for (int j = i + 1; j < arraysize ; j++) {
-				int k = Arrays.binarySearch(array, -(array[i] + array[j]));
-				if (k > j)count = count + 1;
+			for (int j = i + 1; j < arraysize; j++) {
+	//sending the values to the binary search and
+	// searching wether it is present.
+int k = Arrays.binarySearch(array, -(array[i] + array[j]));
+				if (k > j){
+					count = count + 1;
+				}
 			}
 		}
 		System.out.println(count);
