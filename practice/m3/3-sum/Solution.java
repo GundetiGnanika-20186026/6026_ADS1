@@ -1,5 +1,8 @@
 import java.util.Scanner;
 import java.util.Arrays;
+/**
+ *Author:Gnanika
+ */
 
 // class Threesum {
 //  private int[] array;
