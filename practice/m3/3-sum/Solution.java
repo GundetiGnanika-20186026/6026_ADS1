@@ -50,7 +50,7 @@ import java.util.Arrays;
 /**
  * Class for solution.
  */
-class Solution {
+final class Solution {
     /**
      * Constructor for solution class.
      */
