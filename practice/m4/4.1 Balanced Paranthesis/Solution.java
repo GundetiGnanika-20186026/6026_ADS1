@@ -15,7 +15,7 @@ class Solution {
 
 				}
 				else {
-					if (mystack.empty()) {
+					if (mystack.isEmpty()) {
 						System.out.println("NO");
 						flag = true;
 						break;
@@ -25,7 +25,7 @@ class Solution {
 				}
 			}
 			if(!flag) {
-				if (mystack.empty()) {
+				if (mystack.isEmpty()) {
 				System.out.println("YES");
 			    } else {
 				System.out.println("NO");
