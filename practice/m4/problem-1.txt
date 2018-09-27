@@ -1,0 +1,25 @@
+  
+ Question : Give the output printed by java Stack for the input (where "-" means pop) it was - the best - of times - - - it was - the - -
+
+            step1: "it" is inserted to the stack
+            step2: "Was" is inserted to the stack
+            step3: next is "-" so we need to pop "Was"
+            step4: "the" is inserted to the stack
+            step5: "best" is inserted to the stack
+            step6: next is "-" so pop "best"
+            step7: "of" is inserted to the stack
+            step8: "times" is inserted to the stack
+               * the elements present in the stack are "it" , "the" , "of", times
+            step9: next is "-" so pop "times"
+            step10: next is "-" so pop "of"
+            step11: next is "-" so pop "the"
+            step12: "it" is inserted to the stack
+            step13: "was" is inserted to the stack
+            step14: next is "-" so pop "was"
+            step15: "the" is inserted to the stack
+            step16:  next is "-" so pop "the"
+            step17: next is "-" so pop "it"(the second inserted element)
+
+            after all the elements pushing and popping .
+            
+            ***so, the data that is remaining in the stack is only "it".   
