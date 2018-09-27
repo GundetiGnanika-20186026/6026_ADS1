@@ -6,7 +6,7 @@ class Solution {
 		Scanner scan = new Scanner(System.in);
 		int inputcount = Integer.parseInt(scan.nextLine());
 
-		for(int j = 0; j<inputcount; j++) {
+		for (int j = 0; j < inputcount; j++) {
 			boolean flag = false;
 			Stack<String> mystack = new Stack<String>();
 			String[] array = scan.nextLine().split("");
@@ -25,17 +25,16 @@ class Solution {
 				}
 			}
 
-            if(!flag) {
+			if (!flag) {
 				if (mystack.isEmpty()) {
 					System.out.println("YES");
-			    }
-			    else {
-				System.out.println("NO");
-			    }
+				} else {
+					System.out.println("NO");
+				}
 			}
 
 
 		}
-		}
+	}
 
 }
