@@ -6,20 +6,21 @@ class Solution {
 		Scanner scan = new Scanner(System.in);
 		int inputcount = Integer.parseInt(scan.nextLine());
 		boolean flag = false;
-		while (scan.hasNext()) {
+		for(int j = 0; j<inputcount; j++) {
 			String[] array = scan.nextLine().split("");
-
 			for (int i = 0; i < array.length; i++) {
-				if (array[i].equals("[") || array[i].equals("{") || array[i].equals("[")) {
+				if (array[i].equals("[") || array[i].equals("{") || array[i].equals("(")) {
 					mystack.push(array[i]);
 
-				} else {
+				}
+				else {
 					if (mystack.empty()) {
-						System.out.println("S");
+						System.out.println("NO");
 						flag = true;
-					}	else {
-						mystack.pop();
+						break;
 					}
+					mystack.pop();
+
 				}
 			}
 			if (!flag) {
@@ -28,8 +29,6 @@ class Solution {
 				System.out.println("NO");
 			}
 		}
+		}
 
-
-
-	}
 }
