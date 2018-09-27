@@ -23,11 +23,14 @@ class Solution {
 
 				}
 			}
-			if (!flag) {
+			if(!flag) {
+				if (mystack.empty()) {
 				System.out.println("YES");
-			} else {
+			    } else {
 				System.out.println("NO");
 			}
+			}
+
 		}
 		}
 
