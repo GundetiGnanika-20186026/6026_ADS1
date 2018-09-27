@@ -1,7 +1,24 @@
+/**
+ * Author:Gnanika.
+ */
 import java.util.Scanner;
 import java.util.Stack;
-class Solution {
-	public static void main(String[] args) {
+/**
+ * Class for solution.
+ */
+final class Solution {
+	/**
+	 * Constructor for solution class.
+	 */
+	private Solution() {
+
+	}
+	/**
+	 * { main method }
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 
 		Scanner scan = new Scanner(System.in);
 		int inputcount = Integer.parseInt(scan.nextLine());
@@ -11,7 +28,9 @@ class Solution {
 			Stack<String> mystack = new Stack<String>();
 			String[] array = scan.nextLine().split("");
 			for (int i = 0; i < array.length; i++) {
-				if (array[i].equals("[") || array[i].equals("{") || array[i].equals("(")) {
+                if (array[i].equals("[") || array[i].equals("{")
+                 || array[i].equals("(")) {
+
 					mystack.push(array[i]);
 
 				} else {
