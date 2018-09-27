@@ -1,0 +1,32 @@
+ Question : Suppose that a client performs an intermixed sequence of (stack) push and  pop operations. The push operations put the integers 0 through 9 in  order onto the  stack; the pop operations print out the return values. Which of the following  sequence(s) could not occur? 
+ a. 4 3 2 1 0 9 8 7 6 5 
+ b. 4 6 8 7 5 3 2 9 0 1 
+ c. 2 5 6 7 4 8 9 3 1 0 
+ d. 4 3 2 1 0 5 6 7 8 9 
+ e. 1 2 3 4 5 6 9 8 7 0 
+ f. 0 4 6 5 3 8 1 7 2 9 
+ g. 1 4 7 9 8 6 5 3 0 2 
+ h. 2 1 4 3 6 5 8 7 9 0
+
+ a) 4 3 2 1 0 9 8 7 6 5 
+   
+    ** This is "possible"
+
+      as 4 is at the top of stack 4,3,2,1,0 can be popped and then we can push 5,6,7,8,9 and then pop them.
+ 
+ b) 4 6 8 7 5 3 2 9 0 1
+    
+    ** This is "not possible"
+
+     as 4 is at the top we can pop 4,push (5,6),pop 6,push (7,8),pop 8, pop 7,pop 3,pop 2, but cant pop 0 without popping 1
+     so this is not possible.
+ 
+ in the similar way 
+ c) possible
+ d) possible
+ e) possible
+ f) not possible
+ g) not possible
+ h) possible
+ 
+ b,f and g could not occur.
