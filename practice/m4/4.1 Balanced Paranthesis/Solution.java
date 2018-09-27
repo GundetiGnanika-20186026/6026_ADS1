@@ -24,6 +24,7 @@ class Solution {
 
 				}
 			}
+
 			if(!flag) {
 				if (mystack.isEmpty()) {
 				System.out.println("YES");
