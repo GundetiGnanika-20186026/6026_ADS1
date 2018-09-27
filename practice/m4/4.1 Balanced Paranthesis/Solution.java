@@ -5,16 +5,16 @@ class Solution {
 
 		Scanner scan = new Scanner(System.in);
 		int inputcount = Integer.parseInt(scan.nextLine());
-		boolean flag = false;
+
 		for(int j = 0; j<inputcount; j++) {
+			boolean flag = false;
 			Stack<String> mystack = new Stack<String>();
 			String[] array = scan.nextLine().split("");
 			for (int i = 0; i < array.length; i++) {
 				if (array[i].equals("[") || array[i].equals("{") || array[i].equals("(")) {
 					mystack.push(array[i]);
 
-				}
-				else {
+				} else {
 					if (mystack.isEmpty()) {
 						System.out.println("NO");
 						flag = true;
@@ -25,13 +25,15 @@ class Solution {
 				}
 			}
 
-			if(!flag) {
+            if(!flag) {
 				if (mystack.isEmpty()) {
-				System.out.println("YES");
-			    } else {
+					System.out.println("YES");
+			    }
+			    else {
 				System.out.println("NO");
+			    }
 			}
-			}
+
 
 		}
 		}
