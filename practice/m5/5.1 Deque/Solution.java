@@ -69,19 +69,20 @@ class Deque<E> {
     // 	size++;
     // }
 
-    public void removeFirst() {
+    public int removeFirst() {
     	if (size == 0) {
-    		System.out.println("[]");
-    		return;
+    		//System.out.println("Deck is empty");
+    		return 0;
     	}
         head = head.next;
         size--;
+        return 1;
     }
 
-    public void removeLast() {
+    public int removeLast() {
     	if (size == 0) {
-    		System.out.println("No elements in array");
-    		return;
+    		//System.out.println("Deck is empty");
+    		return 0;
     	}
         Node n = head;
         int count = 0;
@@ -92,6 +93,7 @@ class Deque<E> {
         // System.out.println(n.data);
         n.next = null;
         size--;
+        return 1;
     }
 
     // public void removeAfter(int i) {
@@ -107,6 +109,9 @@ class Deque<E> {
     //
 
     public String print() {
+    	if(size == 0){
+    		return "[]";
+    	}
     	Node n = head;
     	String str = "";
     	str += "[";
@@ -145,12 +150,20 @@ class Solution{
 				      System.out.println(obj.print());
 				break;
 				case "popLeft" :
-				      obj.removeFirst();
+				      int i = obj.removeFirst();
+				      if (i == 1){
 				      System.out.println(obj.print());
+				      } else {
+				      System.out.println("Deck is empty");
+				  }
 				break;
 				case "popRight" :
-				      obj.removeLast();
+				      int j = obj.removeLast();
+				      if(j == 1){
 				      System.out.println(obj.print());
+				      } else {
+				      System.out.println("Deck is empty");
+				     }
 				break;
 				case "size" :
 				      System.out.println(obj.getsize());
