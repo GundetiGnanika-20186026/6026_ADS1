@@ -1,28 +1,56 @@
-import java.util.*;
+/**
+ * Author:Gnanika.
+ */
+import java.util.Scanner;
+/**
+ * Class for deque.
+ *
+ * @param      <E>   { to take the required parameter }
+ */
 class Deque<E> {
-	Node head;
-	int size = 0;
-
+	private Node head;
+	private int size = 0;
+	/**
+	 * Class for Node.
+	 */
 	class Node {
-		E data;
-		Node next;
-
+		private E data;
+		private Node next;
+		/**
+		 * Constructs the object.
+		 *
+		 * @param      data1  The data 1
+		 */
 		Node(E data1) {
 			this.data = data1;
 			next = null;
 		}
 	}
 
+	/**
+	 * returns the size.
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public int getsize() {
 		return size;
 	}
 
+	/**
+	 * checks wether queue is empty.
+	 *
+	 * @return     True if empty, False otherwise.
+	 */
 	public boolean isEmpty() {
 		return size == 0;
 	}
 
 
-
+	/**
+	 * Adds element at front.
+	 *
+	 * @param      data  The data
+	 */
 	public void addFront(E data) {
 		Node first = new Node(data);
 		if (size == 0) {
@@ -34,7 +62,11 @@ class Deque<E> {
 		head = first;
 		size++;
 	}
-
+	/**
+	 * Adds element at last.
+	 *
+	 * @param      data  The data
+	 */
 	public void addLast(E data) {
 		if (size == 0) {
 			addFront(data);
@@ -66,6 +98,12 @@ class Deque<E> {
 	// 	size++;
 	// }
 
+	/**
+	 * Removes element at first.
+	 *
+	 * @return     { if no elements return 0
+	 *               else return 1 }
+	 */
 	public int removeFirst() {
 		if (size == 0) {
 			//System.out.println("Deck is empty");
@@ -76,6 +114,12 @@ class Deque<E> {
 		return 1;
 	}
 
+	/**
+	 * Removes element at last.
+	 *
+	 * @return     { if no elements return 0
+	 *               else return 1 }
+	 */
 	public int removeLast() {
 		if (size == 0) {
 			//System.out.println("Deck is empty");
@@ -105,6 +149,11 @@ class Deque<E> {
 	// }
 	//
 
+	/**
+	 * returns the required output in a specific way.
+	 *
+	 * @return     { string }
+	 */
 	public String print() {
 		if (size == 0) {
 			return "[]";
@@ -124,14 +173,22 @@ class Deque<E> {
 			n = n.next;
 		}
 		return str + n.data + "]";
-
 	}
-
-
 }
 
-
+/**
+ * Class for solution.
+ */
 class Solution {
+	/**
+	 * Constructs the object.
+	 */
+	private Solution() { }
+	/**
+	 * { main method }
+	 *
+	 * @param      args  The arguments
+	 */
 	public static void main(String[] args) {
 		Deque<String> obj = new Deque<String>();
 		Scanner scan = new Scanner(System.in);
