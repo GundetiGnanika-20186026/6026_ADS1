@@ -20,7 +20,13 @@ class Deque<E> {
      * Class for Node.
      */
     class Node {
+        /**
+         * { data which we need to store }.
+         */
         private E data;
+        /**
+         * { next pointer of type node }.
+         */
         private Node next;
         /**
          * Constructs the object.
@@ -191,7 +197,7 @@ final class Solution {
      */
     private Solution() { }
     /**
-     * { main method }
+     * { main method }.
      *
      * @param      args  The arguments
      */
