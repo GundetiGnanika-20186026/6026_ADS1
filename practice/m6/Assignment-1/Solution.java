@@ -53,13 +53,13 @@ class AddLargeNumbers {
     // static int length1 = 0;
 
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @param      number  The number
      *
      * @return     { description_of_the_return_value }
      */
-    public static LinkedList numberToDigits(String number) {
+    public static LinkedList numberToDigits(final String number) {
         LinkedList obj = new LinkedList();
         String[] stringarray = number.split("");
         for (int i = 0; i < stringarray.length; i++) {
@@ -77,7 +77,7 @@ class AddLargeNumbers {
      * @return     { description_of_the_return_value }
      */
 
-    public static String digitsToNumber(LinkedList list) {
+    public static String digitsToNumber(final LinkedList list) {
         String str = "";
         // // LinkedList n = head;
         // Node n = head;
@@ -110,7 +110,8 @@ class AddLargeNumbers {
      * @return     { description_of_the_return_value }
      */
 
-    public static LinkedList addLargeNumbers(LinkedList list1, LinkedList list2) {
+    public static LinkedList addLargeNumbers(final LinkedList list1,
+     final LinkedList list2) {
         LinkedList obj3 = new LinkedList();
         for (int i = 0, j = 0; i < list1.size(); i++, j++) {
             //int k =list1.get(i);
@@ -134,7 +135,12 @@ final class Solution {
     private Solution() {
 
     }
-    public static void main(String[] args) {
+    /**
+     * { function_description }
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         String input = sc.nextLine();
         String p = sc.nextLine();
@@ -150,9 +156,10 @@ final class Solution {
         case "addLargeNumbers":
             pDigits = AddLargeNumbers.numberToDigits(p);
             qDigits = AddLargeNumbers.numberToDigits(q);
-            LinkedList result = AddLargeNumbers.addLargeNumbers(pDigits, qDigits);
+LinkedList result = AddLargeNumbers.addLargeNumbers(pDigits, qDigits);
             System.out.println(AddLargeNumbers.digitsToNumber(result));
             break;
+        default:
         }
     }
 
