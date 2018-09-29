@@ -42,12 +42,8 @@ import java.util.LinkedList;
  * Class for add large numbers.
  */
 class AddLargeNumbers {
-    /**
-     * Constructs the object.
-     */
-    AddLargeNumbers() {
 
-    }
+
 
     // static LinkedList head;
     // static int length1 = 0;
@@ -70,7 +66,7 @@ class AddLargeNumbers {
 
     }
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @param      list  The list
      *
@@ -113,11 +109,11 @@ class AddLargeNumbers {
     public static LinkedList addLargeNumbers(final LinkedList list1,
      final LinkedList list2) {
         LinkedList obj3 = new LinkedList();
-        for (int i = 0, j = 0; i < list1.size(); i++, j++) {
-            //int k =list1.get(i);
-            //int m= list2.get(j);
-            //obj3.add(k+m);
-        }
+        // for (int i = 0, j = 0; i < list1.size(); i++, j++) {
+        //     //int k =list1.get(i);
+        //     //int m= list2.get(j);
+        //     //obj3.add(k+m);
+        // }
 
         return null;
 
