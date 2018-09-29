@@ -79,6 +79,13 @@ class AddLargeNumbers {
     }
 
     public static LinkedList addLargeNumbers(LinkedList list1, LinkedList list2) {
+        LinkedList obj3 = new LinkedList();
+         for(int i = 0,j=0; i< list1.size();i++,j++){
+            //int k =list1.get(i);
+            //int m= list2.get(j);
+            //obj3.add(k+m);
+        }
+
         return null;
 
     }
