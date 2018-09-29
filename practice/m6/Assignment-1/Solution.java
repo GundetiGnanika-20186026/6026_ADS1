@@ -1,38 +1,41 @@
 import java.util.Scanner;
-//import java.util.LinkedList;
+import java.util.LinkedList;
 
-class LinkedList {
-    Node head;
-    int size = 0;
-    class Node {
-        int data;
-        Node next;
-        Node(int data) {
-            this.data = data;
-            this.next = null;
-        }
-    }
+// class LinkedList {
+//     Node head;
+//     int size = 0;
+//     class Node {
+//         int data;
+//         Node next;
+//         Node(int data) {
+//             this.data = data;
+//             this.next = null;
+//         }
+//     }
 
-    public  void addtoLinkedList(int data1) {
-        Node last = new Node(data1);
-        if (size == 0) {
-            head = last;
-            size++;
-            return;
-        }
-        Node n = head;
-        int count = 0;
-        while (count < size-1) {
-            n.next = n;
-            count++;
+//     public  void addtoLinkedList(int data1) {
+//         Node last = new Node(data1);
+//         if (size == 0) {
+//             head = last;
+//             size++;
+//             return;
+//         }
+//         Node n = head;
+//         int count = 0;
+//         while (count < size-1) {
+//             n.next = n;
+//             count++;
 
-        }
-        n.next = last;
-        size++;
-        // last.next = null;
-    }
+//         }
+//         n.next = last;
+//         size++;
+//        last.next = null;
+//     }
 
-}
+
+
+// }
+
 
 
 
@@ -44,7 +47,7 @@ class AddLargeNumbers {
         LinkedList obj = new LinkedList();
         String[] stringarray = number.split("");
         for (int i = 0; i < stringarray.length; i++) {
-            obj.addtoLinkedList(Integer.parseInt(stringarray[i]));
+            obj.add(Integer.parseInt(stringarray[i]));
             //length1++;
         }
         return obj;
@@ -61,15 +64,15 @@ class AddLargeNumbers {
         //     n.next = n;
         //     count++;
         // }
-        for (int i = 0 ; i < (list.size) - 1; i++) {
-            str += list.head.data;
-            list.head.next = list.head;
+        // for (int i = 0 ; i < (list.size) - 1; i++) {
+        //     str += list.head.data;
+        //     list.head.next = list.head;
 
-        }
-        // ////////////////////////////////
-        // for(int i = 0; i< list.size();i++){
-        //     str += list.get(i);
         // }
+        // ////////////////////////////////
+        for(int i = 0; i< list.size();i++){
+            str += list.get(i);
+        }
         ////////////////////////////////////
         return str;
 
