@@ -38,11 +38,27 @@ import java.util.LinkedList;
 
 
 
-
+/**
+ * Class for add large numbers.
+ */
 class AddLargeNumbers {
+    /**
+     * Constructs the object.
+     */
+    AddLargeNumbers() {
+
+    }
 
     // static LinkedList head;
     // static int length1 = 0;
+
+    /**
+     * { function_description }
+     *
+     * @param      number  The number
+     *
+     * @return     { description_of_the_return_value }
+     */
     public static LinkedList numberToDigits(String number) {
         LinkedList obj = new LinkedList();
         String[] stringarray = number.split("");
@@ -53,6 +69,13 @@ class AddLargeNumbers {
         return obj;
 
     }
+    /**
+     * { function_description }
+     *
+     * @param      list  The list
+     *
+     * @return     { description_of_the_return_value }
+     */
 
     public static String digitsToNumber(LinkedList list) {
         String str = "";
@@ -70,7 +93,7 @@ class AddLargeNumbers {
 
         // }
         // ////////////////////////////////
-        for(int i = 0; i< list.size();i++){
+        for (int i = 0; i < list.size(); i++) {
             str += list.get(i);
         }
         ////////////////////////////////////
@@ -78,9 +101,18 @@ class AddLargeNumbers {
 
     }
 
+    /**
+     * Adds large numbers.
+     *
+     * @param      list1  The list 1
+     * @param      list2  The list 2
+     *
+     * @return     { description_of_the_return_value }
+     */
+
     public static LinkedList addLargeNumbers(LinkedList list1, LinkedList list2) {
         LinkedList obj3 = new LinkedList();
-         for(int i = 0,j=0; i< list1.size();i++,j++){
+        for (int i = 0, j = 0; i < list1.size(); i++, j++) {
             //int k =list1.get(i);
             //int m= list2.get(j);
             //obj3.add(k+m);
@@ -91,7 +123,17 @@ class AddLargeNumbers {
     }
 }
 
-public class Solution {
+/**
+ * { solution class }.
+ */
+
+final class Solution {
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+
+    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String input = sc.nextLine();
