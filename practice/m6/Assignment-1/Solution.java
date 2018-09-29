@@ -41,12 +41,7 @@ import java.util.LinkedList;
  * Class for add large numbers.
  */
 class AddLargeNumbers {
-    /**
-     * Constructs the object.
-     */
-    public AddLargeNumbers(){
 
-    }
 
     // static LinkedList head;
     // static int length1 = 0;
