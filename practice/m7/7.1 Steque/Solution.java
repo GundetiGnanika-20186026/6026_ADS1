@@ -44,6 +44,7 @@ class Steque {
     /**
      * { pushes the elements at the right of the linked list and
      *  moves the head ponter to the last pushed element if the size }.
+     *  its complexity is O(1).
      *
      * @param      value  The value
      */
@@ -66,6 +67,8 @@ class Steque {
     /**
      * { This method will add the elements
      *  to the linked list at the tail side }.
+     *  its complexity is O(n) as it has a while loop which
+     *   iterates through the entire linked list till it gets null.
      *
      * @param      value  The value
      */
@@ -86,6 +89,7 @@ class Steque {
 
     /**
      * { this method prints the elements in the linked list }.
+     * its complexity is O(n) as it iterates through the entire list.
      */
     public void print() {
 
@@ -107,6 +111,7 @@ class Steque {
 
     /**
      * { deletes the node that the head points and then reduces the size }.
+     * its complexity is O(1) as there are no loops.
      */
     public void pop() {
         if (size == 0) {
@@ -122,11 +127,6 @@ class Steque {
 }
 
 
-
-
-
-
-
 /**
  * Class for solution this class contains the main
  *  method which can handle the test casses.
@@ -140,6 +140,9 @@ final class Solution {
     }
     /**
      * { main method }.
+     * this method has a complexity of O(n^2)as there is a for loop
+     *  which iterates n times and then a while loop
+     *   which iterates for n times so combindly n^2
      *
      * @param      args  The arguments
      */
