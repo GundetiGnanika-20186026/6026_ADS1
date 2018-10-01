@@ -96,7 +96,7 @@ class Solution {
 			while (scan.hasNext()) {
 				String[] array = scan.nextLine().split(" ");
 				if (array.length == 0){
-					break;
+					return;
 				}
 
 				switch (array[0]) {
