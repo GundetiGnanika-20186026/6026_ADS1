@@ -16,7 +16,7 @@ class Steque {
 	}
 
 	public void push(int value) {
-		//System.out.println("entered push");
+		System.out.println("entered push");
 		Node newnode = new Node(value);
 		if (size == 0) {
 			//newnode.next = head;
@@ -94,7 +94,7 @@ class Solution {
 			while (scan.hasNext()) {
 				Steque obj = new Steque();
 				String[] array = scan.nextLine().split(" ");
-				if (array.length == 0){
+				if (array.length == 1){
 					break;
 				}
 
