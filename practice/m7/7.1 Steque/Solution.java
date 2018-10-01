@@ -105,6 +105,8 @@ class Solution {
 					obj.print();
 					break;
 				case "pop" :
+				System.out.println("called");
+
 					obj.pop();
 					obj.print();
 
