@@ -11,9 +11,9 @@ class Steque {
 	 * { size variable to keep track of the elements inserted
 	 *  and deleted from the linked list }.
 	 */
-	private int size = 0 ;
+	private int size = 0;
 	/**
-	 * { head pointer to keep track of last inserted element }
+	 * { head pointer to keep track of last inserted element }.
 	 */
 	private Node head = null;
 
@@ -22,11 +22,11 @@ class Steque {
 	 */
 	private class Node {
 		/**
-		 * { data in the node }
+		 * { data in the node }.
 		 */
 		private int data;
 		/**
-		 * { address to be pointed when a node is added }
+		 * { address to be pointed when a node is added }.
 		 */
 		private Node next;
 		/**
@@ -64,11 +64,12 @@ class Steque {
 	}
 
 	/**
-	 * { This method will add the elements to the linked list at the tail side }
+	 * { This method will add the elements
+	 *  to the linked list at the tail side }.
 	 *
 	 * @param      value  The value
 	 */
-	public void enqueue(int value) {
+	public void enqueue(final int value) {
 		Node newnode = new Node(value);
 		if (size == 0) {
 			head = newnode;
@@ -77,14 +78,14 @@ class Steque {
 		}
 		Node n = head;
 		while (n.next != null) {
-			n = n.next ;
+			n = n.next;
 		}
 		n.next = newnode;
 		size++;
 	}
 
 	/**
-	 * { this method prints the elements in the linked list }
+	 * { this method prints the elements in the linked list }.
 	 */
 	public void print() {
 
@@ -105,7 +106,7 @@ class Steque {
 	}
 
 	/**
-	 * { deletes the node that the head points and then reduces the size }
+	 * { deletes the node that the head points and then reduces the size }.
 	 */
 	public void pop() {
 		if (size == 0) {
@@ -127,7 +128,8 @@ class Steque {
 
 
 /**
- * Class for solution this class contains the main method which can handle the test casses.
+ * Class for solution this class contains the main
+ *  method which can handle the test casses.
  */
 final class Solution {
 	/**
@@ -137,14 +139,14 @@ final class Solution {
 
 	}
 	/**
-	 * { function_description }
+	 * { main method }.
 	 *
 	 * @param      args  The arguments
 	 */
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int testcases = Integer.parseInt(scan.nextLine());
-		for (int i = 0 ; i < testcases; i++) {
+		for (int i = 0; i < testcases; i++) {
 			Steque obj = new Steque();
 
 			while (scan.hasNext()) {
@@ -169,6 +171,7 @@ final class Solution {
 					obj.enqueue(Integer.parseInt(array[1]));
 					obj.print();
 					break;
+				default:
 				}
 			}
 
