@@ -3,27 +3,50 @@
  */
 import java.util.Scanner;
 /**
- * Class for steque.
+ * Class for steque which contains push,pop,enqueue
+ *  methods and another node class.
  */
 class Steque {
+	/**
+	 * { size variable to keep track of the elements inserted
+	 *  and deleted from the linked list }.
+	 */
 	private int size = 0 ;
+	/**
+	 * { head pointer to keep track of last inserted element }
+	 */
 	private Node head = null;
 
-    /**
-     * Class for node.
-     */
+	/**
+	 * Class for creating a node.
+	 */
 	private class Node {
-
+		/**
+		 * { data in the node }
+		 */
 		private int data;
+		/**
+		 * { address to be pointed when a node is added }
+		 */
 		private Node next;
-
-		Node(int data1) {
+		/**
+		 * Constructs the object for nodeclass.
+		 *
+		 * @param      data1  The data 1
+		 */
+		Node(final int data1) {
 			this.data = data1;
 			next = null;
 
 		}
 	}
 
+	/**
+	 * { pushes the elements at the right of the linked list and
+	 *  moves the head ponter to the last pushed element if the size }.
+	 *
+	 * @param      value  The value
+	 */
 	public void push(int value) {
 
 		Node newnode = new Node(value);
@@ -40,7 +63,11 @@ class Steque {
 
 	}
 
-
+	/**
+	 * { This method will add the elements to the linked list at the tail side }
+	 *
+	 * @param      value  The value
+	 */
 	public void enqueue(int value) {
 		Node newnode = new Node(value);
 		if (size == 0) {
@@ -56,6 +83,9 @@ class Steque {
 		size++;
 	}
 
+	/**
+	 * { this method prints the elements in the linked list }
+	 */
 	public void print() {
 
 		if (size == 0) {
@@ -74,7 +104,9 @@ class Steque {
 		System.out.println(str.substring(0, str.length() - 2));
 	}
 
-
+	/**
+	 * { deletes the node that the head points and then reduces the size }
+	 */
 	public void pop() {
 		if (size == 0) {
 
@@ -94,8 +126,21 @@ class Steque {
 
 
 
+/**
+ * Class for solution this class contains the main method which can handle the test casses.
+ */
+final class Solution {
+	/**
+	 * Constructs the object.
+	 */
+	private Solution() {
 
-class Solution {
+	}
+	/**
+	 * { function_description }
+	 *
+	 * @param      args  The arguments
+	 */
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int testcases = Integer.parseInt(scan.nextLine());
