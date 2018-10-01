@@ -1,12 +1,21 @@
+/**
+ * Author:Gnanika Reddy.
+ */
 import java.util.Scanner;
+/**
+ * Class for steque.
+ */
 class Steque {
-	int size = 0 ;
-	Node head = null;
+	private int size = 0 ;
+	private Node head = null;
 
-	class Node {
+    /**
+     * Class for node.
+     */
+	private class Node {
 
-		int data;
-		Node next;
+		private int data;
+		private Node next;
 
 		Node(int data1) {
 			this.data = data1;
@@ -16,7 +25,7 @@ class Steque {
 	}
 
 	public void push(int value) {
-		//System.out.println("entered push");
+
 		Node newnode = new Node(value);
 		if (size == 0) {
 			//newnode.next = head;
@@ -48,27 +57,27 @@ class Steque {
 	}
 
 	public void print() {
-		//System.out.println("entered print");
-		if(size == 0){
+
+		if (size == 0) {
 			System.out.println("Steque is empty.");
 			return;
 		}
 		Node n = head;
 		String str = "";
 		while (n != null) {
-			//System.out.println("entered while");
+
 			str += n.data + ", ";
 			n = n.next;
 		}
 
-		//System.out.println(str);
+
 		System.out.println(str.substring(0, str.length() - 2));
 	}
 
 
 	public void pop() {
 		if (size == 0) {
-			//System.out.println("Steque is empty.");
+
 			return;
 		}
 		int data = head.data;
@@ -95,7 +104,7 @@ class Solution {
 
 			while (scan.hasNext()) {
 				String[] array = scan.nextLine().split(" ");
-				if (array[0].equals("")){
+				if (array[0].equals("")) {
 					break;
 				}
 
@@ -105,7 +114,7 @@ class Solution {
 					obj.print();
 					break;
 				case "pop" :
-				//System.out.println("called");
+
 
 					obj.pop();
 					obj.print();
@@ -120,33 +129,33 @@ class Solution {
 
 
 
-		System.out.println();
+			System.out.println();
 
-		// Steque obj = new Steque();
-		// //System.out.println("object");
-		// obj.push(1);
-		// obj.push(2);
-		// obj.push(3);
-		// obj.push(4);
-		// obj.enqueue(5);
-		// obj.enqueue(6);
-		// obj.print();
-		// obj.pop();
-		// obj.print();
-		// obj.pop();
-		// obj.pop();
-		// obj.pop();
-		// obj.pop();
-		// obj.pop();
-		// obj.pop();
-		// obj.print();
-
-
+			// Steque obj = new Steque();
+			// //System.out.println("object");
+			// obj.push(1);
+			// obj.push(2);
+			// obj.push(3);
+			// obj.push(4);
+			// obj.enqueue(5);
+			// obj.enqueue(6);
+			// obj.print();
+			// obj.pop();
+			// obj.print();
+			// obj.pop();
+			// obj.pop();
+			// obj.pop();
+			// obj.pop();
+			// obj.pop();
+			// obj.pop();
+			// obj.print();
 
 
 
 
 
+
+
+		}
 	}
-}
 }
