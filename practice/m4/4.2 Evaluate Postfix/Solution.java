@@ -1,5 +1,5 @@
 /**
- * Author:Gnanika
+ * Author:Gnanika.
  */
 import java.util.Scanner;
 //import java.util.Arrays;
