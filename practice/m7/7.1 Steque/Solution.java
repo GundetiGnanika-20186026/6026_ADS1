@@ -91,8 +91,9 @@ class Solution {
 		Scanner scan = new Scanner(System.in);
 		int testcases = Integer.parseInt(scan.nextLine());
 		for (int i = 0 ; i < testcases; i++) {
+			Steque obj = new Steque();
+
 			while (scan.hasNext()) {
-				Steque obj = new Steque();
 				String[] array = scan.nextLine().split(" ");
 				if (array.length == 1){
 					break;
@@ -116,8 +117,8 @@ class Solution {
 			}
 
 
-		}
-		//System.out.println("hi");
+
+		// System.out.println("hi");
 
 		// Steque obj = new Steque();
 		// //System.out.println("object");
@@ -136,7 +137,7 @@ class Solution {
 		// obj.pop();
 		// obj.pop();
 		// obj.pop();
-		//obj.print();
+		// obj.print();
 
 
 
@@ -145,4 +146,5 @@ class Solution {
 
 
 	}
+}
 }
