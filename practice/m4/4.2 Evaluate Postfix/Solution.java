@@ -73,7 +73,7 @@ class Linkedlist {
     }
 
     /**
-     * print method to print the result;
+     * print method to print the result.
      */
     public void print() {
         System.out.println(head.data);
