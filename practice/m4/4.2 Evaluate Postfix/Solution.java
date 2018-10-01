@@ -47,11 +47,10 @@ class Solution{
 		String[] array = scan.nextLine().split(" ");
 		//System.out.println(Arrays.toString(array));
 		for (int i = 0; i < array.length; i++) {
-            if(!array[i].equals("+")||array[i].equals("*")){
-            	obj.push(Integer.parseInt(array[i]));
+            // if(!array[i].equals("+")||!array[i].equals("*")){
 
-            }
-            else if (array[i].equals("+")) {
+
+            if (array[i].equals("+")) {
             	int value1 = obj.pop();
             	int value2 = obj.pop();
             	int result = value1+value2;
@@ -63,8 +62,10 @@ class Solution{
             	int value2 = obj.pop();
             	int result = value1 * value2;
             	obj.push(result);
-
             }
+            else{
+            obj.push(Integer.parseInt(array[i]));
+        }
 
 
 		}
