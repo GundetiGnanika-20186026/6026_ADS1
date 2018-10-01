@@ -95,9 +95,9 @@ class Solution {
 
 			while (scan.hasNext()) {
 				String[] array = scan.nextLine().split(" ");
-				if (array.length == 0){
-					return;
-				}
+				// if (array.length == 0){
+				// 	return;
+				// }
 
 				switch (array[0]) {
 				case "push":
