@@ -16,7 +16,7 @@ class Steque {
 	}
 
 	public void push(int value) {
-		System.out.println("entered push");
+		//System.out.println("entered push");
 		Node newnode = new Node(value);
 		if (size == 0) {
 			//newnode.next = head;
@@ -105,7 +105,7 @@ class Solution {
 					obj.print();
 					break;
 				case "pop" :
-				System.out.println("called");
+				//System.out.println("called");
 
 					obj.pop();
 					obj.print();
