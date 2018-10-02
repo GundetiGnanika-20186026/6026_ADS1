@@ -6,7 +6,7 @@ import java.util.Scanner;
  * Class for team which contains all the data such as
  *  teamname,wins,losses and draws.
  */
-class Team {
+class Team implements Comparable<Team>{
     /**
      * { variable for teamname }.
      */
@@ -88,13 +88,19 @@ class Team {
 
 
 
-    // //@Override
+    @Override
 
-    // public int compareTo(Team team1) {
-    //  return this.wins - team1.wins;
+    public int compareTo(Team team1) {
+     if (this.wins > team1.wins) return 1;
+     if (this.wins < team1.wins) return -1;
+     if (this.losses > team1.losses) return -1;
+     if (this.losses < team1.losses) return 1;
+     if (this.draws > team1.draws) return 1;
+     if (this.draws < team1.draws) return -1;
+     return 0;
 
 
-    // }
+    }
 }
 
 
@@ -232,14 +238,14 @@ class Selectionsort {
         for (int i = 0; i < size1; i++) {
             int maximum = i;
             for (int j = i + 1; j < size1; j++) {
-                if (a[j].getwins() > a[i].getwins()) {
+                if (a[j].compareTo(a[i]) == 1) {//a[j].getwins() > a[i].getwins()
                     maximum = j;
                     exchange(a, i, maximum);
-                } else if (a[j].getwins() == a[i].getwins()) {
+                } else if (a[j].compareTo(a[i]) == 0) {//a[j].getwins() == a[i].getwins()
                     if (a[j].getlosses() < a[i].getlosses()) {
                         maximum = j;
                         exchange(a, i, maximum);
-                    } else if (a[j].getlosses() == a[i].getlosses()) {
+                    } else if (a[j].compareTo(a[i]) == 0) {//a[j].getlosses() == a[i].getlosses()
                         if (a[j].getdraws() > a[i].getdraws()) {
                             maximum = j;
                             exchange(a, i, maximum);
