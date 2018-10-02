@@ -89,14 +89,34 @@ class Team implements Comparable<Team> {
 
 
     @Override
-
+    /**
+     * { this method is used to compare }
+     *
+     * @param      team1  The team object
+     *
+     * @return     { return 1 if greater,
+     * 0 if equal,-1 if less }
+     */
     public int compareTo(Team team1) {
-        if (this.wins > team1.wins) return 1;
-        if (this.wins < team1.wins) return -1;
-        if (this.losses > team1.losses) return -1;
-        if (this.losses < team1.losses) return 1;
-        if (this.draws > team1.draws) return 1;
-        if (this.draws < team1.draws) return -1;
+        if (this.wins > team1.wins) {
+            return 1;
+        }
+        if (this.wins < team1.wins) {
+            return -1;
+        }
+
+        if (this.losses > team1.losses) {
+            return -1;
+        }
+        if (this.losses < team1.losses) {
+            return 1;
+        }
+        if (this.draws > team1.draws) {
+            return 1;
+        }
+        if (this.draws < team1.draws) {
+            return -1;
+        }
         return 0;
 
 
