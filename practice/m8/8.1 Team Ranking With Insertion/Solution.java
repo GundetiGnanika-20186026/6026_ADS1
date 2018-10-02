@@ -49,7 +49,7 @@ class Team {
      *
      * @return     { the team name }
      */
-	public String getteamname(){
+	public String getteamname() {
 		return teamname;
 	}
 
@@ -59,7 +59,7 @@ class Team {
 	 * @return     { returns the no.of wins }
 	 */
 
-    public int getwins (){
+    public int getwins() {
     	return wins;
 
     }
@@ -70,7 +70,7 @@ class Team {
      * @return     { returns the losses values }
      */
 
-     public int getlosses (){
+     public int getlosses() {
      	return losses;
 
     }
@@ -81,7 +81,7 @@ class Team {
      * @return     { returns the draws }
      */
 
-     public int getdraws (){
+     public int getdraws() {
      	return draws;
 
     }
@@ -132,7 +132,8 @@ class Teamarray {
 	}
 
 	/**
-	 * { this method is used to send the array to the insertion sort class }.
+	 * { this method is used to send the array
+	 *  to the insertion sort class }.
 	 * its complexity is O(1)
 	 */
 
@@ -178,7 +179,8 @@ class Insertionsort {
 	 * @param      index1     The index 1
 	 * @param      index2     The index 2
 	 */
-	public void exchange(final Team[] teamarray, final int index1, final int index2) {
+	public void exchange(final Team[] teamarray,
+	 final int index1, final int index2) {
 		Team extra = new Team();
 		extra = teamarray[index1];
 		teamarray[index1] = teamarray[index2];
@@ -202,11 +204,11 @@ class Insertionsort {
 					exchange(a, j, j - 1);
 				}
 				if (a[j].getwins() == a[j - 1].getwins()) {
-					if (a[j].getlosses() < a[j - 1].getlosses()) {
+			if (a[j].getlosses() < a[j - 1].getlosses()) {
 						exchange(a, j, j - 1);
 					}
-					if (a[j].getlosses() == a[j - 1].getlosses()) {
-						if (a[j].getdraws() > a[j - 1].getdraws()) {
+			if (a[j].getlosses() == a[j - 1].getlosses()) {
+				if (a[j].getdraws() > a[j - 1].getdraws()) {
 							exchange(a, j, j - 1);
 						}
 
@@ -245,7 +247,9 @@ final class Solution {
 		// int i = 0;
 		while (scan.hasNext()) {
 			String[] token = scan.nextLine().split(",");
-			Team obj = new Team(token[0], Integer.parseInt(token[1]), Integer.parseInt(token[2]), Integer.parseInt(token[3]));
+			Team obj = new Team(token[0], Integer.parseInt(token[1]),
+			 Integer.parseInt(token[1+1]), Integer.parseInt(token[2
+			 	+1]));
 			object.add(obj);
 			//teamarray[size] = obj;
 			//size++;
