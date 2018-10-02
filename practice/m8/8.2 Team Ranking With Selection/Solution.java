@@ -242,11 +242,11 @@ class Selectionsort {
                     maximum = j;
                     exchange(a, i, maximum);
                 } else if (a[j].compareTo(a[i]) == 0) {//a[j].getwins() == a[i].getwins()
-                    if (a[j].getlosses() < a[i].getlosses()) {
+                    if (a[j].compareTo(a[i]) == 1) {//a[j].getlosses() < a[i].getlosses()
                         maximum = j;
                         exchange(a, i, maximum);
                     } else if (a[j].compareTo(a[i]) == 0) {//a[j].getlosses() == a[i].getlosses()
-                        if (a[j].getdraws() > a[i].getdraws()) {
+                        if (a[j].compareTo(a[i]) == 1) {//a[j].getdraws() > a[i].getdraws()
                             maximum = j;
                             exchange(a, i, maximum);
                         }
