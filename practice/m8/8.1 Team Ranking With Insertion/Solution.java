@@ -9,10 +9,22 @@ import java.util.Scanner;
  *  teamname,wins,losses and draws.
  */
 class Team {
-	String teamname;
-	int wins;
-	int losses;
-	int draws;
+	/**
+	 * { variable for teamname }.
+	 */
+	private String teamname;
+	/**
+	 * { variable to store wins }.
+	 */
+	private int wins;
+	/**
+	 * { variable to store losses }.
+	 */
+	private int losses;
+	/**
+	 * { variable to store draws }.
+	 */
+	private int draws;
 	/**
 	 * empty Constructor.
 	 */
@@ -31,6 +43,51 @@ class Team {
 		this.losses = losses1;
 		this.draws = draws1;
 	}
+
+    /**
+     * { method for accessing teamname }.
+     *
+     * @return     { the team name }
+     */
+	public String getteamname(){
+		return teamname;
+	}
+
+	/**
+	 * { this method is to get wins }.
+	 *
+	 * @return     { returns the no.of wins }
+	 */
+
+    public int getwins (){
+    	return wins;
+
+    }
+
+    /**
+     * { this method is to access the losses in specific team }.
+     *
+     * @return     { returns the losses values }
+     */
+
+     public int getlosses (){
+     	return losses;
+
+    }
+
+    /**
+     * { this method is to access the draws }.
+     *
+     * @return     { returns the draws }
+     */
+
+     public int getdraws (){
+     	return draws;
+
+    }
+
+
+
 
 	// //@Override
 
@@ -94,9 +151,9 @@ class Teamarray {
 		String str = "";
 		int i;
 		for (i = 0; i < size - 1; i++) {
-			str += teamarray[i].teamname + ",";
+			str += teamarray[i].getteamname() + ",";
 		}
-		str += teamarray[i].teamname;
+		str += teamarray[i].getteamname();
 		System.out.println(str);
 	}
 }
@@ -141,15 +198,15 @@ class Insertionsort {
 		for (int i = 0; i < size1; i++) {
 			//int max = i;
 			for (int j = i; j > 0; j--) {
-				if (a[j].wins > a[j - 1].wins) {
+				if (a[j].getwins() > a[j - 1].getwins()) {
 					exchange(a, j, j - 1);
 				}
-				if (a[j].wins == a[j - 1].wins) {
-					if (a[j].losses < a[j - 1].losses) {
+				if (a[j].getwins() == a[j - 1].getwins()) {
+					if (a[j].getlosses() < a[j - 1].getlosses()) {
 						exchange(a, j, j - 1);
 					}
-					if (a[j].losses == a[j - 1].losses) {
-						if (a[j].draws > a[j - 1].draws) {
+					if (a[j].getlosses() == a[j - 1].getlosses()) {
+						if (a[j].getdraws() > a[j - 1].getdraws()) {
 							exchange(a, j, j - 1);
 						}
 
