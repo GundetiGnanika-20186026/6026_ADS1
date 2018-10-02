@@ -6,7 +6,7 @@ import java.util.Scanner;
  * Class for team which contains all the data such as
  *  teamname,wins,losses and draws.
  */
-class Team implements Comparable<Team>{
+class Team implements Comparable<Team> {
     /**
      * { variable for teamname }.
      */
@@ -91,13 +91,13 @@ class Team implements Comparable<Team>{
     @Override
 
     public int compareTo(Team team1) {
-     if (this.wins > team1.wins) return 1;
-     if (this.wins < team1.wins) return -1;
-     if (this.losses > team1.losses) return -1;
-     if (this.losses < team1.losses) return 1;
-     if (this.draws > team1.draws) return 1;
-     if (this.draws < team1.draws) return -1;
-     return 0;
+        if (this.wins > team1.wins) return 1;
+        if (this.wins < team1.wins) return -1;
+        if (this.losses > team1.losses) return -1;
+        if (this.losses < team1.losses) return 1;
+        if (this.draws > team1.draws) return 1;
+        if (this.draws < team1.draws) return -1;
+        return 0;
 
 
     }
