@@ -44,11 +44,11 @@ class Team {
 		this.draws = draws1;
 	}
 
-    /**
-     * { method for accessing teamname }.
-     *
-     * @return     { the team name }
-     */
+	/**
+	 * { method for accessing teamname }.
+	 *
+	 * @return     { the team name }
+	 */
 	public String getteamname() {
 		return teamname;
 	}
@@ -59,32 +59,32 @@ class Team {
 	 * @return     { returns the no.of wins }
 	 */
 
-    public int getwins() {
-    	return wins;
+	public int getwins() {
+		return wins;
 
-    }
+	}
 
-    /**
-     * { this method is to access the losses in specific team }.
-     *
-     * @return     { returns the losses values }
-     */
+	/**
+	 * { this method is to access the losses in specific team }.
+	 *
+	 * @return     { returns the losses values }
+	 */
 
-     public int getlosses() {
-     	return losses;
+	public int getlosses() {
+		return losses;
 
-    }
+	}
 
-    /**
-     * { this method is to access the draws }.
-     *
-     * @return     { returns the draws }
-     */
+	/**
+	 * { this method is to access the draws }.
+	 *
+	 * @return     { returns the draws }
+	 */
 
-     public int getdraws() {
-     	return draws;
+	public int getdraws() {
+		return draws;
 
-    }
+	}
 
 
 
@@ -109,16 +109,42 @@ class Team {
  * Class for teamarray this array contains all team objects.
  */
 class Teamarray {
-	Team[] teamarray;
-	int size;
+	private Team[] teamarray;
+	private int size;
 	/**
 	 * Constructor for team array.
 	 */
 	Teamarray() {
-		teamarray = new Team[50];
+		final int fifty = 50;
+		teamarray = new Team[fifty];
 		size = 0;
 
 	}
+
+
+	/**
+ 	* { this method is to return the team array }.
+ 	*
+ 	* @return     { the team array }
+ 	*/
+    public Team[] getteamarray(){
+    	return teamarray;
+    }
+
+
+    /**
+     * { this method will return the size }.
+     *
+     * @return     { this method will return the size }
+     */
+    public int getsize(){
+    	return size;
+    }
+
+
+
+
+
 
 	/**
 	 * { this method adds the team objects into team array }.
@@ -180,7 +206,7 @@ class Insertionsort {
 	 * @param      index2     The index 2
 	 */
 	public void exchange(final Team[] teamarray,
-	 final int index1, final int index2) {
+	                     final int index1, final int index2) {
 		Team extra = new Team();
 		extra = teamarray[index1];
 		teamarray[index1] = teamarray[index2];
@@ -204,11 +230,11 @@ class Insertionsort {
 					exchange(a, j, j - 1);
 				}
 				if (a[j].getwins() == a[j - 1].getwins()) {
-			if (a[j].getlosses() < a[j - 1].getlosses()) {
+					if (a[j].getlosses() < a[j - 1].getlosses()) {
 						exchange(a, j, j - 1);
 					}
-			if (a[j].getlosses() == a[j - 1].getlosses()) {
-				if (a[j].getdraws() > a[j - 1].getdraws()) {
+					if (a[j].getlosses() == a[j - 1].getlosses()) {
+						if (a[j].getdraws() > a[j - 1].getdraws()) {
 							exchange(a, j, j - 1);
 						}
 
@@ -248,8 +274,8 @@ final class Solution {
 		while (scan.hasNext()) {
 			String[] token = scan.nextLine().split(",");
 			Team obj = new Team(token[0], Integer.parseInt(token[1]),
-			 Integer.parseInt(token[1+1]), Integer.parseInt(token[2
-			 	+1]));
+			                    Integer.parseInt(token[1 + 1]),
+			                     Integer.parseInt(token[2 + 1]));
 			object.add(obj);
 			//teamarray[size] = obj;
 			//size++;
