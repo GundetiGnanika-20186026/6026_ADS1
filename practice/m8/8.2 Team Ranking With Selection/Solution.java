@@ -90,7 +90,8 @@ class Team implements Comparable<Team> {
 
     @Override
     /**
-     * { this method is used to compare }
+     * { this method is used to compare }.
+     * this method has a complexity O(1).
      *
      * @param      team1  The team object
      *
