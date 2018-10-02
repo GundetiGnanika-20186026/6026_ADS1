@@ -8,7 +8,7 @@ import java.util.Scanner;
  * Class for team which contains all the data such as
  *  teamname,wins,losses and draws.
  */
-class Team {
+class Team implements Comparable<Team> {
     /**
      * { variable for teamname }.
      */
@@ -38,7 +38,7 @@ class Team {
      * @param      draws1   The draws 1
      */
     Team(final String name, final int wins1,
-     final int losses1, final int draws1) {
+         final int losses1, final int draws1) {
         this.teamname = name;
         this.wins = wins1;
         this.losses = losses1;
@@ -87,16 +87,44 @@ class Team {
 
     }
 
+    @Override
+    /**
+     * { this method is used to compare }.
+     * this method has a complexity O(1).
+     *
+     * @param      team1  The team object
+     *
+     * @return     { return 1 if greater,
+     * 0 if equal,-1 if less }
+     */
+    public int compareTo(final Team team1) {
+        if (this.wins > team1.wins) {
+            return 1;
+        }
+        if (this.wins < team1.wins) {
+            return -1;
+        }
+
+        if (this.losses > team1.losses) {
+            return -1;
+        }
+        if (this.losses < team1.losses) {
+            return 1;
+        }
+        if (this.draws > team1.draws) {
+            return 1;
+        }
+        if (this.draws < team1.draws) {
+            return -1;
+        }
+        return 0;
+
+
+    }
 
 
 
-    // //@Override
 
-    // public int compareTo(Team team1) {
-    //  return this.wins - team1.wins;
-
-
-    // }
 }
 
 
@@ -234,15 +262,20 @@ class Insertionsort {
         for (int i = 0; i < size1; i++) {
             //int max = i;
             for (int j = i; j > 0; j--) {
-                if (a[j].getwins() > a[j - 1].getwins()) {
+                if (a[j].compareTo(a[j - 1]) == 1) {
+                    //a[j].getwins() > a[j - 1].getwins()
                     exchange(a, j, j - 1);
                 }
-                if (a[j].getwins() == a[j - 1].getwins()) {
-            if (a[j].getlosses() < a[j - 1].getlosses()) {
+                if (a[j].compareTo(a[j - 1]) == 0) {
+                    //a[j].getwins() == a[j - 1].getwins()
+                    if (a[j].compareTo(a[j - 1]) == 1) {
+                        //a[j].getlosses() < a[j - 1].getlosses()
                         exchange(a, j, j - 1);
                     }
-            if (a[j].getlosses() == a[j - 1].getlosses()) {
-            if (a[j].getdraws() > a[j - 1].getdraws()) {
+                    if (a[j].compareTo(a[j - 1]) == 0) {
+                        //a[j].getlosses() == a[j - 1].getlosses()
+                        if (a[j].compareTo(a[j - 1]) == 1) {
+                            //a[j].getdraws() > a[j - 1].getdraws()
                             exchange(a, j, j - 1);
                         }
 
@@ -281,9 +314,9 @@ final class Solution {
         // int i = 0;
         while (scan.hasNext()) {
             String[] token = scan.nextLine().split(",");
-        Team obj = new Team(token[0], Integer.parseInt(token[1]),
+            Team obj = new Team(token[0], Integer.parseInt(token[1]),
                                 Integer.parseInt(token[1 + 1]),
-                                 Integer.parseInt(token[2 + 1]));
+                                Integer.parseInt(token[2 + 1]));
             object.add(obj);
             //teamarray[size] = obj;
             //size++;
