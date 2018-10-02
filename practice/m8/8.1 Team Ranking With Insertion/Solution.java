@@ -7,7 +7,7 @@ class Team {
 	int draws;
 	Team() { }
 
-	Team(String name, int wins1, int losses1, int draws1) {
+	Team(final String name, final int wins1, final int losses1, final int draws1) {
 		this.teamname = name;
 		this.wins = wins1;
 		this.losses = losses1;
@@ -57,11 +57,11 @@ class Team {
 // 	}
 // }
 
-class insertion {
+class Insertion {
 	Team[] teamarray;
 	int size;
-	insertion() {
-		Team[] teamarray = new Team[10];
+	Insertion() {
+	   teamarray = new Team[50];
 		size = 0;
 
 	}
@@ -70,7 +70,7 @@ class insertion {
 
 	}
 
-	public void exchange(int index1, int index2) {
+	public void exchange(final int index1, final int index2) {
 		Team extra = new Team();
 		extra = teamarray[index1];
 		teamarray[index1] = teamarray[index2];
@@ -104,10 +104,10 @@ class insertion {
 		String str = "";
 		int i;
 		for ( i = 0; i < size - 1; i++) {
-			str+=teamarray[i].teamname+", ";
-        }
-        str += teamarray[i].teamname;
-        System.out.println(str);
+			str += teamarray[i].teamname + ",";
+		}
+		str += teamarray[i].teamname;
+		System.out.println(str);
 	}
 }
 
@@ -117,9 +117,9 @@ class insertion {
 
 class Solution {
 
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 
-		insertion object = new insertion();
+		Insertion object = new Insertion();
 		Scanner scan = new Scanner(System.in);
 		// int size = 0;
 		// int i = 0;
