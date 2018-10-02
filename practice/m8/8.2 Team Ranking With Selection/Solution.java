@@ -97,7 +97,7 @@ class Team implements Comparable<Team> {
      * @return     { return 1 if greater,
      * 0 if equal,-1 if less }
      */
-    public int compareTo(Team team1) {
+    public int compareTo(final Team team1) {
         if (this.wins > team1.wins) {
             return 1;
         }
@@ -258,15 +258,20 @@ class Selectionsort {
         for (int i = 0; i < size1; i++) {
             int maximum = i;
             for (int j = i + 1; j < size1; j++) {
-                if (a[j].compareTo(a[i]) == 1) {//a[j].getwins() > a[i].getwins()
+                if (a[j].compareTo(a[i]) == 1) {
+                //a[j].getwins() > a[i].getwins()
                     maximum = j;
                     exchange(a, i, maximum);
-                } else if (a[j].compareTo(a[i]) == 0) {//a[j].getwins() == a[i].getwins()
-                    if (a[j].compareTo(a[i]) == 1) {//a[j].getlosses() < a[i].getlosses()
+                } else if (a[j].compareTo(a[i]) == 0) {
+                //a[j].getwins() == a[i].getwins()
+                    if (a[j].compareTo(a[i]) == 1) {
+                    //a[j].getlosses() < a[i].getlosses()
                         maximum = j;
                         exchange(a, i, maximum);
-                    } else if (a[j].compareTo(a[i]) == 0) {//a[j].getlosses() == a[i].getlosses()
-                        if (a[j].compareTo(a[i]) == 1) {//a[j].getdraws() > a[i].getdraws()
+                    } else if (a[j].compareTo(a[i]) == 0) {
+                    //a[j].getlosses() == a[i].getlosses()
+                        if (a[j].compareTo(a[i]) == 1) {
+                        //a[j].getdraws() > a[i].getdraws()
                             maximum = j;
                             exchange(a, i, maximum);
                         }
