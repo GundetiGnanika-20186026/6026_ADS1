@@ -36,7 +36,7 @@ class Team {
      * @param      draws1   The draws 1
      */
     Team(final String name, final int wins1,
-     final int losses1, final int draws1) {
+         final int losses1, final int draws1) {
         this.teamname = name;
         this.wins = wins1;
         this.losses = losses1;
@@ -231,18 +231,16 @@ class Selectionsort {
 
         for (int i = 0; i < size1; i++) {
             int maximum = i;
-            for (int j = i+1; j < size1; j++) {
+            for (int j = i + 1; j < size1; j++) {
                 if (a[j].getwins() > a[i].getwins()) {
                     maximum = j;
                     exchange(a, i, maximum);
-                }
-                else if (a[j].getwins() == a[i].getwins()) {
-            if (a[j].getlosses() < a[i].getlosses()) {
+                } else if (a[j].getwins() == a[i].getwins()) {
+                    if (a[j].getlosses() < a[i].getlosses()) {
                         maximum = j;
                         exchange(a, i, maximum);
-                    }
-            else if (a[j].getlosses() == a[i].getlosses()) {
-            if (a[j].getdraws() > a[i].getdraws()) {
+                    } else if (a[j].getlosses() == a[i].getlosses()) {
+                        if (a[j].getdraws() > a[i].getdraws()) {
                             maximum = j;
                             exchange(a, i, maximum);
                         }
@@ -281,9 +279,9 @@ final class Solution {
 
         while (scan.hasNext()) {
             String[] token = scan.nextLine().split(",");
-        Team obj = new Team(token[0], Integer.parseInt(token[1]),
+            Team obj = new Team(token[0], Integer.parseInt(token[1]),
                                 Integer.parseInt(token[1 + 1]),
-                                 Integer.parseInt(token[2 + 1]));
+                                Integer.parseInt(token[2 + 1]));
             object.add(obj);
 
         }
