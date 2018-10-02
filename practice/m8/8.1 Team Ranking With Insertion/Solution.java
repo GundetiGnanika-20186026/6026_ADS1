@@ -13,55 +13,26 @@ class Team {
 		this.losses = losses1;
 		this.draws = draws1;
 	}
+
+	// @Override
+
+	// public int compareTo(){
+
+	// }
 }
 
 
 
-// class insertion implements Comparable<Team> {
-// 	public void sort(Comparable[] a, int size1) {
-// 		int n = size1;
-// 		for (int i = 0; i < n; i++) {
-// 			int min = i;
-// 			for (int j = i + 1; j < n; j++) {
-// 				if (less(a[j], a[min])) {
-// 					min = j;
-// 				}
-// 				exchange(a, i, min);
-// 			}
-
-// 		}
-// 	}
-
-// 	public boolean less(Comparable v, Comparable w) {
-
-// 		return v.compareTo(w) < 0;
-// 	}
-
-// 	public void exchange(Comparable[] a, int i, int j) {
-// 		Comparable swap = a[i];
-// 		a[i] = a[j];
-// 		a[j] = swap;
-
-// 	}
 
 
-// 	public void print(Team[] array1) {
-// 		String str = "";
-// 		int i;
-// 		for ( i = 0; i < array1.length - 1; i++) {
-// 			str += array1[i].teamname + ",";
-// 		}
-// 		str += array1[i];
-// 		System.out.println(str);
 
-// 	}
-// }
+////////////////////////////////////////////////////////////////////////
 
-class Insertion {
+class Teamarray {
 	Team[] teamarray;
 	int size;
-	Insertion() {
-	   teamarray = new Team[50];
+	Teamarray() {
+		teamarray = new Team[50];
 		size = 0;
 
 	}
@@ -70,37 +41,15 @@ class Insertion {
 
 	}
 
-	public void exchange(final int index1, final int index2) {
-		Team extra = new Team();
-		extra = teamarray[index1];
-		teamarray[index1] = teamarray[index2];
-		teamarray[index2] = extra;
+	public void sendarray(){
+		Insertionsort sortobj = new Insertionsort();
+		sortobj.sort(teamarray, size);
 	}
 
-	public void sort(Team[] a) {
-		for (int i = 0; i < size; i++) {
-			//int max = i;
-			for (int j = i; j > 0; j++) {
-				if (a[j].wins > a[j - 1].wins) {
-					exchange(j, j - 1);
-				}
-				if (a[j].wins == a[j - 1].wins) {
-					if (a[j].losses < a[j - 1].losses) {
-						exchange(j, j - 1);
-					}
-					if (a[j].losses == a[j - 1].losses) {
-						if (a[j].draws > a[j - 1].draws) {
-							exchange(j, j - 1);
-						}
 
-					}
-				}
-
-			}
-		}
-	}
 
 	public void print() {
+
 		String str = "";
 		int i;
 		for ( i = 0; i < size - 1; i++) {
@@ -111,15 +60,51 @@ class Insertion {
 	}
 }
 
+/////////////////////////////////////////////////////////////////////////////
+class Insertionsort {
+	Insertionsort() {
 
+	}
 
+	public void exchange(final Team[] teamarray, final int index1, final int index2) {
+		Team extra = new Team();
+		extra = teamarray[index1];
+		teamarray[index1] = teamarray[index2];
+		teamarray[index2] = extra;
+	}
 
+	public void sort(Team[] a,int size1) {
+		for (int i = 0; i < size1; i++) {
+			//int max = i;
+			for (int j = i; j > 0; j--) {
+				if (a[j].wins > a[j - 1].wins) {
+					exchange(a, j, j - 1);
+				}
+				if (a[j].wins == a[j - 1].wins) {
+					if (a[j].losses < a[j - 1].losses) {
+						exchange(a, j, j - 1);
+					}
+					if (a[j].losses == a[j - 1].losses) {
+						if (a[j].draws > a[j - 1].draws) {
+							exchange(a, j, j - 1);
+						}
+
+					}
+				}
+
+			}
+		}
+	}
+
+}
+
+//////////////////////////////////////////////////////////////////////
 
 class Solution {
 
 	public static void main(final String[] args) {
 
-		Insertion object = new Insertion();
+		Teamarray object = new Teamarray();
 		Scanner scan = new Scanner(System.in);
 		// int size = 0;
 		// int i = 0;
@@ -129,9 +114,10 @@ class Solution {
 			object.add(obj);
 			//teamarray[size] = obj;
 			//size++;
+        }
+        object.sendarray();
 
 
-		}
 		object.print();
 
 
