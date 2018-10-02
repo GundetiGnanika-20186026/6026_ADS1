@@ -17,14 +17,14 @@ class Team {
 	 * empty Constructor.
 	 */
 	Team() { }
-    /**
-     * parameterised constructor.
-     *
-     * @param      name     The name
-     * @param      wins1    The wins 1
-     * @param      losses1  The losses 1
-     * @param      draws1   The draws 1
-     */
+	/**
+	 * parameterised constructor.
+	 *
+	 * @param      name     The name
+	 * @param      wins1    The wins 1
+	 * @param      losses1  The losses 1
+	 * @param      draws1   The draws 1
+	 */
 	Team(final String name, final int wins1, final int losses1, final int draws1) {
 		this.teamname = name;
 		this.wins = wins1;
@@ -69,7 +69,7 @@ class Teamarray {
 	 *
 	 * @param      obj1  The object 1
 	 */
-	public void add(Team obj1) {
+	public void add(final Team obj1) {
 		teamarray[size++] = obj1;
 
 	}
@@ -79,21 +79,21 @@ class Teamarray {
 	 * its complexity is O(1)
 	 */
 
-	public void sendarray(){
+	public void sendarray() {
 		Insertionsort sortobj = new Insertionsort();
 		sortobj.sort(teamarray, size);
 	}
 
 
-    /**
-     * { This method is used to print the teamarray which is sorted }
-     * its complexity is O(n) as it itterates through the entire array.
-     */
+	/**
+	 * { This method is used to print the teamarray which is sorted }
+	 * its complexity is O(n) as it itterates through the entire array.
+	 */
 	public void print() {
 
 		String str = "";
 		int i;
-		for ( i = 0; i < size - 1; i++) {
+		for (i = 0; i < size - 1; i++) {
 			str += teamarray[i].teamname + ",";
 		}
 		str += teamarray[i].teamname;
@@ -113,14 +113,14 @@ class Insertionsort {
 	Insertionsort() {
 
 	}
-    /**
-     * { will exchange the objects in the team array}.
-     * its complexity is O(1).
-     *
-     * @param      teamarray  The teamarray
-     * @param      index1     The index 1
-     * @param      index2     The index 2
-     */
+	/**
+	 * { will exchange the objects in the team array}.
+	 * its complexity is O(1).
+	 *
+	 * @param      teamarray  The teamarray
+	 * @param      index1     The index 1
+	 * @param      index2     The index 2
+	 */
 	public void exchange(final Team[] teamarray, final int index1, final int index2) {
 		Team extra = new Team();
 		extra = teamarray[index1];
@@ -136,7 +136,7 @@ class Insertionsort {
 	 * @param      size1  The size 1
 	 */
 
-	public void sort(Team[] a,int size1) {
+	public void sort(final Team[] a, final int size1) {
 
 		for (int i = 0; i < size1; i++) {
 			//int max = i;
@@ -171,14 +171,14 @@ final class Solution {
 	/**
 	 * Constructor for solution.
 	 */
-	private Solution(){
+	private Solution() {
 
 	}
-    /**
-     * { this is the main method to read the user input}.
-     *
-     * @param      args  The arguments
-     */
+	/**
+	 * { this is the main method to read the user input}.
+	 *
+	 * @param      args  The arguments
+	 */
 
 	public static void main(final String[] args) {
 
@@ -192,8 +192,8 @@ final class Solution {
 			object.add(obj);
 			//teamarray[size] = obj;
 			//size++;
-        }
-        object.sendarray();
+		}
+		object.sendarray();
 
 
 		object.print();
