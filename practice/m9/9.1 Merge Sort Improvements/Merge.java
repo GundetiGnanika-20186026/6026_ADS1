@@ -62,7 +62,8 @@ class Merge {
 	 */
 	private void sort(Comparable[] array, Comparable[] auxilary, int low, int hi) {
 		if (hi- low <=  CUTOFF) {
-			insertionSort(auxilary, low, hi);
+			Insertion obj = new Insertion();
+			obj.insertionSort(auxilary, low, hi);
 			System.out.println("Insertion sort method invoked...");
 			return;
 		}
@@ -92,6 +93,86 @@ class Merge {
 		assert isSorted(array);
 	}
 
+
+
+
+
+
+
+	/**
+	 * Determines if sorted.
+	 * Time complexity is O(1).
+	 *
+	 * @param      array  The array
+	 *
+	 * @return     True if sorted, False otherwise.
+	 */
+	public boolean isSorted(Comparable[] array) {
+		return isSorted(array, 0, array.length - 1);
+	}
+
+
+	/**
+	 * { checks if the value is less or greater than the other }
+	 * Time complexity is O(1)
+	 * @param      v     { element }
+	 * @param      w     { element }
+	 *
+	 * @return     { true if less and false if greater }
+	 */
+	public boolean less(Comparable v, Comparable w) {
+		return v.compareTo(w) < 0;
+	}
+
+
+	/**
+	 * Determines if sorted.
+	 * Time complexity is O(N)
+	 *
+	 * @param      array  The array
+	 * @param      low    The low
+	 * @param      hi     The higher
+	 *
+	 * @return     True if sorted, False otherwise.
+	 */
+	public boolean isSorted(Comparable[] array, int low, int hi) {
+		for (int i = low + 1; i <= hi; i++)
+			if (less(array[i], array[i - 1])) {
+				return false;
+			}
+		return true;
+	}
+
+	/**
+	 * this method is used for printing.
+	 * Time complexity is O(N) as it itterates through the entire array.
+	 *
+	 * @param      array     { parameter_description }
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
+	public Object show(Object[] array) {
+		String str = "[";
+		int i;
+		for (i = 0; i < array.length - 1; i++) {
+			str += array[i] + ", ";
+		}
+		str = str + array[array.length - 1] + "]";
+		return str;
+	}
+}
+
+/**
+ * Class for insertion.
+ */
+class Insertion {
+	/**
+	 * Constructs the object.
+	 */
+	Insertion(){
+
+	}
+
 	/**
 	 *Time complexity is O(N^2) as it has nested for loops.
 	 *
@@ -119,6 +200,7 @@ class Merge {
 		array[j] = swap;
 	}
 
+
 	/**
 	 * { checks if the value is less or greater than the other }
 	 * Time complexity is O(1)
@@ -131,52 +213,4 @@ class Merge {
 		return v.compareTo(w) < 0;
 	}
 
-	/**
-	 * Determines if sorted.
-	 * Time complexity is O(1).
-	 *
-	 * @param      array  The array
-	 *
-	 * @return     True if sorted, False otherwise.
-	 */
-	public boolean isSorted(Comparable[] array) {
-		return isSorted(array, 0, array.length - 1);
-	}
-
-
-	/**
-	 * Determines if sorted.
-	 * Time complexity is O(N)
-	 *
-	 * @param      array  The array
-	 * @param      low    The low
-	 * @param      hi     The higher
-	 *
-	 * @return     True if sorted, False otherwise.
-	 */
-	public boolean isSorted(Comparable[] array, int low, int hi) {
-		for (int i = low + 1; i <= hi; i++)
-			if (less(array[i], array[i - 1])) {
-				return false;
-			}
-		return true;
-	}
-
-	/**
-	 * this method is used for printing.
-	 * Time complexity is O(N) as it itterates through the entire array.
-	 *
-	 * @param      a     { parameter_description }
-	 *
-	 * @return     { description_of_the_return_value }
-	 */
-	public Object show(Object[] array) {
-		String str = "[";
-		int i;
-		for (i = 0; i < array.length - 1; i++) {
-			str += array[i] + ", ";
-		}
-		str = str + array[array.length - 1] + "]";
-		return str;
-	}
 }
