@@ -3,17 +3,32 @@ import java.util.Scanner;
  * Class for linkedlist.
  */
 class Linkedlist {
-	Node head = null;
-	Node test;
-	Node prev;
-	Node temp;
-	int size = 0;
+	/**
+	 * head node.
+	 */
+	private Node head = null;
+	/**
+	 * extra node for iteration.
+	 */
+	private Node extra;
+	/**
+	 * prev node pointer
+	 */
+	private Node prev;
+	/**
+	 * temporary node.
+	 */
+	private Node temp;
+	/**
+	 * variable to maintain size.
+	 */
+	private int size = 0;
 	/**
 	 * Class for node.
 	 */
 	class Node {
-		int data;
-		Node next;
+		private int data;
+		private Node next;
 		/**
 		 * Constructs the object.
 		 *
@@ -58,22 +73,22 @@ class Linkedlist {
 
 		if (index == 0) {
 			Node newnode = new Node(data);
-			newnode.next = test;
+			newnode.next = extra;
 			head = newnode;
-			test =  head;
+			extra =  head;
 			size++;
 			return;
 		}
 		if (index == 1) {
 			Node newnode = new Node(data);
-			newnode.next = test.next;
-			test.next = newnode;
-			test = head;
+			newnode.next = extra.next;
+			extra.next = newnode;
+			extra = head;
 			size++;
 			return;
 		}
 
-		test = test.next;
+		extra = extra.next;
 		index--;
 		insertAt(index, data);
 }
@@ -88,15 +103,15 @@ class Linkedlist {
 			throw new Exception(
 				"No elements to reverse.");
 		}
-		if (test.next == null) {
-			head = test;
+		if (extra.next == null) {
+			head = extra;
 			head.next = prev;
-			test = head;
+			extra = head;
 			prev = null;
 			return;
 		}
-		temp = test;
-		test = test.next;
+		temp = extra;
+		extra = extra.next;
 		temp.next = prev;
 		prev = temp;
 		reverse();
@@ -109,12 +124,12 @@ class Linkedlist {
 	public void print(){
 
 		String str = "";
-		Node newtest = head;
-		while (newtest.next != null) {
-			str = str + newtest.data + ", ";
-			newtest = newtest.next;
+		Node newextra = head;
+		while (newextra.next != null) {
+			str = str + newextra.data + ", ";
+			newextra = newextra.next;
 		}
-		str = str + newtest.data;
+		str = str + newextra.data;
 		System.out.println(str);
 
 	}
