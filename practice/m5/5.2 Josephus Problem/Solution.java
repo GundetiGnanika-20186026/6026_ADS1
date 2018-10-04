@@ -66,7 +66,7 @@ class Queue {
     /**
      * method for popping from the queue from left most place.
      *
-     * @return     { description_of_the_return_value }
+     * @return     { remove the elements from the queue }
      */
     public int dequeue() {
         if (head != null) {
