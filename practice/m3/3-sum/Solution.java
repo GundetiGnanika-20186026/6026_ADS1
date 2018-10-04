@@ -78,7 +78,7 @@ final class Solution {
         }
 
         Threesum object1 = new Threesum();
-         object1.threesum(arraysize,array);
+        object1.threesum(arraysize, array);
 //         Arrays.sort(array);
 //         for (int i = 0; i < arraysize; i++) {
 //             for (int j = i + 1; j < arraysize; j++) {
@@ -100,25 +100,36 @@ final class Solution {
     }
 }
 
-
-class Threesum{
-    Threesum(){
+/**
+ * Class for threesum.
+ */
+class Threesum {
+    /**
+     * Constructs the object.
+     */
+    Threesum() {
 
     }
-    public void threesum(final int arraysize,final int[] array){
+    /**
+     * method to calculate 3 sum.
+     *
+     * @param      arraysize  The arraysize
+     * @param      array      The array
+     */
+    public void threesum(final int arraysize, final int[] array) {
 
         //int[] array = new int[arraysize];
         // for (int i = 0; i < arraysize; i++) {
         //     //object1.add(scan.nextInt());
         //     array[i] = scan.nextInt();
         // }
-         int count = 0;
+        int count = 0;
         Arrays.sort(array);
         for (int i = 0; i < arraysize; i++) {
             for (int j = i + 1; j < arraysize; j++) {
-    //sending the values to the binary search and
-    // searching wether it is present.
-int k = Arrays.binarySearch(array, -(array[i] + array[j]));
+                //sending the values to the binary search and
+                // searching wether it is present.
+                int k = Arrays.binarySearch(array, -(array[i] + array[j]));
                 if (k > j) {
                     count = count + 1;
                 }
