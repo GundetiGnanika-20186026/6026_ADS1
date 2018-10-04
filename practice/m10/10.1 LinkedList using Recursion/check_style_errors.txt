@@ -1,5 +1,4 @@
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m10\10.1 LinkedList using Recursion\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m10\10.1 LinkedList using Recursion\Solution.java:57:26: Parameter index should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 1 errors.

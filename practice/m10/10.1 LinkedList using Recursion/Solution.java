@@ -54,7 +54,7 @@ class Linkedlist {
      *
      * @throws     Exception  { exception_description }
      */
-    public void insertAt(int index,
+    public void insertAt(final int index,
      final int data) throws Exception {
         // Node newnode = new Node(data);
         // if (size == 0) {
@@ -70,7 +70,7 @@ class Linkedlist {
         // }
 
   //       Node n = head;
-        final int in1 = index;
+        int in1 = index;
         if (in1 > size || in1 < 0) {
             throw new Exception(
                 "Can't insert at this position.");
@@ -95,7 +95,7 @@ class Linkedlist {
         }
 
         extra = extra.next;
-        index--;
+        in1--;
         insertAt(in1, data);
 }
     /**
