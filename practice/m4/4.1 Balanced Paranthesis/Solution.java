@@ -72,7 +72,7 @@ class Balancedparanthesis {
     }
     /**
      * { this function will check wether the given
-     *  paranthesis sequence is balanced }
+     *  paranthesis sequence is balanced }.
      *
      * @param      array  The string array
      */
