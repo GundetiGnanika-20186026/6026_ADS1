@@ -21,7 +21,7 @@ final class Solution {
         int[] arr1 = new int[arr1size];
         int[] arr2 = new int[arr2size];
         Sortedarray obj = new Sortedarray();
-        obj.sort(str1,str2,arr1,arr2,arr1size,arr2size);
+        obj.sort(str1, str2, arr1, arr2, arr1size, arr2size);
 
 //         for (int i = 0; i < arr1size; i++) {
 //             arr1[i] = Integer.parseInt(str1[i]);
@@ -55,13 +55,31 @@ final class Solution {
     }
 }
 
-class Sortedarray{
+/**
+ * Class for sortedarray.
+ */
 
-    Sortedarray(){
+class Sortedarray {
+    /**
+     * Constructs the object.
+     */
+
+    Sortedarray() {
 
     }
-
-    public void sort(String[] str1,String[] str2,int[] arr1, int[] arr2,int arr1size,int arr2size){
+    /**
+     * { this method will merge the sorted arrays }.
+     *
+     * @param      str1      The string 1
+     * @param      str2      The string 2
+     * @param      arr1      The arr 1
+     * @param      arr2      The arr 2
+     * @param      arr1size  The arr 1 size
+     * @param      arr2size  The arr 2 size
+     */
+    public void sort(final String[] str1, final String[] str2,
+                     final int[] arr1, final int[] arr2,
+                     final int arr1size, final int arr2size) {
         for (int i = 0; i < arr1size; i++) {
             arr1[i] = Integer.parseInt(str1[i]);
         }
@@ -86,7 +104,7 @@ class Sortedarray{
             arr3[k++] = arr2[j++];
         }
         int a;
-for (a = 0; a < (arr1size + arr2size) - 1; a++) {
+        for (a = 0; a < (arr1size + arr2size) - 1; a++) {
             System.out.print(arr3[a] + ",");
         }
         System.out.print(arr3[a]);
