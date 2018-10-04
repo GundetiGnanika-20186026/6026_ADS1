@@ -42,7 +42,7 @@ class Deque<E> {
     /**
      * returns the size.
      *
-     * @return     { description_of_the_return_value }
+     * @return     { returns the size }
      */
     public int getsize() {
         return size;
