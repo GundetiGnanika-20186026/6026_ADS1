@@ -27,14 +27,20 @@ class Linkedlist {
 	 * Class for node.
 	 */
 	class Node {
+		/**
+		 * data of the node.
+		 */
 		private int data;
+		/**
+		 * address of next node is Stored.
+		 */
 		private Node next;
 		/**
 		 * Constructs the object.
 		 *
 		 * @param      data1  The data 1
 		 */
-		Node(int data1) {
+		Node(final int data1) {
 			this.data = data1;
 			this.next = null;
 		}
@@ -49,7 +55,7 @@ class Linkedlist {
      * @throws     Exception  { exception_description }
      */
 	public void insertAt(int index,
-	 int data) throws Exception {
+	 final int data) throws Exception {
 		// Node newnode = new Node(data);
 		// if (size == 0) {
 		// 	head = newnode;
@@ -151,7 +157,7 @@ final class Solution {
 	 *
 	 * @param      args  The arguments
 	 */
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 		Linkedlist object = new Linkedlist();
 		Scanner scan = new Scanner(System.in);
 		while (scan.hasNext()) {
