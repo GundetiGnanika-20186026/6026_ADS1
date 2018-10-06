@@ -1,5 +1,5 @@
 import java.util.*;
-class Student {
+public class Student {
 	//Student Name, Date of birth, subject1 marks, subject2 marks, subject3 marks, Total marks, Reservation category
 	private String studentName;
 	private String dateOfBirth;
