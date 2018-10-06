@@ -1,9 +1,9 @@
 import java.util.*;
 class Insertion {
     public Insertion() {}
-    public static void sort(Object[] a, Comparator comparator) {
+    public static void sort(Object[] a, Comparator comparator,int size1) {
         int n = a.length;
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < size1; i++) {
             for (int j = i; j > 0 && (!less(a[j], a[j - 1], comparator)); j--) {
                 exch(a, j, j - 1);
             }
