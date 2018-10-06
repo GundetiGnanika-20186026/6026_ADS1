@@ -31,23 +31,23 @@ class Student{
 		}
 	};
 
-	// static Comparator<Student> sub3Comparator = new Comparator<Book>(){
-	// 	public int compare(Student s1, Student s2){
-	// 		return s1.sub3.compareTo(s2.sub3);
-	// 	}
-	// };
+	static Comparator<Student> sub3Comparator = new Comparator<Student>(){
+		public int compare(Student s1, Student s2){
+			return s1.sub3-s2.sub3;
+		}
+	};
 
-	// static Comparator<Student> sub2Comparator = new Comparator<Book>(){
-	// 	public int compare(Student s1, Student s2){
-	// 		return s1.sub2.compareTo(s2.sub2);
-	// 	}
-	// };
+	static Comparator<Student> sub2Comparator = new Comparator<Student>(){
+		public int compare(Student s1, Student s2){
+			return s1.sub2-s2.sub2;
+		}
+	};
 
-	// static Comparator<Student> birthComparator = new Comparator<Book>(){
-	// 	public int compare(Student s1, Student s2){
-	// 		return s1.dateOfBirth.compareTo(s2.dateOfBirth);
-	// 	}
-	// };
+	static Comparator<Student> birthComparator = new Comparator<Student>(){
+		public int compare(Student s1, Student s2){
+			return s1.dateOfBirth.compareTo(s2.dateOfBirth);
+		}
+	};
 
 
 
