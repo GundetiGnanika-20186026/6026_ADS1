@@ -17,8 +17,35 @@ class Student {
 		this.sub3 = sub31;
 		this.total = total1;
 		this.res = res1;
+
+
+
+
 	}
-	static Comparator<Student> totalComparator = new Comparator<Student>() {
+
+
+	// @Override
+	// 	public void compareTo(Student s1, Student s2) {
+	// 		if (s1.total - s2.total < 0)  return -1;
+	// 		if (s1.total - s2.total > 0)  return 1;
+	// 		if (s1.sub3 - s2.sub3 < 0)  return -1;
+	// 		if (s1.sub3 - s2.sub3 > 0)  return 1;
+	// 		if (s1.sub2 - s2.sub2 < 0)  return -1;
+	// 		if (s1.sub2 - s2.sub2 > 0)  return 1;
+	// 		else
+	// 			return 0;
+
+
+	// // 		return s1.total - s2.total;
+	// // 		// else if (s1.sub3-s2.sub3 != 0)
+	// // 		// 	return s1.sub3-s2.sub3;
+	// // 		// else if (s1.sub2-s2.sub2 != 0)
+	// // 		// 	return s1.sub2-s2.sub2;
+	// // 		// else
+	// // 		// 	return s1.dateOfBirth.compareTo(s2.dateOfBirth);
+
+	// 	}
+	public static Comparator<Student> totalComparator = new Comparator<Student>() {
 		public int compare(Student s1, Student s2) {
 			//if (s1.total-s2.total != 0)
 			return s1.total - s2.total;
@@ -31,23 +58,23 @@ class Student {
 		}
 	};
 
-	// static Comparator<Student> sub3Comparator = new Comparator<Student>() {
-	// 	public int compare(Student s1, Student s2) {
-	// 		return s1.sub3 - s2.sub3;
-	// 	}
-	// };
+	static Comparator<Student> sub3Comparator = new Comparator<Student>() {
+		public int compare(Student s1, Student s2) {
+			return s1.sub3 - s2.sub3;
+		}
+	};
 
-	// static Comparator<Student> sub2Comparator = new Comparator<Student>() {
-	// 	public int compare(Student s1, Student s2) {
-	// 		return s1.sub2 - s2.sub2;
-	// 	}
-	// };
+	static Comparator<Student> sub2Comparator = new Comparator<Student>() {
+		public int compare(Student s1, Student s2) {
+			return s1.sub2 - s2.sub2;
+		}
+	};
 
-	// static Comparator<Student> birthComparator = new Comparator<Student>() {
-	// 	public int compare(Student s1, Student s2) {
-	// 		return s1.dateOfBirth.compareTo(s2.dateOfBirth);
-	// 	}
-	// };
+	static Comparator<Student> birthComparator = new Comparator<Student>() {
+		public int compare(Student s1, Student s2) {
+			return s1.dateOfBirth.compareTo(s2.dateOfBirth);
+		}
+	};
 
 
 

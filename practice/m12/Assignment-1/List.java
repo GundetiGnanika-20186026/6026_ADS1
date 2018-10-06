@@ -1,24 +1,24 @@
 import java.util.*;
-class List{
- 	Student[] people;
+class List {
+	Student[] people;
 	int size;
- 	public List(){
+	public List() {
 		people = new Student[50];
 		size = 0;
 	}
 
 	// public void resize(){
- //        people = Arrays.copyOf(people,2*size);
+//        people = Arrays.copyOf(people,2*size);
 	// }
 
- 	public void addStudent(Student obj){
+	public void addStudent(Student obj) {
 		people[size++] = obj;
 	}
- 	public Student[] getArray(){
+	public Student[] getArray() {
 		return people;
 	}
 
-	public int getSize(){
+	public int getSize() {
 		return size;
 	}
 }

@@ -19,6 +19,7 @@ class Solution {
 		Student[] temp = peopleobj.getArray();
 		Insertion insertobj = new Insertion();
 		insertobj.sort(temp, Student.totalComparator);
+
 		for (int i = 0; i < peopleobj.getSize(); i++) {
 			System.out.println(temp[i]);
 		}
