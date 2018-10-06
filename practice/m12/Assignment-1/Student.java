@@ -45,11 +45,11 @@ public class Student {
 	// // 		// 	return s1.dateOfBirth.compareTo(s2.dateOfBirth);
 
 	// 	}
-	public static Comparator<Student> totalComparator = new Comparator<Student>() {
+	 static Comparator<Student> totalComparator = new Comparator<Student>() {
 		 @Override
 		public int compare(Student s1, Student s2) {
 			//if (s1.total-s2.total != 0)
-			return s1.total - s2.total;
+			return (int) s1.total - s2.total;
 			// else if (s1.sub3-s2.sub3 != 0)
 			// 	return s1.sub3-s2.sub3;
 			// else if (s1.sub2-s2.sub2 != 0)
