@@ -4,7 +4,7 @@ class Insertion{
  	public static void sort(Object[] a, Comparator comparator) {
         int n = a.length;
         for (int i = 0; i < n; i++) {
-            for (int j = i; j > 0 && less(a[j-1], a[j], comparator); j--) {
+            for (int j = i; j > 0 && !less(a[j], a[j-1], comparator); j--) {
                 exch(a, j, j-1);
             }
             // assert isSorted(a, 0, i, comparator);
