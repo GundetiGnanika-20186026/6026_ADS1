@@ -29,22 +29,8 @@ Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m12\Assignment-1\Student.java:22:36: Parameter s1 should be final. [FinalParameters]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m12\Assignment-1\Student.java:22:48: Parameter s2 should be final. [FinalParameters]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m12\Assignment-1\Student.java:22:59: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m12\Assignment-1\Student.java:23: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m12\Assignment-1\Student.java:23:37: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m12\Assignment-1\Student.java:23:38: '-' is not followed by whitespace. [WhitespaceAround]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m12\Assignment-1\Student.java:24:44: '-' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m12\Assignment-1\Student.java:24:45: '-' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m12\Assignment-1\Student.java:25: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m12\Assignment-1\Student.java:25:41: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m12\Assignment-1\Student.java:25:42: '-' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m12\Assignment-1\Student.java:26:47: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m12\Assignment-1\Student.java:26:48: '-' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m12\Assignment-1\Student.java:27: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m12\Assignment-1\Student.java:27:41: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m12\Assignment-1\Student.java:27:42: '-' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m12\Assignment-1\Student.java:28:47: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m12\Assignment-1\Student.java:28:48: '-' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m12\Assignment-1\Student.java:29: 'else' construct must use '{}'s. [NeedBraces]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m12\Assignment-1\Student.java:34:9: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m12\Assignment-1\Student.java:34:36: Variable 'sub3Comparator' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m12\Assignment-1\Student.java:34:78: '{' is not preceded with whitespace. [WhitespaceAround]
@@ -78,4 +64,4 @@ Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m12\Assignment-1\Student.java:66:59: '+' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m12\Assignment-1\Student.java:66:60: '+' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 78 errors.
+Checkstyle ends with 64 errors.
