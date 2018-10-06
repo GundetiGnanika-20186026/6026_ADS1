@@ -31,29 +31,13 @@ tanvi,90,BC
 Aditya,80,ST
 priya,72,SC
 Your Output: 
-Ajay,76,Open
-priya,72,SC
-rahul,73,Open
-Abhishek,60,BC
-Priyanka,70,Open
-Aditya,80,ST
-divya,99,ST
-tanvi,90,BC
-vani,50,Open
-yash,61,BC
-Anjali,38,SC
-Ankit,58,BC
-Shreya,23,SC
-shyam,71,ST
-riya,83,Open
-Deepak,98,Open
-Aryan,32,ST
-Aishwarya,48,Open
-Raj,87,BC
-Arjun,75,Open
-varsha,66,BC
-Manoj,39,SC
-Ira,93,ST
+Exception in thread "main" java.lang.NullPointerException
+	at Student.access$000(Student.java:2)
+	at Student$1.compare(Student.java:23)
+	at Student$1.compare(Student.java:21)
+	at Insertion.less(Insertion.java:15)
+	at Insertion.sort(Insertion.java:7)
+	at Solution.main(Solution.java:21)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -97,36 +81,13 @@ Raj,87,BC
 Aditya,80,ST
 priya,72,SC
 Your Output: 
-Ajay,76,Open
-priya,72,SC
-rahul,73,Open
-Tanya,66,BC
-Abhishek,60,BC
-Priyanka,70,Open
-Aditya,80,ST
-divya,99,ST
-Amit,70,Open
-tanvi,90,BC
-mahesh,87,Open
-Ishita,99,Open
-ROHIT,70,SC
-vani,50,Open
-yash,61,BC
-Anjali,38,SC
-Ankit,58,BC
-Shreya,23,SC
-shyam,71,ST
-riya,83,Open
-Deepak,98,Open
-Sneha,50,SC
-Aryan,32,ST
-Aishwarya,48,Open
-Raj,87,BC
-Gayatri,58,SC
-Arjun,75,Open
-varsha,66,BC
-Manoj,39,SC
-Ira,93,ST
+Exception in thread "main" java.lang.NullPointerException
+	at Student.access$000(Student.java:2)
+	at Student$1.compare(Student.java:23)
+	at Student$1.compare(Student.java:21)
+	at Insertion.less(Insertion.java:15)
+	at Insertion.sort(Insertion.java:7)
+	at Solution.main(Solution.java:21)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -145,16 +106,13 @@ divya,99,Open
 Aditya,80,ST
 priya,76,SC
 Your Output: 
-Ajay,76,Open
-priya,76,SC
-rahul,73,Open
-Tanya,66,BC
-Abhishek,60,BC
-Priyanka,70,Open
-Aditya,80,ST
-divya,99,Open
-Amit,70,Open
-tanvi,90,Open
+Exception in thread "main" java.lang.NullPointerException
+	at Student.access$000(Student.java:2)
+	at Student$1.compare(Student.java:23)
+	at Student$1.compare(Student.java:21)
+	at Insertion.less(Insertion.java:15)
+	at Insertion.sort(Insertion.java:7)
+	at Solution.main(Solution.java:21)
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -176,16 +134,13 @@ priya,76,SC
 Ajay,76,Open
 Tanya,66,BC
 Your Output: 
-Ajay,76,Open
-priya,76,SC
-rahul,73,Open
-Tanya,66,BC
-Abhishek,60,BC
-Priyanka,70,Open
-Aditya,80,Open
-divya,99,Open
-Amit,70,Open
-tanvi,90,ST
+Exception in thread "main" java.lang.NullPointerException
+	at Student.access$000(Student.java:2)
+	at Student$1.compare(Student.java:23)
+	at Student$1.compare(Student.java:21)
+	at Insertion.less(Insertion.java:15)
+	at Insertion.sort(Insertion.java:7)
+	at Solution.main(Solution.java:21)
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -234,36 +189,13 @@ Ajay,76,Open
 Amit,76,Open
 Arjun,75,Open
 Your Output: 
-Ajay,76,Open
-priya,76,Open
-rahul,73,Open
-Tanya,72,Open
-Abhishek,60,Open
-Priyanka,70,Open
-Aditya,80,Open
-divya,99,Open
-Amit,76,Open
-tanvi,99,Open
-mahesh,87,Open
-Ishita,99,Open
-ROHIT,70,Open
-vani,50,Open
-yash,61,Open
-Anjali,38,Open
-Ankit,58,Open
-Shreya,23,Open
-shyam,23,Open
-riya,83,Open
-Deepak,98,Open
-Sneha,50,Open
-Aryan,32,Open
-Aishwarya,48,Open
-Raj,87,Open
-Gayatri,58,Open
-Arjun,75,Open
-varsha,66,Open
-Manoj,39,Open
-Ira,93,Open
+Exception in thread "main" java.lang.NullPointerException
+	at Student.access$000(Student.java:2)
+	at Student$1.compare(Student.java:23)
+	at Student$1.compare(Student.java:21)
+	at Insertion.less(Insertion.java:15)
+	at Insertion.sort(Insertion.java:7)
+	at Solution.main(Solution.java:21)
 ----------------------------------------
 ########## Testcase 5: Failed ##########
 Expected Output: 
@@ -314,34 +246,11 @@ rahul,73,Open
 priya,72,SC
 varsha,66,BC
 Your Output: 
-Ajay,76,Open
-priya,72,SC
-rahul,73,Open
-Tanya,66,SC
-Abhishek,60,SC
-Priyanka,70,Open
-Aditya,80,ST
-divya,99,ST
-Amit,76,Open
-tanvi,90,BC
-mahesh,87,BC
-Ishita,99,Open
-ROHIT,70,SC
-vani,50,Open
-yash,61,Open
-Anjali,38,SC
-Ankit,58,SC
-Shreya,23,SC
-shyam,71,ST
-riya,83,Open
-Deepak,99,Open
-Sneha,50,SC
-Aryan,32,ST
-Aishwarya,48,Open
-Raj,87,BC
-Gayatri,58,SC
-Arjun,75,Open
-varsha,66,BC
-Manoj,32,SC
-Ira,93,ST
+Exception in thread "main" java.lang.NullPointerException
+	at Student.access$000(Student.java:2)
+	at Student$1.compare(Student.java:23)
+	at Student$1.compare(Student.java:21)
+	at Insertion.less(Insertion.java:15)
+	at Insertion.sort(Insertion.java:7)
+	at Solution.main(Solution.java:21)
 ----------------------------------------
