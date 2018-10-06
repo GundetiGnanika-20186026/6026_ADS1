@@ -33,7 +33,7 @@ priya,72,SC
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
 	at Student.access$000(Student.java:2)
-	at Student$1.compare(Student.java:52)
+	at Student$1.compare(Student.java:51)
 	at Student$1.compare(Student.java:48)
 	at Insertion.less(Insertion.java:15)
 	at Insertion.sort(Insertion.java:7)
@@ -83,7 +83,7 @@ priya,72,SC
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
 	at Student.access$000(Student.java:2)
-	at Student$1.compare(Student.java:52)
+	at Student$1.compare(Student.java:51)
 	at Student$1.compare(Student.java:48)
 	at Insertion.less(Insertion.java:15)
 	at Insertion.sort(Insertion.java:7)
@@ -108,7 +108,7 @@ priya,76,SC
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
 	at Student.access$000(Student.java:2)
-	at Student$1.compare(Student.java:52)
+	at Student$1.compare(Student.java:51)
 	at Student$1.compare(Student.java:48)
 	at Insertion.less(Insertion.java:15)
 	at Insertion.sort(Insertion.java:7)
@@ -136,7 +136,7 @@ Tanya,66,BC
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
 	at Student.access$000(Student.java:2)
-	at Student$1.compare(Student.java:52)
+	at Student$1.compare(Student.java:51)
 	at Student$1.compare(Student.java:48)
 	at Insertion.less(Insertion.java:15)
 	at Insertion.sort(Insertion.java:7)
@@ -191,7 +191,7 @@ Arjun,75,Open
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
 	at Student.access$000(Student.java:2)
-	at Student$1.compare(Student.java:52)
+	at Student$1.compare(Student.java:51)
 	at Student$1.compare(Student.java:48)
 	at Insertion.less(Insertion.java:15)
 	at Insertion.sort(Insertion.java:7)
@@ -248,7 +248,7 @@ varsha,66,BC
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
 	at Student.access$000(Student.java:2)
-	at Student$1.compare(Student.java:52)
+	at Student$1.compare(Student.java:51)
 	at Student$1.compare(Student.java:48)
 	at Insertion.less(Insertion.java:15)
 	at Insertion.sort(Insertion.java:7)
