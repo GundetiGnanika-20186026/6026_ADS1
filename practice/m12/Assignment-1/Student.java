@@ -1,5 +1,5 @@
 import java.util.*;
-public class Student{
+public class Student {
 	//Student Name, Date of birth, subject1 marks, subject2 marks, subject3 marks, Total marks, Reservation category
 	private String studentName;
 	private String dateOfBirth;
@@ -46,16 +46,16 @@ public class Student{
 
 	// 	}
 	public static Comparator<Student> totalComparator = new Comparator<Student>() {
-		 @Override
+		@ Override
 		public int compare(Student s1, Student s2) {
-			if (s1.total-s2.total != 0)
-					return  s1.total - s2.total;
-			else if (s1.sub3-s2.sub3 != 0)
-			 		return s1.sub3-s2.sub3;
-			else if (s1.sub2-s2.sub2 != 0)
-			 		return s1.sub2-s2.sub2;
+			if (s1.total - s2.total != 0)
+				return  s1.total - s2.total;
+			else if (s1.sub3 - s2.sub3 != 0)
+				return s1.sub3 - s2.sub3;
+			else if (s1.sub2 - s2.sub2 != 0)
+				return s1.sub2 - s2.sub2;
 			else
-			 		return s1.dateOfBirth.compareTo(s2.dateOfBirth);
+				return s1.dateOfBirth.compareTo(s2.dateOfBirth);
 		}
 	};
 
