@@ -46,6 +46,7 @@ public class Student {
 
 	// 	}
 	public static Comparator<Student> totalComparator = new Comparator<Student>() {
+		 @Override
 		public int compare(Student s1, Student s2) {
 			//if (s1.total-s2.total != 0)
 			return s1.total - s2.total;
