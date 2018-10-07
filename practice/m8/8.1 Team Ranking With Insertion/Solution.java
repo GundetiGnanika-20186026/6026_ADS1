@@ -198,7 +198,7 @@ class Teamarray {
      * its complexity is O(1)
      */
 
-    public void sendarray() {
+    public void sendArray() {
         Insertionsort sortobj = new Insertionsort();
         sortobj.sort(teamarray, size);
     }
@@ -321,7 +321,7 @@ final class Solution {
             //teamarray[size] = obj;
             //size++;
         }
-        object.sendarray();
+        object.sendArray();
 
 
         object.print();
