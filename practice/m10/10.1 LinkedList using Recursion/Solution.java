@@ -52,7 +52,7 @@ class Linkedlist {
      * @param      index      The index
      * @param      data       The data
      *
-     * @throws     Exception  { exception_description }
+     * @throws     Exception  { throws Exception if present }
      */
     public void insertAt(final int index,
      final int data) throws Exception {
