@@ -21,7 +21,7 @@ class InsertionSort {
      *
      * @return     { true if less and false ig more }
      */
-    public boolean less(final Comparable u,final Comparable v) {
+    public boolean less(final Comparable u, final Comparable v) {
         return u.compareTo(v) < 0;
     }
 
@@ -79,10 +79,10 @@ class QuickSort {
      * @param      end     The end
      * @param      cutoff  The cutoff
      */
-    public void sort(final Comparable[] array,final int start,
-     final int end,final int cutoff) {
+    public void sort(final Comparable[] array, final int start,
+     final int end, final int cutoff) {
         int length = end - start;
-        if ( length < cutoff) {
+        if (length < cutoff) {
             InsertionSort insertionObj = new InsertionSort();
             insertionObj.sort(array, start, end);
             return;
@@ -196,11 +196,11 @@ class QuickSort {
 /**
  * Class for solution.
  */
-class Solution {
+public class Solution {
     /**
      * Constructs the object.
      */
-    Solution() {
+    private Solution() {
 
     }
     /**
