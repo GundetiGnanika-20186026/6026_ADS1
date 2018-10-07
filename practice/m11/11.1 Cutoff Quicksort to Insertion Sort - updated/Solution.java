@@ -40,58 +40,36 @@ class QuickSort {
 
 
 
-    public int partition(Comparable[] a, int start, int end) {
+    public int partition(Comparable[] array, int start, int end) {
 
-        int i = start;
-        int j = end + 1;
-        Comparable v = a[start];
-
-        // Comparable pivot = array[start];
         // int i = start;
-        // int j = end;
-        // while (true) {
-        //     while (j >= start && array[j].compareTo(pivot) > 0) {
-        //         j--;
-        //     }
-        //     while (i <= end && array[i].compareTo(pivot) <= 0) {
-        //         i++;
-        //     }
-        //     if (j < i) {
-        //         i--;
-        //         break;
-        //     }
-        //     exchange(array, i, j);
-        //     i++;
-        //     j--;
-        // }
-        // array[start] = array[i];
-        // array[i] = pivot;
-        // System.out.println(toString(array));
-        // return i;
-        //
-         while (true) {
+        // int j = end ;
+        //Comparable v = a[start];
 
-            // find item on lo to swap
-            while (less(a[++i], v)) {
-                if (i == end) break;
+        Comparable pivot = array[start];
+        int i = start;
+        int j = end;
+        while (true) {
+            while (j >= start && array[j].compareTo(pivot) > 0) {
+                j--;
             }
-
-            // find item on hi to swap
-            while (less(v, a[--j])) {
-                if (j == start) break;      // redundant since a[lo] acts as sentinel
+            while (i <= end && array[i].compareTo(pivot) <= 0) {
+                i++;
             }
-
-            // check if pointers cross
-            if (i >= j) break;
-
-            exchange(a, i, j);
+            if (j < i) {
+                i--;
+                break;
+            }
+            exchange(array, i, j);
+            i++;
+            j--;
         }
+        array[start] = array[i];
+        array[i] = pivot;
+        System.out.println(toString(array));
+        return i;
 
-        // put partitioning item v at a[j]
-        exchange(a, start, j);
 
-        // now, a[lo .. j-1] <= a[j] <= a[j+1 .. hi]
-        return j;
     }
 
 
