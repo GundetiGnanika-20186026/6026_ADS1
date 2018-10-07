@@ -1,18 +1,57 @@
+/**
+ * Author: Gnanika.
+ */
 import java.util.Scanner;
-
+/**
+ * Class for insertion sort.
+ */
 class InsertionSort {
-    boolean less(Comparable u, Comparable v) {
+    /**
+     * Constructs the object.
+     */
+    InsertionSort() {
+
+    }
+    /**
+     * { checks if first element is less than the second }.
+     * its complexity is O(1).
+     *
+     * @param      u     { value1 }
+     * @param      v     { value2 }
+     *
+     * @return     { true if less and false ig more }
+     */
+    public boolean less(Comparable u, Comparable v) {
         return u.compareTo(v) < 0;
     }
-    void exch(Comparable[] a, int i, int j) {
+
+    /**
+     * { exchanges the values in both the indexes }.
+     * its complexity is O(1).
+     *
+     * @param      a     { array }
+     * @param      i     { index }
+     * @param      j     { index }
+     */
+    public void exch(Comparable[] a, int i, int j) {
         Comparable temp = a[i];
         a[i] = a[j];
         a[j] = temp;
     }
-    void sort(Comparable[] array, int low, int high) {
+
+    /**
+     * { method for sorting the array}.
+     * its Complexity is O(n^2) as it has nested for loop.
+     *
+     * @param      array  The array
+     * @param      low    The lowindex
+     * @param      high   The highindex
+     */
+    public void sort(Comparable[] array, int low, int high) {
         System.out.println("insertionSort called");
         for (int i = low; i <= high; i++) {
-            for (int j = i; j > low && less(array[j], array[j - 1]); j--) {
+            for (int j = i; j > low && less(array[j],
+             array[j - 1]); j--) {
                 exch(array, j, j - 1);
             }
         }
@@ -20,12 +59,28 @@ class InsertionSort {
 }
 
 
-
+/**
+ * Class for quick sort.
+ */
 class QuickSort {
+    /**
+     * Constructs the object.
+     */
+    QuickSort(){
 
+    }
 
-
-    public void sort(Comparable[] array, int start, int end, int cutoff) {
+    /**
+     * { This method is for sorting }.
+     * its complexity is N*log(N)
+     *
+     * @param      array   The array
+     * @param      start   The start
+     * @param      end     The end
+     * @param      cutoff  The cutoff
+     */
+    public void sort(Comparable[] array, int start,
+     int end, int cutoff) {
         int length = end - start;
         if ( length < cutoff) {
             InsertionSort insertionObj = new InsertionSort();
@@ -39,7 +94,17 @@ class QuickSort {
 
 
 
-
+    /**
+     * this method is to find the partition element.
+     * its complexity is O(n^2)
+     *
+     * @param      array  The array
+     * @param      start  The start
+     * @param      end    The end
+     *
+     * @return     { integer which is the
+     *              index of partition element }
+     */
     public int partition(Comparable[] array, int start, int end) {
 
         // int i = start;
@@ -50,10 +115,10 @@ class QuickSort {
         int i = start;
         int j = end;
         while (true) {
-            while (j >= start && array[j].compareTo(pivot) > 0) {
+    while (j >= start && array[j].compareTo(pivot) > 0) {
                 j--;
             }
-            while (i <= end && array[i].compareTo(pivot) <= 0) {
+    while (i <= end && array[i].compareTo(pivot) <= 0) {
                 i++;
             }
             if (j < i) {
@@ -75,19 +140,43 @@ class QuickSort {
 
 
 
-
-    void exchange(Comparable[] array, int v1 , int v2) {
+    /**
+     * exchanges the values present at the given indexes.
+     * its complexity is O(1).
+     *
+     * @param      array  The array
+     * @param      v1     index1
+     * @param      v2     index2
+     */
+    public void exchange(Comparable[] array, int v1 , int v2) {
         Comparable temp = array[v1];
         array[v1] = array[v2];
         array[v2] = temp;
     }
 
-
-     private static boolean less(Comparable v, Comparable w) {
-        if (v == w) return false;   // optimization when reference equals
+    /**
+     * checks wether the first element
+     *  is less than the other.
+     * its complexity is O(1).
+     *
+     * @param      v     { value1 }
+     * @param      w     { value2 }
+     *
+     * @return     { true if less and false if greater }
+     */
+    private  boolean less(Comparable v, Comparable w) {
+        if (v == w) return false;
         return v.compareTo(w) < 0;
     }
 
+    /**
+     * Returns a string representation of the object.
+     * its complexity is O(n).
+     *
+     * @param      array  The array
+     *
+     * @return     String representation of the object.
+     */
     public String toString(Comparable[] array) {
         String s = "[";
         int i;
@@ -98,7 +187,23 @@ class QuickSort {
         return s;
     }
 }
-class Solution {
+
+
+/**
+ * Class for solution.
+ */
+final class Solution {
+    /**
+     * Constructs the object.
+     */
+    Solution(){
+
+    }
+    /**
+     * { main method to read input from console }.
+     *
+     * @param      args  The arguments
+     */
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int testcases = Integer.parseInt(scan.nextLine());
