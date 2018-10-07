@@ -21,7 +21,7 @@ class InsertionSort {
      *
      * @return     { true if less and false ig more }
      */
-    public boolean less(Comparable u, Comparable v) {
+    public boolean less(final Comparable u,final Comparable v) {
         return u.compareTo(v) < 0;
     }
 
@@ -33,7 +33,7 @@ class InsertionSort {
      * @param      i     { index }
      * @param      j     { index }
      */
-    public void exch(Comparable[] a, int i, int j) {
+    public void exch(final Comparable[] a, final int i, final int j) {
         Comparable temp = a[i];
         a[i] = a[j];
         a[j] = temp;
@@ -47,7 +47,7 @@ class InsertionSort {
      * @param      low    The lowindex
      * @param      high   The highindex
      */
-    public void sort(Comparable[] array, int low, int high) {
+    public void sort(final Comparable[] array, final int low, final int high) {
         System.out.println("insertionSort called");
         for (int i = low; i <= high; i++) {
             for (int j = i; j > low && less(array[j],
@@ -66,7 +66,7 @@ class QuickSort {
     /**
      * Constructs the object.
      */
-    QuickSort(){
+    QuickSort() {
 
     }
 
@@ -79,7 +79,7 @@ class QuickSort {
      * @param      end     The end
      * @param      cutoff  The cutoff
      */
-    public void sort(Comparable[] array, int start,
+    public void sort(final Comparable[] array,final int start,
      int end, int cutoff) {
         int length = end - start;
         if ( length < cutoff) {
@@ -105,7 +105,7 @@ class QuickSort {
      * @return     { integer which is the
      *              index of partition element }
      */
-    public int partition(Comparable[] array, int start, int end) {
+    public int partition(final Comparable[] array, final int start, final int end) {
 
         // int i = start;
         // int j = end ;
@@ -148,7 +148,7 @@ class QuickSort {
      * @param      v1     index1
      * @param      v2     index2
      */
-    public void exchange(Comparable[] array, int v1 , int v2) {
+    public void exchange(final Comparable[] array, final int v1, final int v2) {
         Comparable temp = array[v1];
         array[v1] = array[v2];
         array[v2] = temp;
@@ -164,7 +164,7 @@ class QuickSort {
      *
      * @return     { true if less and false if greater }
      */
-    private  boolean less(Comparable v, Comparable w) {
+    private  boolean less(final Comparable v,final Comparable w) {
         if (v == w) return false;
         return v.compareTo(w) < 0;
     }
@@ -177,7 +177,7 @@ class QuickSort {
      *
      * @return     String representation of the object.
      */
-    public String toString(Comparable[] array) {
+    public String toString(final Comparable[] array) {
         String s = "[";
         int i;
         for (i = 0; i < array.length - 1; i++) {
@@ -204,7 +204,7 @@ final class Solution {
      *
      * @param      args  The arguments
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         int testcases = Integer.parseInt(scan.nextLine());
         for (int i = 0; i < testcases; i++) {
