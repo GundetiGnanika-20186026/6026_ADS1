@@ -80,7 +80,7 @@ class QuickSort {
      * @param      cutoff  The cutoff
      */
     public void sort(final Comparable[] array,final int start,
-     int end, int cutoff) {
+     final int end,final int cutoff) {
         int length = end - start;
         if ( length < cutoff) {
             InsertionSort insertionObj = new InsertionSort();
@@ -105,7 +105,8 @@ class QuickSort {
      * @return     { integer which is the
      *              index of partition element }
      */
-    public int partition(final Comparable[] array, final int start, final int end) {
+    public int partition(final Comparable[] array,
+     final int start, final int end) {
 
         // int i = start;
         // int j = end ;
@@ -148,7 +149,8 @@ class QuickSort {
      * @param      v1     index1
      * @param      v2     index2
      */
-    public void exchange(final Comparable[] array, final int v1, final int v2) {
+    public void exchange(final Comparable[] array,
+     final int v1, final int v2) {
         Comparable temp = array[v1];
         array[v1] = array[v2];
         array[v2] = temp;
@@ -164,8 +166,10 @@ class QuickSort {
      *
      * @return     { true if less and false if greater }
      */
-    private  boolean less(final Comparable v,final Comparable w) {
-        if (v == w) return false;
+    private  boolean less(final Comparable v, final Comparable w) {
+        if (v == w) {
+            return false;
+        }
         return v.compareTo(w) < 0;
     }
 
@@ -192,11 +196,11 @@ class QuickSort {
 /**
  * Class for solution.
  */
-final class Solution {
+class Solution {
     /**
      * Constructs the object.
      */
-    Solution(){
+    Solution() {
 
     }
     /**

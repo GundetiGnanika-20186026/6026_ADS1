@@ -1,13 +1,8 @@
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:24:44: ',' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:82:47: ',' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:83:6: Parameter end should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:83:15: Parameter cutoff should be final. [FinalParameters]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:83:20: ',' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:85:13: '(' is followed by whitespace. [ParenPad]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:108: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:167:46: ',' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:168: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:195:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:199:15: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:199:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
 Audit done.
-Checkstyle ends with 10 errors.
+Checkstyle ends with 5 errors.
