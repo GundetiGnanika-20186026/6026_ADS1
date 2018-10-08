@@ -53,7 +53,7 @@ class MinPQ<Key extends Comparable<Key>> {
      * @return     { true if elements are following
      *  minimum priority and false if not  }
      */
-    public boolean minHeapchecking(Key[] array) {
+    public boolean minHeapchecking(final Key[] array) {
         int n = array.length - 1;
         // if (array.length == 0) {
         //     return false;
@@ -150,6 +150,8 @@ final class Solution {
                 System.out.println(obj.minHeapchecking(input1));
 
             }
+        break;
+        default:
 
         }
     }

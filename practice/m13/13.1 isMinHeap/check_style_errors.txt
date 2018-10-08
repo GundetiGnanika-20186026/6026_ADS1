@@ -1,5 +1,2 @@
 Starting audit...
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m13\13.1 isMinHeap\Solution.java:56:36: Parameter array should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m13\13.1 isMinHeap\Solution.java:92: switch without "default" clause. [MissingSwitchDefault]
 Audit done.
-Checkstyle ends with 2 errors.
