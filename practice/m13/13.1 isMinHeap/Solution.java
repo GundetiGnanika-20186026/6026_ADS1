@@ -95,6 +95,37 @@ class Solution {
                 }
 
             break;
+
+            case "Double" :
+                 int testcase2 = Integer.parseInt(scan.nextLine());
+                for(int i = 0; i< testcase2; i++){
+                    String[] input = scan.nextLine().split(",");
+                    Double[] input1 = new Double[input.length];
+                    for(int j = 0;j<input.length;j++){
+                        input1[j] = Double.parseDouble(input[j]);
+
+                    }
+                    MinPQ<Double> obj = new MinPQ<Double>();
+                   System.out.println(obj.minHeapchecking(input1));
+
+                }
+
+            break;
+            case "Float" :
+
+                int testcase3 = Integer.parseInt(scan.nextLine());
+                for(int i = 0; i< testcase3; i++){
+                    String[] input = scan.nextLine().split(",");
+                    Float[] input1 = new Float[input.length];
+                    for(int j = 0;j<input.length;j++){
+                        input1[j] = Float.parseFloat(input[j]);
+
+                    }
+                    MinPQ<Float> obj = new MinPQ<Float>();
+                   System.out.println(obj.minHeapchecking(input1));
+
+                }
+
         }
     }
 
