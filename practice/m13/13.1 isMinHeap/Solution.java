@@ -1,12 +1,19 @@
 import java.util.Scanner;
-import java.util.Arrays;
-import java.util.Comparator;
-
+/**
+ * minimum priority queue class.
+ *
+ * @param      <Key>  The key(
+ *                    which acts as generic)
+ */
 
 class MinPQ<Key extends Comparable<Key>> {
     // private  Key[] pq;
     // private  int n;
     // Comparator<Key> comparator;
+
+    /**
+     * Constructs the object.
+     */
     MinPQ() {
 
     }
@@ -35,6 +42,17 @@ class MinPQ<Key extends Comparable<Key>> {
     //         return comparator.compare(pq[i], pq[j]) > 0;
     //     }
     // }
+
+    /**
+     * { this method will check whether the elements
+     *  in the given input array are in minimum  }
+     *  its complexity is O(n).
+     *
+     * @param      array  The array from the input.
+     *
+     * @return     { true if elements are following
+     *  minimum priority and false if not  }
+     */
     public boolean minHeapchecking(Key[] array) {
         int n = array.length - 1;
         // if (array.length == 0) {
@@ -56,11 +74,11 @@ class MinPQ<Key extends Comparable<Key>> {
 /**
  * Class for solution.
  */
-class Solution {
+final class Solution {
     /**
      * Constructs the object.
      */
-    Solution() {
+    private Solution() {
 
     }
     /**

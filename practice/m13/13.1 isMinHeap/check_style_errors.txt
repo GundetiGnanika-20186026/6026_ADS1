@@ -1,11 +1,5 @@
 Starting audit...
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m13\13.1 isMinHeap\Solution.java:2:8: Unused import - java.util.Arrays. [UnusedImports]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m13\13.1 isMinHeap\Solution.java:3:8: Unused import - java.util.Comparator. [UnusedImports]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m13\13.1 isMinHeap\Solution.java:6: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m13\13.1 isMinHeap\Solution.java:10:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m13\13.1 isMinHeap\Solution.java:38:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m13\13.1 isMinHeap\Solution.java:38:36: Parameter array should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m13\13.1 isMinHeap\Solution.java:59:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m13\13.1 isMinHeap\Solution.java:74: switch without "default" clause. [MissingSwitchDefault]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m13\13.1 isMinHeap\Solution.java:56:36: Parameter array should be final. [FinalParameters]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m13\13.1 isMinHeap\Solution.java:92: switch without "default" clause. [MissingSwitchDefault]
 Audit done.
-Checkstyle ends with 8 errors.
+Checkstyle ends with 2 errors.
