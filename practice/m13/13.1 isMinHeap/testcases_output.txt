@@ -40,7 +40,13 @@ false
 true
 false
 Your Output: 
-
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 9
+	at MinPQ.greater(Solution.java:33)
+	at MinPQ.isMinHeap(Solution.java:27)
+	at MinPQ.isMinHeap(Solution.java:28)
+	at MinPQ.isMinHeap(Solution.java:28)
+	at MinPQ.isMinHeap(Solution.java:18)
+	at Solution.main(Solution.java:77)
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 

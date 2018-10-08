@@ -63,17 +63,22 @@ class Solution {
                 }
 
             break;
-            // case "Integer" :
+            case "Integer" :
 
-            //     int testcase1 = Integer.parseInt(scan.nextLine());
-            //     for(int i = 0; i< testcase1; i++){
-            //         Integer[] input = scan.nextLine().split(",");
-            //         MinPQ<Integer> obj = new MinPQ<Integer>(input,input.length);
-            //        obj.isMinHeap();
+                int testcase1 = Integer.parseInt(scan.nextLine());
+                for(int i = 0; i< testcase1; i++){
+                    String[] input = scan.nextLine().split(",");
+                    Integer[] input1 = new Integer[input.length];
+                    for(int j = 0;j<input.length;j++){
+                        input1[j] = Integer.parseInt(input[j]);
 
-            //     }
+                    }
+                    MinPQ<Integer> obj = new MinPQ<Integer>(input1,input.length);
+                   obj.isMinHeap();
 
-            // break;
+                }
+
+            break;
         }
     }
 

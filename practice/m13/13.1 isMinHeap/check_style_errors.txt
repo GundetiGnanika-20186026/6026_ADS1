@@ -33,6 +33,16 @@ Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m13\13.1 isMinHeap\Solution.java:59:33: '<' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m13\13.1 isMinHeap\Solution.java:59:49: '{' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m13\13.1 isMinHeap\Solution.java:61:65: ',' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m13\13.1 isMinHeap\Solution.java:71: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m13\13.1 isMinHeap\Solution.java:69:20: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m13\13.1 isMinHeap\Solution.java:69:33: '<' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m13\13.1 isMinHeap\Solution.java:69:50: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m13\13.1 isMinHeap\Solution.java:72:24: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m13\13.1 isMinHeap\Solution.java:72:35: ';' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m13\13.1 isMinHeap\Solution.java:72:36: '<' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m13\13.1 isMinHeap\Solution.java:72:37: '<' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m13\13.1 isMinHeap\Solution.java:72:50: ';' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m13\13.1 isMinHeap\Solution.java:72:54: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m13\13.1 isMinHeap\Solution.java:76: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m13\13.1 isMinHeap\Solution.java:76:68: ',' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
-Checkstyle ends with 35 errors.
+Checkstyle ends with 45 errors.
