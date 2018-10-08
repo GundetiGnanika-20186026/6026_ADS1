@@ -1,0 +1,60 @@
+########## Testcase 0: Failed ##########
+Expected Output: 
+true
+false
+true
+false
+Your Output: 
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 8
+	at MinPQ.greater(Solution.java:33)
+	at MinPQ.isMinHeap(Solution.java:26)
+	at MinPQ.isMinHeap(Solution.java:28)
+	at MinPQ.isMinHeap(Solution.java:28)
+	at MinPQ.isMinHeap(Solution.java:18)
+	at Solution.main(Solution.java:62)
+----------------------------------------
+########## Testcase 1: Passed ##########
+Expected Output: 
+false
+false
+false
+false
+false
+false
+Your Output: 
+false
+false
+false
+false
+false
+false
+----------------------------------------
+########## Testcase 2: Failed ##########
+Expected Output: 
+true
+true
+true
+false
+false
+false
+true
+false
+Your Output: 
+
+----------------------------------------
+########## Testcase 3: Failed ##########
+Expected Output: 
+true
+false
+false
+Your Output: 
+
+----------------------------------------
+########## Testcase 4: Failed ##########
+Expected Output: 
+true
+true
+false
+Your Output: 
+
+----------------------------------------
