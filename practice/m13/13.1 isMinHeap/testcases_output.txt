@@ -1,17 +1,14 @@
-########## Testcase 0: Failed ##########
+########## Testcase 0: Passed ##########
 Expected Output: 
 true
 false
 true
 false
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 8
-	at MinPQ.greater(Solution.java:33)
-	at MinPQ.isMinHeap(Solution.java:26)
-	at MinPQ.isMinHeap(Solution.java:28)
-	at MinPQ.isMinHeap(Solution.java:28)
-	at MinPQ.isMinHeap(Solution.java:18)
-	at Solution.main(Solution.java:62)
+true
+false
+true
+false
 ----------------------------------------
 ########## Testcase 1: Passed ##########
 Expected Output: 
@@ -29,7 +26,7 @@ false
 false
 false
 ----------------------------------------
-########## Testcase 2: Failed ##########
+########## Testcase 2: Passed ##########
 Expected Output: 
 true
 true
@@ -40,13 +37,14 @@ false
 true
 false
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 9
-	at MinPQ.greater(Solution.java:33)
-	at MinPQ.isMinHeap(Solution.java:27)
-	at MinPQ.isMinHeap(Solution.java:28)
-	at MinPQ.isMinHeap(Solution.java:28)
-	at MinPQ.isMinHeap(Solution.java:18)
-	at Solution.main(Solution.java:77)
+true
+true
+true
+false
+false
+false
+true
+false
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
