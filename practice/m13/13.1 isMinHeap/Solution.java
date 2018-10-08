@@ -37,7 +37,11 @@ class MinPQ<Key extends Comparable<Key>> {
     // }
     public boolean minHeapchecking(Key[] array) {
         int n = array.length-1;
+        if (array.length == 0) {
+            return false;
+        }
         while(n>1) {
+
             if(array[n].compareTo(array[n/2]) >= 0) {
                 n = -1;
             }
