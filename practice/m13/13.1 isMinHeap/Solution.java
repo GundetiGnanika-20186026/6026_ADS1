@@ -74,7 +74,7 @@ class Solution {
 
                     }
                     MinPQ<Integer> obj = new MinPQ<Integer>(input1,input.length);
-                   obj.isMinHeap();
+                   System.out.println(obj.isMinHeap());
 
                 }
 
