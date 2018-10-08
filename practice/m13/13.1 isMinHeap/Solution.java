@@ -120,7 +120,7 @@ class Solution {
             for (int i = 0; i < testcase3; i++) {
                 String[] input = scan.nextLine().split(",");
                 Float[] input1 = new Float[input.length];
-                if (input1.length == 0) {
+                if (input.length == 0) {
                     System.out.println("false");
                     break;
                 }
