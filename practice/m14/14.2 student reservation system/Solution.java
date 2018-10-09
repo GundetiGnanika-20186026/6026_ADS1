@@ -31,6 +31,20 @@ class Solution {
 		objectres.addSc(temp,scVacacy,peopleobj.getSize());
 		objectres.addSt(temp,stVacancy,peopleobj.getSize());
 		Student[] temp1 =objectres.getArray1();
+
+
+		for(int i = 0; i < peopleobj.getSize();i++){
+			//System.out.println("entered here");
+				if (objectres.getRessize() < vacancy) {
+				    if(temp[i] != temp1[i]) {
+				    	temp1[objectres.getRessize()] = temp[i];
+				    	objectres.setRessize();
+				}
+			}
+
+		}
+
+
 		insertobj.sort(temp1, Student.totalComparator, objectres.getRessize());
 
 		for (int i = 0; i < objectres.getRessize(); i++) {

@@ -16,6 +16,10 @@ class Reservation {
 		return ressize;
 	}
 
+	public void setRessize(){
+		ressize++;
+	}
+
 	//add unreserved
 	public void addUnreserved(Student[] array, int unresseats) {
 		for (int i = 0; i < unresseats; i++) {
@@ -28,9 +32,9 @@ class Reservation {
 	public void addBc(Student[] array, int bcceats,int listsize) {
 		//System.out.println("entered addbc");
 		int count = 0;
-		for (int i = ressize; count < bcceats; i++) {
+		for (int i = ressize; count < bcceats  && i < listsize; i++) {
 			//for(int j = ressize; j < listsize; j++)
-				if (array[i].getRes().equals("BC")) { //&& count != bcceats)
+				if (array[i].getRes().equals("BC") ) { //&& count != bcceats)
 					reservation[ressize] = array[i];
 					ressize++;
 					count++;
@@ -44,7 +48,7 @@ class Reservation {
 	public void addSc(Student[] array, int scceats,int listsize) {
 		//System.out.println(scceats);
 		int count = 0;
-		for (int i = ressize; count < scceats; i++) {
+		for (int i = ressize; count < scceats && i < listsize; i++) {
 			//for(int j = ressize; j < listsize; j++)
 				if (array[i].getRes().equals("SC")) { //&& count != bcceats)
 					reservation[ressize] = array[i];
@@ -59,7 +63,7 @@ class Reservation {
 	//add st
 	public void addSt(Student[] array, int stceats, int listsize) {
 		int count = 0;
-		for (int i = ressize; count < stceats; i++) {
+		for (int i = ressize; count < stceats && i < listsize; i++) {
 			//for(int j = ressize; j < listsize; j++)
 				if (array[i].getRes().equals("ST")) { //&& count != bcceats)
 					reservation[ressize] = array[i];
