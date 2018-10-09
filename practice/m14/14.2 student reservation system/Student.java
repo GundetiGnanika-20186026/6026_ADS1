@@ -188,25 +188,5 @@ class Student implements Comparable<Student> {
         }
         return 0;
     }
-    // /**
-    //  * { function_description }.
-    //  *
-    //  * @param      other  The other
-    //  *
-    //  * @return     { description_of_the_return_value }
-    //  */
-    // public int compareAgain(final Student other) {
-    //     if ((this.getresCat().equals("SC") || this.getresCat().equals("ST")
-    //             || this.getresCat().equals("BC")
-    //             && other.getresCat().equals("Open"))) {
-    //         return 1;
-    //     }
-    //     if ((other.getresCat().equals("SC")
-    //             || other.getresCat().equals("ST") || other.getresCat().equals("BC")
-    //             && this.getresCat().equals("Open"))) {
-    //         return -1;
-    //     }
 
-    //     return 0;
-    // }
 }
