@@ -57,7 +57,7 @@ Shreya,23,SC
 
 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 10
-	at Reservation.addSc(Reservation.java:43)
+	at Reservation.addSc(Reservation.java:44)
 	at Solution.main(Solution.java:32)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
@@ -135,7 +135,7 @@ Shreya,23,SC
 
 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 12
-	at Reservation.addSc(Reservation.java:43)
+	at Reservation.addSc(Reservation.java:44)
 	at Solution.main(Solution.java:32)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
@@ -168,6 +168,8 @@ Abhishek,60,BC
 
 
 divya,99,Open
+null
+Aditya,80,ST
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 

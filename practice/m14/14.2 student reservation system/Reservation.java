@@ -30,6 +30,7 @@ class Reservation {
 		for(int i = ressize;count < bcceats;i++) {
 			if (array[i].getres().equals("BC")) {
 				reservation[i] = array[i];
+				ressize++;
 				count++;
 			}
 
@@ -41,6 +42,7 @@ class Reservation {
 		for(int i = ressize;count < scceats;i++) {
 			if (array[i].getres().equals("SC")) {
 				reservation[i] = array[i];
+					ressize++;
 				count++;
 			}
 
@@ -53,6 +55,7 @@ class Reservation {
 		for(int i = ressize;count < stceats;i++) {
 			if (array[i].getres().equals("ST")) {
 				reservation[i] = array[i];
+					ressize++;
 				count++;
 			}
 
