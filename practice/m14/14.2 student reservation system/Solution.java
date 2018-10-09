@@ -29,7 +29,7 @@ public final class Solution {
 	 */
 	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
-		int noLines = Integer.parseInt(scan.nextLine());
+		int numoflines = Integer.parseInt(scan.nextLine());
 		int vacancies = Integer.parseInt(scan.nextLine());
 		int unreserved = Integer.parseInt(scan.nextLine());
 		int bc = Integer.parseInt(scan.nextLine());
@@ -143,6 +143,7 @@ public final class Solution {
 	}
 	/**
 	 * sort again.
+	 * its complexity is O(n^2)
 	 */
 	public static void sortAgain() {
 		for (int i = vacanciesList.size() - 1; i >= 0; i--) {
@@ -163,6 +164,7 @@ public final class Solution {
 	}
 	/**
 	 * selction sort
+	 * its complexity is O(n^2)
 	 */
 	public static void selectionSort() {
 		for (int i = students.size() - 1; i >= 0; i--) {
