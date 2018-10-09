@@ -21,7 +21,7 @@ class Maxpq {
 /////////////////////////////////
 
 
-	public float median() {
+	public double median() {
         // int[] array1 = new int[size];
         // int m = 0;
         // for(int i =1 ; i<size; i++) {
@@ -34,7 +34,7 @@ class Maxpq {
 			return array[1];
 		}
 		if (size % 2 == 0){
-			float b = array[size/2]+array[(size/2)+1];
+			double b = array[size/2]+array[(size/2)+1];
 			b = b/2;
 			// System.out.println((array[size/2]+"   "+array[(size/2)+1]));
 			return b;
