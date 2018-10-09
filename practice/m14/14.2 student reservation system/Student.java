@@ -31,7 +31,7 @@ public class Student {
 	}
 
 
-	public String getres(){
+	public String getRes(){
 		return res;
 	}
 

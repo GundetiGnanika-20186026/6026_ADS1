@@ -26,14 +26,15 @@ class Solution {
         System.out.println();
 		System.out.println();
 
-		Reservation objectres = new Reservation();
-		objectres.addunreserved(temp,unreservedVacancy);
-		objectres.addBc(temp,bcVacancy);
-		objectres.addSc(temp,scVacacy);
-		objectres.addSt(temp,stVacancy);
+		Reservation objectres = new Reservation(vacancy);
+		objectres.addUnreserved(temp,unreservedVacancy);
+		objectres.addBc(temp,bcVacancy,peopleobj.getSize());
+		objectres.addSc(temp,scVacacy,peopleobj.getSize());
+		objectres.addSt(temp,stVacancy,peopleobj.getSize());
 		Student[] temp1 =objectres.getArray1();
+		insertobj.sort(temp1, Student.totalComparator, objectres.getRessize());
 
-		for (int i = 0; i < objectres.getressize(); i++) {
+		for (int i = 0; i < objectres.getRessize(); i++) {
 			System.out.println(temp1[i]);
 		}
 

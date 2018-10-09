@@ -56,9 +56,12 @@ Aryan,32,ST
 Shreya,23,SC
 
 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 10
-	at Reservation.addSc(Reservation.java:44)
-	at Solution.main(Solution.java:32)
+divya,99,ST
+Deepak,98,Open
+Ira,93,ST
+tanvi,90,BC
+Aditya,80,ST
+priya,72,SC
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -134,9 +137,14 @@ Aryan,32,ST
 Shreya,23,SC
 
 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 12
-	at Reservation.addSc(Reservation.java:44)
-	at Solution.main(Solution.java:32)
+divya,99,ST
+Ishita,99,Open
+Deepak,98,Open
+Ira,93,ST
+tanvi,90,BC
+Raj,87,BC
+Aditya,80,ST
+priya,72,SC
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -168,8 +176,8 @@ Abhishek,60,BC
 
 
 divya,99,Open
-null
 Aditya,80,ST
+priya,76,SC
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -203,9 +211,9 @@ Tanya,66,BC
 Abhishek,60,BC
 
 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 8
-	at Reservation.addBc(Reservation.java:32)
-	at Solution.main(Solution.java:31)
+Exception in thread "main" java.lang.NullPointerException
+	at Reservation.addSc(Reservation.java:49)
+	at Solution.main(Solution.java:32)
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -286,9 +294,9 @@ shyam,23,Open
 Shreya,23,Open
 
 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 6
-	at Reservation.addunreserved(Reservation.java:22)
-	at Solution.main(Solution.java:30)
+Exception in thread "main" java.lang.NullPointerException
+	at Reservation.addBc(Reservation.java:33)
+	at Solution.main(Solution.java:31)
 ----------------------------------------
 ########## Testcase 5: Failed ##########
 Expected Output: 
@@ -371,7 +379,7 @@ Aryan,32,ST
 Shreya,23,SC
 
 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 6
-	at Reservation.addunreserved(Reservation.java:22)
-	at Solution.main(Solution.java:30)
+Exception in thread "main" java.lang.NullPointerException
+	at Reservation.addBc(Reservation.java:33)
+	at Solution.main(Solution.java:31)
 ----------------------------------------
