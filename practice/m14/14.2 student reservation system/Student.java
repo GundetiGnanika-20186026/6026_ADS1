@@ -31,6 +31,11 @@ public class Student {
 	}
 
 
+	public String getres(){
+		return res;
+	}
+
+
 
 	public static Comparator<Student> totalComparator = new Comparator<Student>() {
 		@ Override

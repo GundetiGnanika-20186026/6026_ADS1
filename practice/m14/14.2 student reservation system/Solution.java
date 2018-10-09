@@ -23,9 +23,19 @@ class Solution {
 		for (int i = 0; i < peopleobj.getSize(); i++) {
 			System.out.println(temp[i]);
 		}
+        System.out.println();
+		System.out.println();
 
-		System.out.println();
-		System.out.println();
+		Reservation objectres = new Reservation();
+		objectres.addunreserved(temp,unreservedVacancy);
+		objectres.addBc(temp,bcVacancy);
+		objectres.addSc(temp,scVacacy);
+		objectres.addSt(temp,stVacancy);
+		Student[] temp1 =objectres.getArray1();
+
+		for (int i = 0; i < objectres.getressize(); i++) {
+			System.out.println(temp1[i]);
+		}
 
 
 
