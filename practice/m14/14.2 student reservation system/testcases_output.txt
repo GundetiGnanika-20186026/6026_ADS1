@@ -1,4 +1,4 @@
-########## Testcase 0: Failed ##########
+########## Testcase 0: Passed ##########
 Expected Output: 
 divya,99,ST
 Deepak,98,Open
@@ -55,7 +55,6 @@ Anjali,38,SC
 Aryan,32,ST
 Shreya,23,SC
 
-
 divya,99,ST
 Deepak,98,Open
 Ira,93,ST
@@ -63,7 +62,7 @@ tanvi,90,BC
 Aditya,80,ST
 priya,72,SC
 ----------------------------------------
-########## Testcase 1: Failed ##########
+########## Testcase 1: Passed ##########
 Expected Output: 
 divya,99,ST
 Ishita,99,Open
@@ -136,7 +135,6 @@ Anjali,38,SC
 Aryan,32,ST
 Shreya,23,SC
 
-
 divya,99,ST
 Ishita,99,Open
 Deepak,98,Open
@@ -146,7 +144,7 @@ Raj,87,BC
 Aditya,80,ST
 priya,72,SC
 ----------------------------------------
-########## Testcase 2: Failed ##########
+########## Testcase 2: Passed ##########
 Expected Output: 
 divya,99,Open
 tanvi,90,Open
@@ -173,7 +171,6 @@ Amit,70,Open
 Priyanka,70,Open
 Tanya,66,BC
 Abhishek,60,BC
-
 
 divya,99,Open
 Aditya,80,ST
@@ -210,10 +207,9 @@ Priyanka,70,Open
 Tanya,66,BC
 Abhishek,60,BC
 
-
 Exception in thread "main" java.lang.NullPointerException
 	at Reservation.addSc(Reservation.java:49)
-	at Solution.main(Solution.java:32)
+	at Solution.main(Solution.java:31)
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -293,10 +289,9 @@ Aryan,32,Open
 shyam,23,Open
 Shreya,23,Open
 
-
 Exception in thread "main" java.lang.NullPointerException
 	at Reservation.addBc(Reservation.java:33)
-	at Solution.main(Solution.java:31)
+	at Solution.main(Solution.java:30)
 ----------------------------------------
 ########## Testcase 5: Failed ##########
 Expected Output: 
@@ -378,8 +373,7 @@ Manoj,32,SC
 Aryan,32,ST
 Shreya,23,SC
 
-
 Exception in thread "main" java.lang.NullPointerException
 	at Reservation.addBc(Reservation.java:33)
-	at Solution.main(Solution.java:31)
+	at Solution.main(Solution.java:30)
 ----------------------------------------

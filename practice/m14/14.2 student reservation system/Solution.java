@@ -23,7 +23,6 @@ class Solution {
 		for (int i = 0; i < peopleobj.getSize(); i++) {
 			System.out.println(temp[i]);
 		}
-        System.out.println();
 		System.out.println();
 
 		Reservation objectres = new Reservation(vacancy);
