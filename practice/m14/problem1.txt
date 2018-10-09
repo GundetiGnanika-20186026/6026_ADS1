@@ -1,0 +1,9 @@
+Question:
+
+Suppose that your application will have a huge number of insert operations, but only a few remove the maximum operations. Which priority-queue implementation do you think would be most effective: heap, unordered array, ordered array?
+
+Answer:
+
+Unordered arrays are more effective, because the time complexity for the insertion of elements into the array is O(1), where as for, ordered arrays and heaps, the time complexity for insertion is O(N) and log(N) respectively. Similarly, time complexity for deletions is log(N) in unordered arrays, where as, in ordered arrays it is O(1), and for heap it is  log(N).
+As here number of insertions are more, and number of deletions are less, so unordered arrays are more effective.
+
