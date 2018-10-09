@@ -29,15 +29,16 @@ class Solution {
 		objectres.addUnreserved(temp,unreservedVacancy);
 		objectres.addBc(temp,bcVacancy,peopleobj.getSize());
 		objectres.addSc(temp,scVacacy,peopleobj.getSize());
-		objectres.addSt(temp,stVacancy,peopleobj.getSize());
+		objectres.addSt(temp,stVacancy,peopleobj.getSize(),unreservedVacancy);
 		Student[] temp1 =objectres.getArray1();
-
 
 		for(int i = 0; i < peopleobj.getSize();i++){
 			//System.out.println("entered here");
 				if (objectres.getRessize() < vacancy) {
-				    if(temp[i] != temp1[i]) {
+				    if(!(temp1[i] == temp[i])) {
+				    	//System.out.println(temp[i]);
 				    	temp1[objectres.getRessize()] = temp[i];
+				    	//System.out.println(temp1[objectres.getRessize()] + "val");
 				    	objectres.setRessize();
 				}
 			}

@@ -61,18 +61,18 @@ class Reservation {
 	}
 
 	//add st
-	public void addSt(Student[] array, int stceats, int listsize) {
+	public void addSt(Student[] array, int stceats, int listsize, int unresseats) {
 		int count = 0;
-		for (int i = ressize; count < stceats && i < listsize; i++) {
+		for (int i = unresseats; count < stceats && i < listsize; i++) {
 			//for(int j = ressize; j < listsize; j++)
 				if (array[i].getRes().equals("ST")) { //&& count != bcceats)
 					reservation[ressize] = array[i];
+					//System.out.println(reservation[ressize] + "reservation");
 					ressize++;
 					count++;
-
 			}
-
 		}
+		//System.out.println(count + "countval");
 	}
 
 
