@@ -1,0 +1,7 @@
+I would like to use Symbol table implementation using binary search  because its complexity in linked list is
+   Complexity for put() : O(N)
+   Complexity for get() : O(N)
+where as in Binary Search:
+    Complexity for put() : O(log(N))
+    Complexity for get() : O(log(N))
+hence for larger operations like 10^6 and 10^3 binary search symbol tree is efficient.
