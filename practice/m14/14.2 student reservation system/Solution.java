@@ -1,102 +1,64 @@
-import java.util.Scanner;
-import java.util.Arrays;
-class Maxpq {
-	int[] array;
-	int size;
-	Maxpq(int length) {
-		array = new int[length + 1];
-		size = 0;
-	}
-//////////////////////////////////////////////
-	public void insert(int value) {
-		array[++size] = value;
-		sort(array);
-		System.out.println(Arrays.toString(array));
-		// System.out.println(size);
-
-
-		System.out.println(median());
-	}
-
-/////////////////////////////////
-
-
-	public double median() {
-		// int[] array1 = new int[size];
-		// int m = 0;
-		// for(int i =1 ; i<size; i++) {
-		//     array1[m] = array[i];
-		//     m++;
-		// }
-
-		// System.out.println(Arrays.toString(array1));
-		if (size == 1) {
-			return array[1];
-		}
-		if (size % 2 == 0) {
-			double b = array[size / 2] + array[(size / 2) + 1];
-			b = b / 2;
-			// System.out.println((array[size/2]+"   "+array[(size/2)+1]));
-			return b;
-
-		} else {
-			return array[(size + 1) / 2];
-		}
-		// return 1;
-
-	}
-////////////////////////////////////
-	public void sort(int[] array) {
-		int n = size;
-		for (int k = n / 2; k >= 1; k--) {
-			sink(array, k, n);
-		}
-		while (n > 1) {
-			exch(array, 1, n);
-			sink(array, 1, --n);
-		}
-	}
-/////////////////////////////
-
-	public void sink(int[] array1, int k, int n) {
-		while (2 * k <= n) {
-			int j = 2 * k;
-			if (j < n && less(j, j + 1)) j++;
-			if (!less(k, j)) break;
-			exch(array, k, j);
-			k = j;
-		}
-	}
-///////////////////////////////////////
-	public boolean less(int i, int j) {
-		return array[i] - array[j] < 0;
-	}
-////////////////////////////////////
-
-	public void exch(int[] array, int i, int j) {
-		int t = array[i];
-		array[i] = array[j];
-		array[j] = t;
-	}
-/////////////////////////////////////
-
-
-
-}
+import java.util.*;
 class Solution {
-	Solution() {
-
-	}
 	public static void main(String[] args) {
-
 		Scanner scan = new Scanner(System.in);
-		int num = Integer.parseInt(scan.nextLine());
-		Maxpq obj = new Maxpq(num);
-		for (int i = 0; i < num; i++) {
-			int element = Integer.parseInt(scan.nextLine());
-			obj.insert(element);
+		int qualified = Integer.parseInt(scan.nextLine());
+		int vacancy = Integer.parseInt(scan.nextLine());
+		int unreservedVacancy = Integer.parseInt(scan.nextLine());
+		int bcVacancy = Integer.parseInt(scan.nextLine());
+		int scVacacy = Integer.parseInt(scan.nextLine());
+		int stVacancy = Integer.parseInt(scan.nextLine());
+		List peopleobj = new List();
 
+		while (scan.hasNext()) {
+// Student Name, Date of birth, subject1 marks, subject2 marks, subject3 marks, Total marks, Reservation category
+			String[] token = scan.nextLine().split(",");
+			Student stuobj = new Student(token[0], token[1], Integer.parseInt(token[2]), Integer.parseInt(token[3]), Integer.parseInt(token[4]), Integer.parseInt(token[5]), token[6]);
+			peopleobj.addStudent(stuobj);
+		}
+		Student[] temp = peopleobj.getArray();
+		Insertion insertobj = new Insertion();
+		insertobj.sort(temp, Student.totalComparator, peopleobj.getSize());
+
+		for (int i = 0; i < peopleobj.getSize(); i++) {
+			System.out.println(temp[i]);
+		}
+		System.out.println();
+
+		Reservation objectres = new Reservation(vacancy);
+		objectres.addUnreserved(temp,unreservedVacancy);
+		objectres.addBc(temp,bcVacancy,peopleobj.getSize());
+		objectres.addSc(temp,scVacacy,peopleobj.getSize());
+		objectres.addSt(temp,stVacancy,peopleobj.getSize(),unreservedVacancy);
+		Student[] temp1 =objectres.getArray1();
+
+		for(int i = 0; i < peopleobj.getSize();i++){
+			//System.out.println("entered here");
+				if (objectres.getRessize() < vacancy) {
+				    if(!(temp1[i] == temp[i])) {
+				    	//System.out.println(temp[i]);
+				    	temp1[objectres.getRessize()] = temp[i];
+				    	//System.out.println(temp1[objectres.getRessize()] + "val");
+				    	objectres.setRessize();
+				}
+			}
 
 		}
+
+
+		insertobj.sort(temp1, Student.totalComparator, objectres.getRessize());
+
+		for (int i = 0; i < objectres.getRessize(); i++) {
+			System.out.println(temp1[i]);
+		}
+
+
+
+
+
+
+
+
+
 	}
 }
