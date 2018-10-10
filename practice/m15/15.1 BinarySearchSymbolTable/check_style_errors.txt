@@ -1,9 +1,5 @@
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m15\15.1 BinarySearchSymbolTable\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m15\15.1 BinarySearchSymbolTable\Solution.java:2:8: Unused import - java.util.Arrays. [UnusedImports]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m15\15.1 BinarySearchSymbolTable\Solution.java:10:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m15\15.1 BinarySearchSymbolTable\Solution.java:18: First sentence should end with a period. [JavadocStyle]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m15\15.1 BinarySearchSymbolTable\Solution.java:59: First sentence should end with a period. [JavadocStyle]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m15\15.1 BinarySearchSymbolTable\Solution.java:225: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 2 errors.
