@@ -1,0 +1,5 @@
+Starting audit...
+[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m8\8.2 Team Ranking With Selection\Solution.java:141:20: Name 'TeamArray' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m8\8.2 Team Ranking With Selection\Solution.java:240:39: Name 'TeamArray' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+Audit done.
+Checkstyle ends with 2 errors.

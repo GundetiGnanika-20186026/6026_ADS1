@@ -132,13 +132,13 @@ class Team implements Comparable<Team> {
 ////////////////////////////////////////////////////////////////////////
 
 /**
- * Class for teamarray this array contains all team objects.
+ * Class for TeamArray this array contains all team objects.
  */
-class Teamarray {
+class TeamArray {
     /**
-     * variable teamarray for teamobjects storing.
+     * variable TeamArray for teamobjects storing.
      */
-    private Team[] teamarray;
+    private Team[] TeamArray;
     /**
      * variable for keeping track of size.
      */
@@ -146,9 +146,9 @@ class Teamarray {
     /**
      * Constructor for team array.
      */
-    Teamarray() {
+    TeamArray() {
         final int fifty = 50;
-        teamarray = new Team[fifty];
+        TeamArray = new Team[fifty];
         size = 0;
 
     }
@@ -159,8 +159,8 @@ class Teamarray {
     *
     * @return     { the team array }
     */
-    public Team[] getteamarray() {
-        return teamarray;
+    public Team[] getTeamArray() {
+        return TeamArray;
     }
 
 
@@ -169,7 +169,7 @@ class Teamarray {
      *
      * @return     { this method will return the size }
      */
-    public int getsize() {
+    public int getSize() {
         return size;
     }
 
@@ -185,7 +185,7 @@ class Teamarray {
      * @param      obj1  The object 1
      */
     public void add(final Team obj1) {
-        teamarray[size++] = obj1;
+        TeamArray[size++] = obj1;
 
     }
 
@@ -195,14 +195,14 @@ class Teamarray {
      * its complexity is O(1)
      */
 
-    public void sendarray() {
+    public void sendArray() {
         Selectionsort sortobj = new Selectionsort();
-        sortobj.sort(teamarray, size);
+        sortobj.sort(TeamArray, size);
     }
 
 
     /**
-     * { This method is used to print the teamarray which is sorted }
+     * { This method is used to print the TeamArray which is sorted }
      * its complexity is O(n) as it itterates through the entire array.
      */
     public void print() {
@@ -210,9 +210,9 @@ class Teamarray {
         String str = "";
         int i;
         for (i = 0; i < size - 1; i++) {
-            str += teamarray[i].getteamname() + ",";
+            str += TeamArray[i].getteamname() + ",";
         }
-        str += teamarray[i].getteamname();
+        str += TeamArray[i].getteamname();
         System.out.println(str);
     }
 }
@@ -233,16 +233,16 @@ class Selectionsort {
      * { will exchange the objects in the team array}.
      * its complexity is O(1).
      *
-     * @param      teamarray  The teamarray
+     * @param      TeamArray  The TeamArray
      * @param      index1     The index 1
      * @param      index2     The index 2
      */
-    public void exchange(final Team[] teamarray,
+    public void exchange(final Team[] TeamArray,
                          final int index1, final int index2) {
         Team extra = new Team();
-        extra = teamarray[index1];
-        teamarray[index1] = teamarray[index2];
-        teamarray[index2] = extra;
+        extra = TeamArray[index1];
+        TeamArray[index1] = TeamArray[index2];
+        TeamArray[index2] = extra;
     }
 
     /**
@@ -250,7 +250,7 @@ class Selectionsort {
      * its complexity is O(n^2) as it has a nested for loops
      * which is iterating n times.
      *
-     * @param      a      { this is the teamarray }
+     * @param      a      { this is the TeamArray }
      * @param      size1  The size 1
      */
 
@@ -306,7 +306,7 @@ final class Solution {
 
     public static void main(final String[] args) {
 
-        Teamarray object = new Teamarray();
+        TeamArray object = new TeamArray();
         Scanner scan = new Scanner(System.in);
 
         while (scan.hasNext()) {
@@ -317,7 +317,7 @@ final class Solution {
             object.add(obj);
 
         }
-        object.sendarray();
+        object.sendArray();
 
 
         object.print();
