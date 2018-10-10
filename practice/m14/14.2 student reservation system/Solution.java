@@ -38,7 +38,7 @@ class Solution {
 				    if(!(temp1[i] == temp[i])) {
 				    	//System.out.println(temp[i]);
 				    	// System.out.println(objectres.getRessize() + "sizeval");
-				    	temp1[objectres.getRessize()] = temp[i+1];
+				    	temp1[objectres.getRessize()] = temp[i];
 				    	// System.out.println(temp1[11] + "inside");
 				    	//System.out.println(temp1[objectres.getRessize()] + "val");
 				    	objectres.setRessize();
