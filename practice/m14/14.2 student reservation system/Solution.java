@@ -31,13 +31,15 @@ class Solution {
 		objectres.addSc(temp,scVacacy,peopleobj.getSize());
 		objectres.addSt(temp,stVacancy,peopleobj.getSize(),unreservedVacancy);
 		Student[] temp1 =objectres.getArray1();
-
+		// System.out.println(temp1[10] + "val at 7th index");
 		for(int i = 0; i < peopleobj.getSize();i++){
 			//System.out.println("entered here");
 				if (objectres.getRessize() < vacancy) {
 				    if(!(temp1[i] == temp[i])) {
 				    	//System.out.println(temp[i]);
-				    	temp1[objectres.getRessize()] = temp[i];
+				    	// System.out.println(objectres.getRessize() + "sizeval");
+				    	temp1[objectres.getRessize()] = temp[i+1];
+				    	// System.out.println(temp1[11] + "inside");
 				    	//System.out.println(temp1[objectres.getRessize()] + "val");
 				    	objectres.setRessize();
 				}
