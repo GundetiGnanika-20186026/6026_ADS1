@@ -4,15 +4,6 @@ Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m15\15.1 BinarySearchSymbolTable\Solution.java:10:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m15\15.1 BinarySearchSymbolTable\Solution.java:18: First sentence should end with a period. [JavadocStyle]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m15\15.1 BinarySearchSymbolTable\Solution.java:59: First sentence should end with a period. [JavadocStyle]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m15\15.1 BinarySearchSymbolTable\Solution.java:72: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m15\15.1 BinarySearchSymbolTable\Solution.java:73: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m15\15.1 BinarySearchSymbolTable\Solution.java:74: 'else' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m15\15.1 BinarySearchSymbolTable\Solution.java:103: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m15\15.1 BinarySearchSymbolTable\Solution.java:104: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m15\15.1 BinarySearchSymbolTable\Solution.java:105: 'else' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m15\15.1 BinarySearchSymbolTable\Solution.java:148: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m15\15.1 BinarySearchSymbolTable\Solution.java:188: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m15\15.1 BinarySearchSymbolTable\Solution.java:190: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m15\15.1 BinarySearchSymbolTable\Solution.java:210: First sentence should end with a period. [JavadocStyle]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m15\15.1 BinarySearchSymbolTable\Solution.java:225: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 15 errors.
+Checkstyle ends with 6 errors.
