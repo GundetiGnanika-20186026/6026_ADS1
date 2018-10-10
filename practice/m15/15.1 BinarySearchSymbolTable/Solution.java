@@ -16,7 +16,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
      */
     private Value[] vals;
     /**
-     * size
+     * size.
      */
     private int size = 0;
     /**
