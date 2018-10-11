@@ -1,7 +1,2 @@
 Starting audit...
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m16\16.1 BST\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m16\16.1 BST\Solution.java:179: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m16\16.1 BST\Solution.java:203: Line is longer than 80 characters (found 91). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m16\16.1 BST\Solution.java:204: Line is longer than 80 characters (found 95). [LineLength]
 Audit done.
-Checkstyle ends with 4 errors.
