@@ -199,7 +199,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
 
     /**
      * will get the value present at that key.
-     * its Complexity is O(1).
+     * its Complexity is O(n).
      *
      * @param      key   The key
      *
