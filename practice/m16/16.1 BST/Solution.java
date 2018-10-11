@@ -22,7 +22,8 @@ class Book {
 	 * @param      author1  The author
 	 * @param      price1   The price
 	 */
-	Book(final String name1, final String author1, final double price1) {
+	Book(final String name1, final String author1,
+	     final double price1) {
 		this.name = name1;
 		this.author = author1;
 		this.price = price1;
@@ -96,7 +97,10 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 
 
 	/**
-	 *
+	 * {this method will insert the key
+	 *  into the linked list.
+	 *  its complexity is O(logN) as we are not
+	 *   iterating through the entire list.}.
 	 *
 	 * @param      key   The key
 	 * @param      val   The value
@@ -106,26 +110,36 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 	}
 
 	/**
+	 * {this method will return the key
+	 *  to be inserted into linked list.
+	 *  its complexity is O(logN)}.
 	 *
-	 *
-	 * @param      x
+	 * @param      node  rootnode
 	 * @param      key   The key
 	 * @param      val   The value
 	 *
 	 * @return     Node to be inserted.
 	 */
-	public Node put(final Node x, final Book key, final Value val) {
-		if (x == null) return new Node(key, val, 1);
-		int cmp = key.getName().compareTo(x.key.getName());
-		if      (cmp < 0) x.left  = put(x.left,  key, val);
-		else if (cmp > 0) x.right = put(x.right, key, val);
-		else              x.val   = val;
-		//x.size = 1 + size(x.left) + size(x.right);
-		return x;
+	public Node put(final Node node, final Book key, final Value val) {
+		if (node == null) {
+			return new Node(key, val, 1);
+		}
+		int cmp = key.getName().compareTo(node.key.getName());
+		if      (cmp < 0) {
+			node.left  = put(node.left,  key, val);
+		} else if (cmp > 0) {
+			node.right = put(node.right, key, val);
+		} else {
+			node.val   = val;
+		}
+		//node.size = 1 + size(node.left) + size(node.right);
+		return node;
 	}
 
 	/**
-	 * { function_description }
+	 * { This method will return the value of given key
+	 * its complexity is O(logN) as we are
+	 *  not iterating through the entire list}.
 	 *
 	 * @param      key   The key
 	 *
@@ -137,20 +151,28 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 	}
 
 	/**
-	 * { function_description }
+	 * { This method will return the value of given key
+	 * its complexity is O(logN) as we are
+	 *  not iterating through the entire list }.
 	 *
-	 * @param      x     { parameter_description }
-	 * @param      key   The key
+	 * @param      node     { root node }.
+	 * @param      key   The key whose value to be found.
 	 *
-	 * @return     { description_of_the_return_value }
+	 * @return     { value of given key }.
 	 */
-	private Value get(final Node x, final Book key) {
-		if (key == null) throw new IllegalArgumentException("calls get() with a null key");
-		if (x == null) return null;
-		int cmp = key.getName().compareTo(x.key.getName());
-		if      (cmp < 0) return get(x.left, key);
-		else if (cmp > 0) return get(x.right, key);
-		else              return x.val;
+	private Value get(final Node node, final Book key) {
+
+		if (node == null) {
+			return null;
+		}
+		int cmp = key.getName().compareTo(node.key.getName());
+		if (cmp < 0) {
+			return get(node.left, key);
+		} else if (cmp > 0) {
+			return get(node.right, key);
+		} else {
+			return node.val;
+		}
 	}
 }
 
@@ -179,14 +201,16 @@ final class Solution {
 		while (scan.hasNext()) {
 			String[] line = scan.nextLine().split(",");
 			//BinaryST<String,Integer> object = new BinaryST<String,Integer>();
-			Book obj = new Book(line[1], line[2], Double.parseDouble(line[3]));
+			Book obj = new Book(line[1], line[2], Double.parseDouble(line[2 + 1]));
 			switch (line[0]) {
 			case "put" :
 
-				object.put(obj, line[4]);
+				object.put(obj, line[2 + 2]);
 				break;
 			case "get" :
 				System.out.println(object.get(obj));
+				break;
+			default:
 				break;
 
 

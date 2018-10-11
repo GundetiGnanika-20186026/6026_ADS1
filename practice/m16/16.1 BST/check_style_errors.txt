@@ -1,23 +1,7 @@
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m16\16.1 BST\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m16\16.1 BST\Solution.java:117:36: Expected @param tag for 'x'. [JavadocMethod]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m16\16.1 BST\Solution.java:118: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m16\16.1 BST\Solution.java:120: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m16\16.1 BST\Solution.java:121: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m16\16.1 BST\Solution.java:122: 'else' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m16\16.1 BST\Solution.java:127: First sentence should end with a period. [JavadocStyle]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m16\16.1 BST\Solution.java:139: First sentence should end with a period. [JavadocStyle]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m16\16.1 BST\Solution.java:148: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m16\16.1 BST\Solution.java:148: Line is longer than 80 characters (found 99). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m16\16.1 BST\Solution.java:149: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m16\16.1 BST\Solution.java:151: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m16\16.1 BST\Solution.java:152: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m16\16.1 BST\Solution.java:153: 'else' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m16\16.1 BST\Solution.java:157: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m16\16.1 BST\Solution.java:181: Line is longer than 80 characters (found 91). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m16\16.1 BST\Solution.java:182: Line is longer than 80 characters (found 91). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m16\16.1 BST\Solution.java:182:87: '3' is a magic number. [MagicNumber]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m16\16.1 BST\Solution.java:183: switch without "default" clause. [MissingSwitchDefault]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m16\16.1 BST\Solution.java:186:54: '4' is a magic number. [MagicNumber]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m16\16.1 BST\Solution.java:179: Line is longer than 80 characters (found 84). [LineLength]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m16\16.1 BST\Solution.java:203: Line is longer than 80 characters (found 91). [LineLength]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m16\16.1 BST\Solution.java:204: Line is longer than 80 characters (found 95). [LineLength]
 Audit done.
-Checkstyle ends with 20 errors.
+Checkstyle ends with 4 errors.
