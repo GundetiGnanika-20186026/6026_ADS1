@@ -28,12 +28,12 @@ class Book {
 		this.price = price1;
 	}
 
-    /**
-     * Gets the name.
-     *
-     * @return     The name.
-     */
-	public String getName(){
+	/**
+	 * Gets the name.
+	 *
+	 * @return     The name.
+	 */
+	public String getName() {
 		return name;
 	}
 }
@@ -76,7 +76,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 		/**
 		 * variable to keep track of size.
 		 */
-		//private int size;
+		private int size;
 
 		/**
 		 * Constructs the object.
@@ -86,7 +86,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 		 * @param      size1  The size
 		 */
 
-		Node(final Book key1, final Value val1) { //final int size1) {
+		Node(final Book key1, final Value val1, final int size1) {
 			this.key = key1;
 			this.val = val1;
 			//this.size = size1;
@@ -95,27 +95,27 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 	}
 
 
-    /**
-     *
-     *
-     * @param      key   The key
-     * @param      val   The value
-     */
+	/**
+	 *
+	 *
+	 * @param      key   The key
+	 * @param      val   The value
+	 */
 	public void put(final Book key, final Value val) {
 		root = put(root, key, val);
 	}
 
-    /**
-     *
-     *
-     * @param      x
-     * @param      key   The key
-     * @param      val   The value
-     *
-     * @return     Node to be inserted.
-     */
+	/**
+	 *
+	 *
+	 * @param      x
+	 * @param      key   The key
+	 * @param      val   The value
+	 *
+	 * @return     Node to be inserted.
+	 */
 	public Node put(final Node x, final Book key, final Value val) {
-		//if (x == null) return new Node(key, val, 1);
+		if (x == null) return new Node(key, val, 1);
 		int cmp = key.getName().compareTo(x.key.getName());
 		if      (cmp < 0) x.left  = put(x.left,  key, val);
 		else if (cmp > 0) x.right = put(x.right, key, val);
@@ -136,14 +136,14 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 		return get(root, key);
 	}
 
-    /**
-     * { function_description }
-     *
-     * @param      x     { parameter_description }
-     * @param      key   The key
-     *
-     * @return     { description_of_the_return_value }
-     */
+	/**
+	 * { function_description }
+	 *
+	 * @param      x     { parameter_description }
+	 * @param      key   The key
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	private Value get(final Node x, final Book key) {
 		if (key == null) throw new IllegalArgumentException("calls get() with a null key");
 		if (x == null) return null;
