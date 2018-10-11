@@ -1,26 +1,34 @@
-########## Testcase 0: Passed ##########
+########## Testcase 0: Failed ##########
 Expected Output: 
 1
 Your Output: 
-1
+Exception in thread "main" java.lang.NullPointerException
+	at BinaryST$Node.access$000(Solution.java:63)
+	at BinaryST.put(Solution.java:119)
+	at BinaryST.put(Solution.java:105)
+	at Solution.main(Solution.java:186)
 ----------------------------------------
-########## Testcase 1: Passed ##########
+########## Testcase 1: Failed ##########
 Expected Output: 
 6
 5
 7
 2
 Your Output: 
-6
-5
-7
-2
+Exception in thread "main" java.lang.NullPointerException
+	at BinaryST$Node.access$000(Solution.java:63)
+	at BinaryST.put(Solution.java:119)
+	at BinaryST.put(Solution.java:105)
+	at Solution.main(Solution.java:186)
 ----------------------------------------
-########## Testcase 2: Passed ##########
+########## Testcase 2: Failed ##########
 Expected Output: 
 null
 7
 Your Output: 
-null
-7
+Exception in thread "main" java.lang.NullPointerException
+	at BinaryST$Node.access$000(Solution.java:63)
+	at BinaryST.put(Solution.java:119)
+	at BinaryST.put(Solution.java:105)
+	at Solution.main(Solution.java:186)
 ----------------------------------------
