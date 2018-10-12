@@ -1,8 +1,23 @@
 import java.util.Scanner;
+/**
+ * Class for cube sum.
+ */
 class CubeSum implements Comparable<CubeSum> {
+    /**
+     * sum.
+     */
     private final int sum;
+    /**
+     * value1.
+     */
     private final int i;
+    /**
+     * value2.
+     */
     private final int j;
+    /**
+     * Constructs the object.
+     */
     CubeSum() {
         sum = 0;
         i = 0;
@@ -10,40 +25,82 @@ class CubeSum implements Comparable<CubeSum> {
 
     }
 
-    public CubeSum(int i, int j) {
+    /**
+     * Constructs the object.
+     *
+     * @param      i     { value1 }
+     * @param      j     { value2 }
+     */
+    public CubeSum(final int i, final int j) {
         this.sum = i * i * i + j * j * j;
         this.i = i;
         this.j = j;
     }
 
-    public int compareTo(CubeSum that) {
-        if (this.sum < that.sum) return -1;
-        if (this.sum > that.sum) return +1;
+    /**
+     * { this method is used for comparing }
+     *
+     * @param      that  The other cube sum.
+     *
+     * @return     { -1 if less and 1 if greater }
+     */
+    public int compareTo(final CubeSum that) {
+        if (this.sum < that.sum) {
+            return -1;
+        }
+        if (this.sum > that.sum) {
+            return +1;
+        }
         return 0;
     }
 
-    // public  toString() {
-    //     return sum;
-    // }
-
+    /**
+     * Gets the j.
+     *
+     * @return     The j.
+     */
     public int getJ() {
         return j;
     }
 
+
+    /**
+     * Gets i.
+     *
+     * @return     i.
+     */
     public int getI() {
         return i;
     }
 
-    public int getSum(){
+    /**
+     * Gets the sum.
+     *
+     * @return     The sum.
+     */
+    public int getSum() {
         return sum;
     }
 
 }
 
 
+/**
+ * main class.
+ */
+final class Solution {
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
 
-class Solution {
-    public static void main(String[] args) {
+    }
+    /**
+     * main method.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
 
 
         Scanner scan = new Scanner(System.in);
@@ -65,21 +122,21 @@ class Solution {
 
         while (!pq.isEmpty()) {
             CubeSum s = pq.delMin();
-            if(s.getSum() == temp){
-               count++;
+            if (s.getSum() == temp) {
+                count++;
             } else {
                 count = 0;
             }
-            if (count == m-1){
+            if (count == m - 1) {
                 n--;
-                if(n==0){
+                if (n == 0) {
 
-                System.out.println(s.getSum());
-                break;
+                    System.out.println(s.getSum());
+                    break;
+                }
             }
-        }
 
-             temp = s.getSum();
+            temp = s.getSum();
 
             //System.out.println(s);
             if (s.getJ() < c)
