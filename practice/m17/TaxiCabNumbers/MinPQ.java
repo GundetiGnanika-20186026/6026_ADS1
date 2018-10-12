@@ -26,9 +26,9 @@ public class MinPQ<Key> {
     }
 
 
-    public MinPQ(Comparator<Key> comparator) {
-        this(1, comparator);
-    }
+    // public MinPQ(Comparator<Key> comparator) {
+    //     this(1, comparator);
+    // }
 
     public MinPQ(Key[] keys) {
         n = keys.length;
