@@ -1,9 +1,4 @@
 Starting audit...
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m17\TaxiCabNumbers\Solution.java:34:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m17\TaxiCabNumbers\Solution.java:34:30: 'i' hides a field. [HiddenField]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m17\TaxiCabNumbers\Solution.java:34:43: 'j' hides a field. [HiddenField]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m17\TaxiCabNumbers\Solution.java:40: First sentence should end with a period. [JavadocStyle]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m17\TaxiCabNumbers\Solution.java:113:17: '600' is a magic number. [MagicNumber]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m17\TaxiCabNumbers\Solution.java:142: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m17\TaxiCabNumbers\Solution.java:113:22: '600' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 1 errors.

@@ -28,17 +28,17 @@ class CubeSum implements Comparable<CubeSum> {
     /**
      * Constructs the object.
      *
-     * @param      i     { value1 }
-     * @param      j     { value2 }
+     * @param      i1     { value1 }
+     * @param      j1     { value2 }
      */
-    public CubeSum(final int i, final int j) {
-        this.sum = i * i * i + j * j * j;
-        this.i = i;
-        this.j = j;
+    CubeSum(final int i1, final int j1) {
+        this.sum = i1 * i1 * i1 + j1 * j1 * j1;
+        this.i = i1;
+        this.j = j1;
     }
 
     /**
-     * { this method is used for comparing }
+     * { this method is used for comparing }.
      *
      * @param      that  The other cube sum.
      *
@@ -110,12 +110,12 @@ final class Solution {
         CubeSum obj = new CubeSum();
         int count = 1;
         int temp = -1;
-        int c = 600;
+        int cutval = 600;
 
 
         // initialize priority queue
         MinPQ<CubeSum> pq = new MinPQ<CubeSum>();
-        for (int i = 0; i <= c; i++) {
+        for (int i = 0; i <= cutval; i++) {
             pq.insert(new CubeSum(i, i));
         }
 
@@ -139,8 +139,9 @@ final class Solution {
             temp = s.getSum();
 
             //System.out.println(s);
-            if (s.getJ() < c)
+            if (s.getJ() < cutval) {
                 pq.insert(new CubeSum(s.getI(), s.getJ() + 1));
+            }
         }
 
     }
