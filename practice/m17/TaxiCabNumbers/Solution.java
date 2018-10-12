@@ -110,7 +110,7 @@ final class Solution {
         CubeSum obj = new CubeSum();
         int count = 1;
         int temp = -1;
-        int cutval = 600;
+        final int cutval = 600;
 
 
         // initialize priority queue
