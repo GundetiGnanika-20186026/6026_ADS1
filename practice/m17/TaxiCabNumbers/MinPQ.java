@@ -1,6 +1,6 @@
 import java.util.Comparator;
-import java.util.Iterator;
-import java.util.NoSuchElementException;
+// import java.util.Iterator;
+// import java.util.NoSuchElementException;
 
 public class MinPQ<Key> {
     private Key[] pq;                    // store items at indices 1 to n
@@ -26,9 +26,7 @@ public class MinPQ<Key> {
     }
 
 
-    // public MinPQ(Comparator<Key> comparator) {
-    //     this(1, comparator);
-    // }
+
 
     public MinPQ(Key[] keys) {
         n = keys.length;
@@ -121,33 +119,8 @@ public class MinPQ<Key> {
         pq[j] = swap;
     }
 
-    // is pq[1..N] a min heap?
-    // private boolean isMinHeap() {
-    //     return isMinHeap(1);
-    // }
 
-    // is subtree of pq[1..n] rooted at k a min heap?
-    // private boolean isMinHeap(int k) {
-    //     if (k > n) return true;
-    //     int left = 2 * k;
-    //     int right = 2 * k + 1;
-    //     if (left  <= n && greater(k, left))  return false;
-    //     if (right <= n && greater(k, right)) return false;
-    //     return isMinHeap(left) && isMinHeap(right);
-    // }
-
-
-
-
-
-        //public boolean hasNext()  { return !copy.isEmpty();                     }
-        //public void remove()      { throw new UnsupportedOperationException();  }
-
-        // public Key next() {
-        //     //if (!hasNext()) throw new NoSuchElementException();
-        //     return copy.delMin();
-        // }
-    }
+}
 
 
 
