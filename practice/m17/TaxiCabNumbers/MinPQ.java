@@ -43,7 +43,7 @@ public class MinPQ<Key> {
      * @param      comparator    The comparator
      */
     public MinPQ(final int initCapacity,
-     final Comparator<Key> comparator) {
+                 final Comparator<Key> comparator) {
         this.comparator = comparator;
         pq = (Key[]) new Object[initCapacity + 1];
         n = 0;
@@ -124,7 +124,7 @@ public class MinPQ<Key> {
      * @param      key     { index }
      */
 
-    private void swim(int key) {
+    private void swim(final int key) {
         int k = key;
         while (k > 1 && greater(k / 2, k)) {
             exch(k, k / 2);
@@ -139,7 +139,7 @@ public class MinPQ<Key> {
      *
      * @param      key     { index }
      */
-    public void sink(int key) {
+    public void sink(final int key) {
         int k = key;
         while (2 * k <= n) {
             int j = 2 * k;
