@@ -42,7 +42,8 @@ public class MinPQ<Key> {
      * @param      initCapacity  The initialize capacity
      * @param      comparator    The comparator
      */
-    public MinPQ(final int initCapacity, final Comparator<Key> comparator) {
+    public MinPQ(final int initCapacity,
+     final Comparator<Key> comparator) {
         this.comparator = comparator;
         pq = (Key[]) new Object[initCapacity + 1];
         n = 0;
@@ -50,6 +51,7 @@ public class MinPQ<Key> {
 
     /**
      * Determines if empty.
+     * its complexity is O(1).
      *
      * @return     True if empty, False otherwise.
      */
@@ -61,6 +63,7 @@ public class MinPQ<Key> {
 
     /**
      * will resize with the given capacity.
+     * its complexity is O(n)
      *
      * @param      capacity  The capacity
      */
@@ -76,6 +79,7 @@ public class MinPQ<Key> {
 
     /**
      * this method will insert the object.
+     * its complexity is O(1)
      *
      * @param      x     { object to be inserted }
      */
@@ -94,6 +98,7 @@ public class MinPQ<Key> {
 
     /**
      * this will delete the minimum key.
+     * its complexity is O(1)
      *
      * @return     { the key that is deleted }
      */
@@ -114,11 +119,13 @@ public class MinPQ<Key> {
 
     /**
      * it will compare the parent and child.
+     * its complexity is O(logN)
      *
-     * @param      k     { index }
+     * @param      key     { index }
      */
 
-    private void swim(int k) {
+    private void swim(int key) {
+        int k = key;
         while (k > 1 && greater(k / 2, k)) {
             exch(k, k / 2);
             k = k / 2;
@@ -126,11 +133,14 @@ public class MinPQ<Key> {
     }
 
     /**
-     * { this will compare the parent and child and exchange if required }.
+     * { this will compare the parent and child
+     *  and exchange if required }.
+     *  its complexity is O(logN)
      *
-     * @param      k     { index }
+     * @param      key     { index }
      */
-    public void sink(int k) {
+    public void sink(int key) {
+        int k = key;
         while (2 * k <= n) {
             int j = 2 * k;
             if (j < n && greater(j, j + 1)) {
@@ -145,8 +155,9 @@ public class MinPQ<Key> {
     }
 
     /**
-     * checks wether the element
-     *  at index i is greater than the other.
+     * {checks wether the element
+     *  at index i is greater than the other}.
+     *  its complexity is O(1)
      *
      * @param      i     { index1 }
      * @param      j     { index2 }
@@ -164,6 +175,7 @@ public class MinPQ<Key> {
 
     /**
      * exchanges the value at index i and index j.
+     * its complexity is O(1).
      *
      * @param      i     { index1 }
      * @param      j     { index2 }

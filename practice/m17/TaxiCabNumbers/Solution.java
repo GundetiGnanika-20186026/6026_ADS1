@@ -39,6 +39,7 @@ class CubeSum implements Comparable<CubeSum> {
 
     /**
      * { this method is used for comparing }.
+     * its complexity is O(1).
      *
      * @param      that  The other cube sum.
      *
@@ -56,6 +57,7 @@ class CubeSum implements Comparable<CubeSum> {
 
     /**
      * Gets the j.
+     * its complexity is O(1).
      *
      * @return     The j.
      */
@@ -66,6 +68,7 @@ class CubeSum implements Comparable<CubeSum> {
 
     /**
      * Gets i.
+     * its complexity is O(1).
      *
      * @return     i.
      */
@@ -75,6 +78,7 @@ class CubeSum implements Comparable<CubeSum> {
 
     /**
      * Gets the sum.
+     * its complexity is O(1).
      *
      * @return     The sum.
      */
@@ -97,6 +101,7 @@ final class Solution {
     }
     /**
      * main method.
+     * its complexity is O(N).
      *
      * @param      args  The arguments
      */
