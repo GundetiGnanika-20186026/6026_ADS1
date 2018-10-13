@@ -10,15 +10,7 @@ class Stock {
 	}
 
 
-	// public int CompareTo(Stock first, Stock second){
-	// 	if (first.change > second.change) return 1;
-	// 	if (first.change < second.change) return -1;
-	// 	if (first.change == second.change){
-	// 		return first.name.compareTo(second.name) ;
 
-//        }
-	// 	return 0;
-	// }
 
 	public float getchange() {
 		return change;
@@ -35,11 +27,10 @@ class Stock {
 	public static Comparator<Stock> changeComparator = new Comparator<Stock>() {
 		@ Override
 		public int compare(Stock s1, Stock s2) {
-			if (s1.change - s2.change != 0)
+			if (s1.change - s2.change != 0) {
 				if (s1.change > s2.change) return 1;
 				else return -1;
-
-			else
+			} else
 				return s1.name.compareTo(s2.name);
 		}
 	};
