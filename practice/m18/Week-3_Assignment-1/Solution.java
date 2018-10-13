@@ -1,29 +1,74 @@
 import java.util.Scanner;
 import java.util.Comparator;
-class Stock{
+
+class Stock {
 	String name;
 	float change;
-	Stock(String name1, float change1){
+	Stock(String name1, float change1) {
 		this.name = name1;
 		this.change = change1;
 	}
 
-	public String toString(Stock list1){
-		return list1.name+" "+list1.change;
+
+	// public int CompareTo(Stock first, Stock second){
+	// 	if (first.change > second.change) return 1;
+	// 	if (first.change < second.change) return -1;
+	// 	if (first.change == second.change){
+	// 		return first.name.compareTo(second.name) ;
+
+//        }
+	// 	return 0;
+	// }
+
+	public float getchange() {
+		return change;
 	}
+
+
+
+	public String toString(Stock list1) {
+		return list1.name + " " + list1.change;
+	}
+
+
+
+	public static Comparator<Stock> changeComparator = new Comparator<Stock>() {
+		@ Override
+		public int compare(Stock s1, Stock s2) {
+			if (s1.change - s2.change != 0)
+				if (s1.change > s2.change) return 1;
+				else return -1;
+
+			else
+				return s1.name.compareTo(s2.name);
+		}
+	};
+
 }
-class Solution{
+
+
+
+
+
+
+
+
+
+
+
+
+class Solution {
 	public static void main(String[] args) {
 		MaxPQ<Stock> pq = new MaxPQ<Stock>();
 		Scanner scan = new Scanner(System.in);
 		int noOfStacksperHour = Integer.parseInt(scan.nextLine());
-		for(int i = 0; i < noOfStacksperHour; i++){
+		for (int i = 0; i < noOfStacksperHour; i++) {
 			String[] stock1 = scan.nextLine().split(",");
-			Stock obj = new Stock(stock1[0],Float.parseFloat(stock1[1]));
-            pq.insert(obj);
+			Stock obj = new Stock(stock1[0], Float.parseFloat(stock1[1]));
+			pq.insert(obj);
 		}
 
-		for(int i = 0; i < 5; i++){
+		for (int i = 0; i < 5; i++) {
 			Stock list = pq.delMax();
 			System.out.println(list);
 		}

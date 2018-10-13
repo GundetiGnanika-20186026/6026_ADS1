@@ -1,7 +1,3 @@
-
-
-
-
 import java.util.Comparator;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
@@ -47,6 +43,10 @@ public class MaxPQ<Key> implements Iterable<Key> {
             sink(k);
         assert isMaxHeap();
     }
+
+
+
+
 
 
 
@@ -102,9 +102,7 @@ public class MaxPQ<Key> implements Iterable<Key> {
     }
 
 
-   /***************************************************************************
-    * Helper functions to restore the heap invariant.
-    ***************************************************************************/
+
 
     private void swim(int k) {
         while (k > 1 && less(k/2, k)) {
@@ -123,9 +121,7 @@ public class MaxPQ<Key> implements Iterable<Key> {
         }
     }
 
-   /***************************************************************************
-    * Helper functions for compares and swaps.
-    ***************************************************************************/
+
     private boolean less(int i, int j) {
         if (comparator == null) {
             return ((Comparable<Key>) pq[i]).compareTo(pq[j]) < 0;
@@ -134,6 +130,16 @@ public class MaxPQ<Key> implements Iterable<Key> {
             return comparator.compare(pq[i], pq[j]) < 0;
         }
     }
+
+
+
+
+
+
+
+
+
+
 
     private void exch(int i, int j) {
         Key swap = pq[i];

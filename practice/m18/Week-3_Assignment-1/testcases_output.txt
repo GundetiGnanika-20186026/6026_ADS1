@@ -76,7 +76,7 @@ Exception in thread "main" java.lang.ClassCastException: Stock cannot be cast to
 	at MaxPQ.less(MaxPQ.java:131)
 	at MaxPQ.swim(MaxPQ.java:110)
 	at MaxPQ.insert(MaxPQ.java:88)
-	at Solution.main(Solution.java:23)
+	at Solution.main(Solution.java:68)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -156,7 +156,7 @@ Exception in thread "main" java.lang.ClassCastException: Stock cannot be cast to
 	at MaxPQ.less(MaxPQ.java:131)
 	at MaxPQ.swim(MaxPQ.java:110)
 	at MaxPQ.insert(MaxPQ.java:88)
-	at Solution.main(Solution.java:23)
+	at Solution.main(Solution.java:68)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -238,10 +238,10 @@ WABCO India 0.33
 3
 Your Output: 
 Exception in thread "main" java.lang.ClassCastException: Stock cannot be cast to java.base/java.lang.Comparable
-	at MaxPQ.less(MaxPQ.java:131)
-	at MaxPQ.swim(MaxPQ.java:110)
+	at MaxPQ.less(MaxPQ.java:127)
+	at MaxPQ.swim(MaxPQ.java:108)
 	at MaxPQ.insert(MaxPQ.java:88)
-	at Solution.main(Solution.java:23)
+	at Solution.main(Solution.java:68)
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -323,10 +323,10 @@ Chola Inv Fin 1.47
 0
 Your Output: 
 Exception in thread "main" java.lang.ClassCastException: Stock cannot be cast to java.base/java.lang.Comparable
-	at MaxPQ.less(MaxPQ.java:131)
-	at MaxPQ.swim(MaxPQ.java:110)
+	at MaxPQ.less(MaxPQ.java:127)
+	at MaxPQ.swim(MaxPQ.java:108)
 	at MaxPQ.insert(MaxPQ.java:88)
-	at Solution.main(Solution.java:23)
+	at Solution.main(Solution.java:68)
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -423,8 +423,8 @@ TTK Prestige
 Tasty Bite Eat
 Your Output: 
 Exception in thread "main" java.lang.ClassCastException: Stock cannot be cast to java.base/java.lang.Comparable
-	at MaxPQ.less(MaxPQ.java:131)
-	at MaxPQ.swim(MaxPQ.java:110)
+	at MaxPQ.less(MaxPQ.java:127)
+	at MaxPQ.swim(MaxPQ.java:108)
 	at MaxPQ.insert(MaxPQ.java:88)
-	at Solution.main(Solution.java:23)
+	at Solution.main(Solution.java:68)
 ----------------------------------------
