@@ -72,8 +72,8 @@ Sanofi India 0.21
 Tasty Bite Eat 0.23
 WABCO India 0.33
 Your Output: 
-Exception in thread "main" java.lang.ClassCastException: Stock cannot be cast to java.base/java.lang.Comparable
-	at MaxPQ.less(MaxPQ.java:127)
+Exception in thread "main" java.lang.NullPointerException
+	at MaxPQ.less(MaxPQ.java:130)
 	at MaxPQ.swim(MaxPQ.java:108)
 	at MaxPQ.insert(MaxPQ.java:88)
 	at Solution.main(Solution.java:60)
@@ -152,8 +152,8 @@ Fine Organic Industries Ltd. 0.29
 Vinati Organics 1.03
 Chola Inv Fin 1.47
 Your Output: 
-Exception in thread "main" java.lang.ClassCastException: Stock cannot be cast to java.base/java.lang.Comparable
-	at MaxPQ.less(MaxPQ.java:127)
+Exception in thread "main" java.lang.NullPointerException
+	at MaxPQ.less(MaxPQ.java:130)
 	at MaxPQ.swim(MaxPQ.java:108)
 	at MaxPQ.insert(MaxPQ.java:88)
 	at Solution.main(Solution.java:60)
@@ -237,8 +237,8 @@ WABCO India 0.33
 1
 3
 Your Output: 
-Exception in thread "main" java.lang.ClassCastException: Stock cannot be cast to java.base/java.lang.Comparable
-	at MaxPQ.less(MaxPQ.java:127)
+Exception in thread "main" java.lang.NullPointerException
+	at MaxPQ.less(MaxPQ.java:130)
 	at MaxPQ.swim(MaxPQ.java:108)
 	at MaxPQ.insert(MaxPQ.java:88)
 	at Solution.main(Solution.java:60)
@@ -322,8 +322,8 @@ Chola Inv Fin 1.47
 4
 0
 Your Output: 
-Exception in thread "main" java.lang.ClassCastException: Stock cannot be cast to java.base/java.lang.Comparable
-	at MaxPQ.less(MaxPQ.java:127)
+Exception in thread "main" java.lang.NullPointerException
+	at MaxPQ.less(MaxPQ.java:130)
 	at MaxPQ.swim(MaxPQ.java:108)
 	at MaxPQ.insert(MaxPQ.java:88)
 	at Solution.main(Solution.java:60)
@@ -422,8 +422,8 @@ Schaeffler India
 TTK Prestige
 Tasty Bite Eat
 Your Output: 
-Exception in thread "main" java.lang.ClassCastException: Stock cannot be cast to java.base/java.lang.Comparable
-	at MaxPQ.less(MaxPQ.java:127)
+Exception in thread "main" java.lang.NullPointerException
+	at MaxPQ.less(MaxPQ.java:130)
 	at MaxPQ.swim(MaxPQ.java:108)
 	at MaxPQ.insert(MaxPQ.java:88)
 	at Solution.main(Solution.java:60)
