@@ -73,10 +73,10 @@ Tasty Bite Eat 0.23
 WABCO India 0.33
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at MaxPQ.less(MaxPQ.java:130)
-	at MaxPQ.swim(MaxPQ.java:108)
-	at MaxPQ.insert(MaxPQ.java:88)
-	at Solution.main(Solution.java:60)
+	at MaxPQ.less(MaxPQ.java:127)
+	at MaxPQ.swim(MaxPQ.java:101)
+	at MaxPQ.insert(MaxPQ.java:81)
+	at Solution.main(Solution.java:62)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -153,10 +153,10 @@ Vinati Organics 1.03
 Chola Inv Fin 1.47
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at MaxPQ.less(MaxPQ.java:130)
-	at MaxPQ.swim(MaxPQ.java:108)
-	at MaxPQ.insert(MaxPQ.java:88)
-	at Solution.main(Solution.java:60)
+	at MaxPQ.less(MaxPQ.java:127)
+	at MaxPQ.swim(MaxPQ.java:101)
+	at MaxPQ.insert(MaxPQ.java:81)
+	at Solution.main(Solution.java:62)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -238,10 +238,10 @@ WABCO India 0.33
 3
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at MaxPQ.less(MaxPQ.java:130)
-	at MaxPQ.swim(MaxPQ.java:108)
-	at MaxPQ.insert(MaxPQ.java:88)
-	at Solution.main(Solution.java:60)
+	at MaxPQ.less(MaxPQ.java:127)
+	at MaxPQ.swim(MaxPQ.java:101)
+	at MaxPQ.insert(MaxPQ.java:81)
+	at Solution.main(Solution.java:62)
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -323,10 +323,10 @@ Chola Inv Fin 1.47
 0
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at MaxPQ.less(MaxPQ.java:130)
-	at MaxPQ.swim(MaxPQ.java:108)
-	at MaxPQ.insert(MaxPQ.java:88)
-	at Solution.main(Solution.java:60)
+	at MaxPQ.less(MaxPQ.java:127)
+	at MaxPQ.swim(MaxPQ.java:101)
+	at MaxPQ.insert(MaxPQ.java:81)
+	at Solution.main(Solution.java:62)
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -423,8 +423,8 @@ TTK Prestige
 Tasty Bite Eat
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at MaxPQ.less(MaxPQ.java:130)
-	at MaxPQ.swim(MaxPQ.java:108)
-	at MaxPQ.insert(MaxPQ.java:88)
-	at Solution.main(Solution.java:60)
+	at MaxPQ.less(MaxPQ.java:127)
+	at MaxPQ.swim(MaxPQ.java:101)
+	at MaxPQ.insert(MaxPQ.java:81)
+	at Solution.main(Solution.java:62)
 ----------------------------------------
