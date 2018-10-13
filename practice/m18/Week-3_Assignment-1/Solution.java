@@ -1,5 +1,6 @@
-import java.util.Scanner;
-import java.util.Comparator;
+// import java.util.Scanner;
+// import java.util.Comparator;
+import java.util.*;
 
 class Stock {
 	String name;
@@ -24,7 +25,7 @@ class Stock {
 
 
 
-	public static Comparator<Stock> changeComparator = new Comparator<Stock>() {
+	public Comparator<Stock> changeComparator = new Comparator<Stock>() {
 		@ Override
 		public int compare(Stock s1, Stock s2) {
 			if (s1.change - s2.change != 0) {
@@ -63,5 +64,7 @@ class Solution {
 			Stock list = pq.delMax();
 			System.out.println(list);
 		}
+		System.out.println();
+
 	}
 }

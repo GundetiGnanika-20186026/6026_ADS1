@@ -76,7 +76,7 @@ Exception in thread "main" java.lang.ClassCastException: Stock cannot be cast to
 	at MaxPQ.less(MaxPQ.java:127)
 	at MaxPQ.swim(MaxPQ.java:108)
 	at MaxPQ.insert(MaxPQ.java:88)
-	at Solution.main(Solution.java:59)
+	at Solution.main(Solution.java:60)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -156,7 +156,7 @@ Exception in thread "main" java.lang.ClassCastException: Stock cannot be cast to
 	at MaxPQ.less(MaxPQ.java:127)
 	at MaxPQ.swim(MaxPQ.java:108)
 	at MaxPQ.insert(MaxPQ.java:88)
-	at Solution.main(Solution.java:59)
+	at Solution.main(Solution.java:60)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -241,7 +241,7 @@ Exception in thread "main" java.lang.ClassCastException: Stock cannot be cast to
 	at MaxPQ.less(MaxPQ.java:127)
 	at MaxPQ.swim(MaxPQ.java:108)
 	at MaxPQ.insert(MaxPQ.java:88)
-	at Solution.main(Solution.java:59)
+	at Solution.main(Solution.java:60)
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -326,7 +326,7 @@ Exception in thread "main" java.lang.ClassCastException: Stock cannot be cast to
 	at MaxPQ.less(MaxPQ.java:127)
 	at MaxPQ.swim(MaxPQ.java:108)
 	at MaxPQ.insert(MaxPQ.java:88)
-	at Solution.main(Solution.java:59)
+	at Solution.main(Solution.java:60)
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -426,5 +426,5 @@ Exception in thread "main" java.lang.ClassCastException: Stock cannot be cast to
 	at MaxPQ.less(MaxPQ.java:127)
 	at MaxPQ.swim(MaxPQ.java:108)
 	at MaxPQ.insert(MaxPQ.java:88)
-	at Solution.main(Solution.java:59)
+	at Solution.main(Solution.java:60)
 ----------------------------------------
