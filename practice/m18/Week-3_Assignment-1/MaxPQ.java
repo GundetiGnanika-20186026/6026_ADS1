@@ -116,17 +116,17 @@ public class MaxPQ<Key> {
 
 
     private boolean less(int i, int j) {
-        // if (comparator == null) {
-        //     return ((Comparable<Key>) pq[i]).compareTo(pq[j]) < 0;
-        // }
-        // else {
+        if (comparator == null) {
+            return ((Comparable<Key>) pq[i]).compareTo(pq[j]) < 0;
+        }
+        else {
         // System.out.println(pq[i]);
         // System.out.println(pq[j]);
         //System.out.println("entered into comparator");
 
         return comparator.compare(pq[i], pq[j]) < 0;
           //return pq[i].compareTo(pq[j]) < 0;
-        //}
+        }
     }
 
 
