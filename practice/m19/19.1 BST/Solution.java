@@ -399,7 +399,7 @@ final class Solution {
             case "ceiling" :
                 Book obj3 = new Book(line[1], line[2],
                                      Double.parseDouble(line[2 + 1]));
-                Book ceil1 = object.floor(obj3);
+                Book ceil1 = object.ceiling(obj3);
                 System.out.println(object.toString(ceil1));
                 break;
             default:
