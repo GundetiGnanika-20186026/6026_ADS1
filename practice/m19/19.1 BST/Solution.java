@@ -35,6 +35,7 @@ class Book {
 
     /**
      * Gets the name.
+     * its complexity is O(1).
      *
      * @return     The name.
      */
@@ -42,16 +43,37 @@ class Book {
         return name;
     }
 
+    /**
+     * Gets the author.
+     * its complexity is O(1).
+     *
+     * @return     The author.
+     */
+
     public String getAuthor() {
         return author;
     }
 
+    /**
+     * Gets the price.
+     * its complexity is O(1).
+     *
+     * @return     The price.
+     */
     public Double getPrice() {
         return price;
     }
 
-
-    public int compareTo(Book that){
+    /**
+     * compares two values.
+     *
+     * its complexity is O(1).
+     *
+     * @param      that  The other book object
+     *
+     * @return   either 1,-1 or 0.
+     */
+    public int compareTo(Book that) {
         return this.name.compareTo(that.name);
     }
 
@@ -90,7 +112,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
          */
         private Value val;
         /**
-* pointers to point left and right nodes.
+        * pointers to point left and right nodes.
          */
         private Node left, right;
         /**
@@ -107,10 +129,10 @@ class BinaryST<Key extends Comparable<Key>, Value> {
          */
 
         Node(final Book key1, final Value val1,
-         final int size1) {
+             final int size1) {
             this.key = key1;
             this.val = val1;
-            //this.size = size1;
+            this.size = size1;
         }
 
     }
@@ -141,7 +163,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
      * @return     Node to be inserted.
      */
     public Node put(final Node node, final Book key,
-     final Value val) {
+                    final Value val) {
         if (node == null) {
             return new Node(key, val, 1);
         }
@@ -210,7 +232,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
     }
 
 
-     public Book min() {
+    public Book min() {
         //if (isEmpty()) throw new NoSuchElementException("calls min() with empty symbol table");
         return min(root).key;
     }
@@ -240,7 +262,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
         else return x;
     }
 
-   public Book ceiling(Book key) {
+    public Book ceiling(Book key) {
         //if (key == null) throw new IllegalArgumentException("argument to ceiling() is null");
         //if (isEmpty()) throw new NoSuchElementException("calls ceiling() with empty symbol table");
         Node x = ceiling(root, key);
@@ -260,7 +282,13 @@ class BinaryST<Key extends Comparable<Key>, Value> {
         return ceiling(x.right, key);
     }
 
-
+    /**
+     * returns the object at the given index.
+     *
+     * @param      k     value.
+     *
+     * @return   book object.
+     */
     public Book select(int k) {
 
         Node x = select(root, k);
@@ -268,66 +296,44 @@ class BinaryST<Key extends Comparable<Key>, Value> {
     }
 
 
-    //  public boolean contains(Book key) {
-    //     //if (key == null) throw new IllegalArgumentException("argument to contains() is null");
-    //     return get(key) != null;
-    // }
-
-
-
-
-    //  public int size(Book lo, Book hi) {
-    //     //if (lo == null) throw new IllegalArgumentException("first argument to size() is null");
-    //     //if (hi == null) throw new IllegalArgumentException("second argument to size() is null");
-
-    //     if (lo.compareTo(hi) > 0) return 0;
-    //     if (contains(hi)) return rank(hi) - rank(lo) + 1;
-    //     else              return rank(hi) - rank(lo);
-    // }
-
-
-
-
-    // public int rank(Book key) {
-    //     //if (key == null) throw new IllegalArgumentException("argument to rank() is null");
-    //     return rank(key, root);
-    // }
-
-    // // Number of keys in the subtree less than key.
-    // private int rank(Book key, Node x) {
-    //     if (x == null) return 0;
-    //     int cmp = key.compareTo(x.key);
-    //     if      (cmp < 0) return rank(key, x.left);
-    //     else if (cmp > 0) return 1 + size(x.left) + rank(key, x.right);
-    //     else              return size(x.left);
-    // }
-
-
+    /**
+     * gives size.
+     * its complexity is O(1).
+     *
+     * @return size
+     */
     public int size() {
         return size(root);
     }
 
-    // return number of key-value pairs in BST rooted at x
+
     private int size(Node x) {
         if (x == null) return 0;
         else return x.size;
     }
 
 
-    // Return key of rank k.
+
     private Node select(Node x, int k) {
         if (x == null) return null;
         int t = size(x.left);
         if      (t > k) return select(x.left,  k);
-        else if (t < k) return select(x.right, k-t-1);
+        else if (t < k) return select(x.right, k - t - 1);
         else            return x;
     }
 
-
-    public String toString(Book obj){
+    /**
+     * Returns a string representation of the object.
+     * its complexity is O(1).
+     *
+     * @param      obj   The object
+     *
+     * @return     String representation of the object.
+     */
+    public String toString(Book obj) {
         //System.out.println("came....");
 
-        return obj.getName()+", "+obj.getAuthor()+", "+obj.getPrice();
+        return obj.getName() + ", " + obj.getAuthor() + ", " + obj.getPrice();
     }
 
 
@@ -359,18 +365,18 @@ final class Solution {
 
         while (scan.hasNext()) {
             String[] line = scan.nextLine().split(",");
-//BinaryST<String,Integer> object = new BinaryST<String,Integer>();
+
 
             switch (line[0]) {
             case "put" :
-                 Book obj = new Book(line[1], line[2],
-                 Double.parseDouble(line[2 + 1]));
+                Book obj = new Book(line[1], line[2],
+                                    Double.parseDouble(line[2 + 1]));
 
                 object.put(obj, Integer.parseInt(line[2 + 2]));
                 break;
             case "get" :
-                 Book obj1 = new Book(line[1], line[2],
-                 Double.parseDouble(line[2 + 1]));
+                Book obj1 = new Book(line[1], line[2],
+                                     Double.parseDouble(line[2 + 1]));
                 System.out.println(object.get(obj1));
                 break;
             case "max" :
@@ -378,24 +384,24 @@ final class Solution {
                 System.out.println(object.toString(max1));
                 break;
             case "min" :
-                  Book min1 = object.min();
+                Book min1 = object.min();
                 System.out.println(object.toString(min1));
-                 break;
+                break;
             case "select" :
-                  Book selected = object.select(Integer.parseInt(line[1]));
-                  System.out.println(object.toString(selected));
+                Book selected = object.select(Integer.parseInt(line[1]));
+                System.out.println(object.toString(selected));
                 break;
             case "floor" :
-                  Book obj2 = new Book(line[1], line[2],
-                  Double.parseDouble(line[2 + 1]));
-                  Book floor1 = object.floor(obj2);
-                  System.out.println(object.toString(floor1));
+                Book obj2 = new Book(line[1], line[2],
+                                     Double.parseDouble(line[2 + 1]));
+                Book floor1 = object.floor(obj2);
+                System.out.println(object.toString(floor1));
                 break;
             case "ceiling" :
-                   Book obj3 = new Book(line[1], line[2],
-                  Double.parseDouble(line[2 + 1]));
-                  Book ceil1 = object.floor(obj3);
-                  System.out.println(object.toString(ceil1));
+                Book obj3 = new Book(line[1], line[2],
+                                     Double.parseDouble(line[2 + 1]));
+                Book ceil1 = object.floor(obj3);
+                System.out.println(object.toString(ceil1));
                 break;
             default:
                 break;

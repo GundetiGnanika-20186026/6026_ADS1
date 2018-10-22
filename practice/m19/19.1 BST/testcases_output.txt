@@ -57,8 +57,8 @@ Harry, JK, 600.0
 Street, Kiran, 800.0
 null
 Harry, JK, 600.0
-Exception in thread "main" java.lang.NullPointerException
-	at BinaryST$Node.access$000(Solution.java:83)
-	at BinaryST.select(Solution.java:267)
-	at Solution.main(Solution.java:385)
+Street, Kiran, 800.0
+Harry, JK, 600.0
+Street, Kiran, 800.0
+7
 ----------------------------------------
