@@ -327,7 +327,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
     public String toString(Book obj){
         //System.out.println("came....");
 
-        return obj.getName()+","+obj.getAuthor()+","+obj.getPrice();
+        return obj.getName()+", "+obj.getAuthor()+", "+obj.getPrice();
     }
 
 

@@ -71,11 +71,11 @@ Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m19\19.1 BST\Solution.java:327:37: '{' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m19\19.1 BST\Solution.java:330:29: '+' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m19\19.1 BST\Solution.java:330:30: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m19\19.1 BST\Solution.java:330:33: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m19\19.1 BST\Solution.java:330:34: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m19\19.1 BST\Solution.java:330:49: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m19\19.1 BST\Solution.java:330:50: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m19\19.1 BST\Solution.java:330:53: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m19\19.1 BST\Solution.java:330:54: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m19\19.1 BST\Solution.java:330:34: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m19\19.1 BST\Solution.java:330:35: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m19\19.1 BST\Solution.java:330:50: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m19\19.1 BST\Solution.java:330:51: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m19\19.1 BST\Solution.java:330:55: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m19\19.1 BST\Solution.java:330:56: '+' is not followed by whitespace. [WhitespaceAround]
 Audit done.
 Checkstyle ends with 78 errors.
