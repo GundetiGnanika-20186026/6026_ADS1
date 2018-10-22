@@ -1,0 +1,9 @@
+Starting audit...
+[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m19\19.1 BST\Solution.java:183:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m19\19.1 BST\Solution.java:184: Line is longer than 80 characters (found 97). [LineLength]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m19\19.1 BST\Solution.java:188:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m19\19.1 BST\Solution.java:188:22: Parameter x should be final. [FinalParameters]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m19\19.1 BST\Solution.java:189: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m19\19.1 BST\Solution.java:190: 'else' construct must use '{}'s. [NeedBraces]
+Audit done.
+Checkstyle ends with 6 errors.
