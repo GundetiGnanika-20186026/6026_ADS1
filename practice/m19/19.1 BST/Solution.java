@@ -136,7 +136,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
     /**
      * {this method will insert the key
      *  into the linked list.
-     *  its complexity is O(logN) as we are not
+     *  its complexity is O(N) as we are not
      *   iterating through the entire list.}.
      *
      * @param      key   The key
@@ -149,7 +149,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
     /**
      * {this method will return the key
      *  to be inserted into linked list.
-     *  its complexity is O(logN)}.
+     *  its complexity is O(N)}.
      *
      * @param      node  rootnode
      * @param      key   The key
@@ -215,6 +215,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 
     /**
      * will return max node.
+     * its complexity is O(logN).
      *
      * @return book.
      */
@@ -224,6 +225,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
     }
     /**
      * will return max node.
+     * its complexity is O(logN).
      *
      * @param      x     { node }
      *
@@ -239,6 +241,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 
     /**
      * returns the book by name comparision.
+     * its complexity is O(logN).
      *
      * @return    book.
      */
@@ -247,6 +250,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
     }
     /**
      * returns the minimum node.
+     * its complexity is O(logN).
      *
      * @param      x     { node }
      *
@@ -264,6 +268,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
     /**
      * {returns the given book if present and if not present it
      *  will return the highest less value than the given book}.
+     *  its complexity is O(logN).
      *
      * @param      key   The book
      *
@@ -282,6 +287,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
     /**
      * {returns the given book if present and if not present it
      *  will return the highest less value than the given book}.
+     *  its complexity is O(logN).
      *
      * @param      x     { node }
      * @param      key   The book
@@ -311,6 +317,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
     /**
      * {returns the given book if present and if not present it
      *  will return the lowest greater value than the given book}.
+     *  its complexity is O(logN).
      *
      * @param      key   The book
      *
@@ -329,6 +336,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
     /**
      * {returns the given book if present and if not present it
      *  will return the lowest greater value than the given book}.
+     *  its complexity is O(logN).
      *
      * @param      x     { node }
      * @param      key   The book
@@ -357,6 +365,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 
     /**
      * returns the object at the given index.
+     * its complexity is O(logN).
      *
      * @param      k     value.
      *
@@ -379,6 +388,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 
     /**
      * returns size.
+     * its complexity is O(1).
      *
      * @param      x     { node }
      *
@@ -395,6 +405,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 
     /**
      * returns the object at the given index.
+     * its complexity is O(logN).
      *
      * @param      x     { node }
      * @param      k     { value }
