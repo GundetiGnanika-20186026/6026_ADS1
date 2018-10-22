@@ -96,7 +96,7 @@ class QuickSort {
 
     /**
      * this method is to find the partition element.
-     * its complexity is O(n^2)
+     * its complexity is O(N)
      *
      * @param      array  The array
      * @param      start  The start
