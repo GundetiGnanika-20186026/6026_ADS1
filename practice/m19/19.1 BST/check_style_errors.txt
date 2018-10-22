@@ -1,20 +1,2 @@
 Starting audit...
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m19\19.1 BST\Solution.java:71:26: Parameter that should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m19\19.1 BST\Solution.java:232:22: Parameter x should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m19\19.1 BST\Solution.java:255:22: Parameter x should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m19\19.1 BST\Solution.java:272:23: Parameter key should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m19\19.1 BST\Solution.java:292:24: Parameter x should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m19\19.1 BST\Solution.java:292:32: Parameter key should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m19\19.1 BST\Solution.java:319:25: Parameter key should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m19\19.1 BST\Solution.java:339:26: Parameter x should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m19\19.1 BST\Solution.java:339:34: Parameter key should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m19\19.1 BST\Solution.java:340: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m19\19.1 BST\Solution.java:342: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m19\19.1 BST\Solution.java:361:24: Parameter k should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m19\19.1 BST\Solution.java:383:22: Parameter x should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m19\19.1 BST\Solution.java:400:25: Parameter x should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m19\19.1 BST\Solution.java:400:33: Parameter k should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m19\19.1 BST\Solution.java:401: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m19\19.1 BST\Solution.java:420:28: Parameter obj should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 17 errors.

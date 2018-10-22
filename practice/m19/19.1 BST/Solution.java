@@ -68,7 +68,7 @@ class Book {
      *
      * @return   either 1,-1 or 0.
      */
-    public int compareTo(Book that) {
+    public int compareTo(final Book that) {
         return this.name.compareTo(that.name);
     }
 
@@ -229,7 +229,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
      *
      * @return     { node }
      */
-    private Node max(Node x) {
+    private Node max(final Node x) {
         if (x.right == null) {
             return x;
         } else  {
@@ -252,7 +252,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
      *
      * @return     { node }
      */
-    private Node min(Node x) {
+    private Node min(final Node x) {
         if (x.left == null) {
             return x;
         } else  {
@@ -269,7 +269,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
      *
      * @return     {book}
      */
-    public Book floor(Book key) {
+    public Book floor(final Book key) {
 
         Node x = floor(root, key);
         if (x == null) {
@@ -289,7 +289,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
      * @return     { node }
      */
 
-    private Node floor(Node x, Book key) {
+    private Node floor(final Node x, final Book key) {
         if (x == null) {
             return null;
         }
@@ -316,7 +316,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
      *
      * @return     { book }
      */
-    public Book ceiling(Book key) {
+    public Book ceiling(final Book key) {
 
         Node x = ceiling(root, key);
         if (x == null) {
@@ -336,10 +336,14 @@ class BinaryST<Key extends Comparable<Key>, Value> {
      * @return     { node }
      */
 
-    private Node ceiling(Node x, Book key) {
-        if (x == null) return null;
+    private Node ceiling(final Node x, final Book key) {
+        if (x == null) {
+            return null;
+        }
         int cmp = key.compareTo(x.key);
-        if (cmp == 0) return x;
+        if (cmp == 0) {
+            return x;
+        }
         if (cmp < 0) {
             Node t = ceiling(x.left, key);
             if (t != null) {
@@ -358,7 +362,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
      *
      * @return   book object.
      */
-    public Book select(int k) {
+    public Book select(final int k) {
 
         Node x = select(root, k);
         return x.key;
@@ -380,7 +384,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
      *
      * @return     { size }
      */
-    private int size(Node x) {
+    private int size(final Node x) {
         if (x == null) {
             return 0;
         } else {
@@ -397,8 +401,10 @@ class BinaryST<Key extends Comparable<Key>, Value> {
      *
      * @return     { node }
      */
-    private Node select(Node x, int k) {
-        if (x == null) return null;
+    private Node select(final Node x, final int k) {
+        if (x == null) {
+            return null;
+        }
         int t = size(x.left);
         if      (t > k) {
             return select(x.left,  k);
@@ -417,7 +423,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
      *
      * @return     String representation of the object.
      */
-    public String toString(Book obj) {
+    public String toString(final Book obj) {
         //System.out.println("came....");
 
         return obj.getName() + ", " + obj.getAuthor() + ", " + obj.getPrice();
