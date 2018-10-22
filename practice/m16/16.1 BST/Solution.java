@@ -100,7 +100,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
     /**
      * {this method will insert the key
      *  into the linked list.
-     *  its complexity is O(logN) as we are not
+     *  its complexity is O(N) in worst case as we are not
      *   iterating through the entire list.}.
      *
      * @param      key   The key
@@ -113,7 +113,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
     /**
      * {this method will return the key
      *  to be inserted into linked list.
-     *  its complexity is O(logN)}.
+     *  its complexity is O(N)}.
      *
      * @param      node  rootnode
      * @param      key   The key
