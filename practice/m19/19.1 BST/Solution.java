@@ -28,17 +28,12 @@ class Book {
         this.author = author1;
         this.price = price1;
     }
-
-    Book() {
-
-    }
-
     /**
-     * Gets the name.
-     * its complexity is O(1).
-     *
-     * @return     The name.
-     */
+    * Gets the name.
+    * its complexity is O(1).
+    *
+    * @return     The name.
+    */
     public String getName() {
         return name;
     }
@@ -218,56 +213,128 @@ class BinaryST<Key extends Comparable<Key>, Value> {
         }
     }
 
-
-
-
+    /**
+     * will return max node.
+     *
+     * @return book.
+     */
     public Book max() {
-        //if (isEmpty()) throw new NoSuchElementException("calls max() with empty symbol table");
+
         return max(root).key;
     }
-
+    /**
+     * will return max node.
+     *
+     * @param      x     { node }
+     *
+     * @return     { node }
+     */
     private Node max(Node x) {
-        if (x.right == null) return x;
-        else  return max(x.right);
+        if (x.right == null) {
+            return x;
+        } else  {
+            return max(x.right);
+        }
     }
 
-
+    /**
+     * returns the book by name comparision.
+     *
+     * @return    book.
+     */
     public Book min() {
-        //if (isEmpty()) throw new NoSuchElementException("calls min() with empty symbol table");
         return min(root).key;
     }
-
+    /**
+     * returns the minimum node.
+     *
+     * @param      x     { node }
+     *
+     * @return     { node }
+     */
     private Node min(Node x) {
-        if (x.left == null) return x;
-        else                return min(x.left);
+        if (x.left == null) {
+            return x;
+        } else  {
+            return min(x.left);
+        }
     }
 
 
-
+    /**
+     * {returns the given book if present and if not present it
+     *  will return the highest less value than the given book}.
+     *
+     * @param      key   The book
+     *
+     * @return     {book}
+     */
     public Book floor(Book key) {
-        //if (key == null) throw new IllegalArgumentException("argument to floor() is null");
-        //if (isEmpty()) throw new NoSuchElementException("calls floor() with empty symbol table");
+
         Node x = floor(root, key);
-        if (x == null) return null;
-        else return x.key;
+        if (x == null) {
+            return null;
+        } else {
+            return x.key;
+        }
     }
+
+    /**
+     * {returns the given book if present and if not present it
+     *  will return the highest less value than the given book}.
+     *
+     * @param      x     { node }
+     * @param      key   The book
+     *
+     * @return     { node }
+     */
 
     private Node floor(Node x, Book key) {
-        if (x == null) return null;
+        if (x == null) {
+            return null;
+        }
         int cmp = key.compareTo(x.key);
-        if (cmp == 0) return x;
-        if (cmp <  0) return floor(x.left, key);
+        if (cmp == 0) {
+            return x;
+        }
+        if (cmp <  0) {
+            return floor(x.left, key);
+        }
         Node t = floor(x.right, key);
-        if (t != null) return t;
-        else return x;
+        if (t != null) {
+            return t;
+        } else {
+            return x;
+        }
     }
 
+    /**
+     * {returns the given book if present and if not present it
+     *  will return the lowest greater value than the given book}.
+     *
+     * @param      key   The book
+     *
+     * @return     { book }
+     */
     public Book ceiling(Book key) {
 
         Node x = ceiling(root, key);
-        if (x == null) return null;
-        else return x.key;
+        if (x == null) {
+            return null;
+        } else {
+            return x.key;
+        }
     }
+
+    /**
+     * {returns the given book if present and if not present it
+     *  will return the lowest greater value than the given book}.
+     *
+     * @param      x     { node }
+     * @param      key   The book
+     *
+     * @return     { node }
+     */
 
     private Node ceiling(Node x, Book key) {
         if (x == null) return null;
@@ -275,8 +342,11 @@ class BinaryST<Key extends Comparable<Key>, Value> {
         if (cmp == 0) return x;
         if (cmp < 0) {
             Node t = ceiling(x.left, key);
-            if (t != null) return t;
-            else return x;
+            if (t != null) {
+                return t;
+            } else {
+                return x;
+            }
         }
         return ceiling(x.right, key);
     }
@@ -293,8 +363,6 @@ class BinaryST<Key extends Comparable<Key>, Value> {
         Node x = select(root, k);
         return x.key;
     }
-
-
     /**
      * gives size.
      * its complexity is O(1).
@@ -305,20 +373,40 @@ class BinaryST<Key extends Comparable<Key>, Value> {
         return size(root);
     }
 
-
+    /**
+     * returns size.
+     *
+     * @param      x     { node }
+     *
+     * @return     { size }
+     */
     private int size(Node x) {
-        if (x == null) return 0;
-        else return x.size;
+        if (x == null) {
+            return 0;
+        } else {
+            return x.size;
+        }
     }
 
 
-
+    /**
+     * returns the object at the given index.
+     *
+     * @param      x     { node }
+     * @param      k     { value }
+     *
+     * @return     { node }
+     */
     private Node select(Node x, int k) {
         if (x == null) return null;
         int t = size(x.left);
-        if      (t > k) return select(x.left,  k);
-        else if (t < k) return select(x.right, k - t - 1);
-        else            return x;
+        if      (t > k) {
+            return select(x.left,  k);
+        } else if (t < k) {
+            return select(x.right, k - t - 1);
+        } else {
+            return x;
+        }
     }
 
     /**
