@@ -10,10 +10,7 @@ class Stock implements Comparable<Stock> {
 	Stock() {
 
 	}
-
-
-
-	Stock(String name1, float change1) {
+    Stock(String name1, float change1) {
 		this.name = name1;
 		this.change = change1;
 	}
@@ -60,8 +57,11 @@ class Stock implements Comparable<Stock> {
 		if(this.change < that.change) {
 			return -1;
 		}
-		if(this.change == that.change){
-			return this.name.compareTo(that.name);
+		if(this.change == that.change) {
+			if (this.name.compareTo(that.name) > 0)
+			     return 1;
+			if (this.name.compareTo(that.name) < 0)
+			     return -1;
 		}
 		return 0;
 
@@ -71,12 +71,14 @@ class Stock implements Comparable<Stock> {
 
 class Solution {
 	public static void main(String[] args) {
-		MaxPQ<Stock> pqmax = new MaxPQ<Stock>();
-		MinPQ<Stock> pqmin = new MinPQ<Stock>();
+		// MaxPQ<Stock> pqmax = new MaxPQ<Stock>();
+		// MinPQ<Stock> pqmin = new MinPQ<Stock>();
 		Stock mainobj = new Stock();
 		Scanner scan = new Scanner(System.in);
 		int noOfStacksperHour = Integer.parseInt(scan.nextLine());
-		while(scan.hasNext()){
+		for(int j=0;j<6;j++) {
+			MaxPQ<Stock> pqmax = new MaxPQ<Stock>();
+		    MinPQ<Stock> pqmin = new MinPQ<Stock>();
 		for (int i = 0; i < noOfStacksperHour; i++) {
 			String[] stock1 = scan.nextLine().split(",");
 			Stock obj = new Stock(stock1[0], Float.parseFloat(stock1[1]));
@@ -84,6 +86,7 @@ class Solution {
 			pqmin.insert(obj);
 
 		}
+
 
 		for (int i = 0; i < 5; i++) {
 			Stock list = pqmax.delMax();
@@ -99,5 +102,5 @@ class Solution {
         System.out.println();
 
 	}
-}
+  }
 }
