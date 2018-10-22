@@ -263,8 +263,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
     }
 
     public Book ceiling(Book key) {
-        //if (key == null) throw new IllegalArgumentException("argument to ceiling() is null");
-        //if (isEmpty()) throw new NoSuchElementException("calls ceiling() with empty symbol table");
+
         Node x = ceiling(root, key);
         if (x == null) return null;
         else return x.key;
