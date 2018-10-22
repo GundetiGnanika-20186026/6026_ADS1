@@ -181,7 +181,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
      *
      * @param      key   The key
      *
-     * @return     { description_of_the_return_value }
+     * @return     { value of given key }
      */
 
     public Value get(final Book key) {
