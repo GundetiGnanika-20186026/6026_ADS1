@@ -101,7 +101,8 @@ final class Solution {
     }
     /**
      * main method.
-     * its complexity is O(N).
+     * its complexity is O(Nlog(N)) as we are
+     *  inserting N elements in to minpq.
      *
      * @param      args  The arguments
      */
