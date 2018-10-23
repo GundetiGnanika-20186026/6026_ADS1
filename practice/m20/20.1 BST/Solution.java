@@ -176,7 +176,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 
     /**
      * { This method will return the value of given key
-     * its complexity is O(logN) as we are
+     * its complexity is O(N) as we are
      *  not iterating through the entire list}.
      *
      * @param      key   The key
@@ -190,7 +190,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 
     /**
      * { This method will return the value of given key
-     * its complexity is O(logN) as we are
+     * its complexity is O(N) as we are
      *  not iterating through the entire list }.
      *
      * @param      node     { root node }.
@@ -215,7 +215,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 
     /**
      * will return max node.
-     * its complexity is O(logN).
+     * its complexity is O(N).
      *
      * @return book.
      */
@@ -225,7 +225,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
     }
     /**
      * will return max node.
-     * its complexity is O(logN).
+     * its complexity is O(N).
      *
      * @param      x     { node }
      *
@@ -241,7 +241,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 
     /**
      * returns the book by name comparision.
-     * its complexity is O(logN).
+     * its complexity is O(N).
      *
      * @return    book.
      */
@@ -250,7 +250,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
     }
     /**
      * returns the minimum node.
-     * its complexity is O(logN).
+     * its complexity is O(N).
      *
      * @param      x     { node }
      *
@@ -268,7 +268,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
     /**
      * {returns the given book if present and if not present it
      *  will return the highest less value than the given book}.
-     *  its complexity is O(logN).
+     *  its complexity is O(N).
      *
      * @param      key   The book
      *
@@ -287,7 +287,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
     /**
      * {returns the given book if present and if not present it
      *  will return the highest less value than the given book}.
-     *  its complexity is O(logN).
+     *  its complexity is O(N).
      *
      * @param      x     { node }
      * @param      key   The book
@@ -317,7 +317,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
     /**
      * {returns the given book if present and if not present it
      *  will return the lowest greater value than the given book}.
-     *  its complexity is O(logN).
+     *  its complexity is O(N).
      *
      * @param      key   The book
      *
@@ -336,7 +336,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
     /**
      * {returns the given book if present and if not present it
      *  will return the lowest greater value than the given book}.
-     *  its complexity is O(logN).
+     *  its complexity is O(N).
      *
      * @param      x     { node }
      * @param      key   The book
@@ -365,7 +365,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 
     /**
      * returns the object at the given index.
-     * its complexity is O(logN).
+     * its complexity is O(N).
      *
      * @param      k     value.
      *
@@ -405,7 +405,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 
     /**
      * returns the object at the given index.
-     * its complexity is O(logN).
+     * its complexity is O(N).
      *
      * @param      x     { node }
      * @param      k     { value }
@@ -428,6 +428,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 
     /**
      * this method will delete the minimum node.
+     * its complexity is O(N).
      */
     public void deleteMin() {
 
@@ -437,6 +438,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 
     /**
      * returns the root node after deleteing the minimum node.
+     * its complexity is O(N).
      *
      * @param      x     { root node x }
      *
@@ -454,6 +456,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 
     /**
      * This method will delete the maximum node.
+     * its complexity is O(N).
      */
     public void deleteMax() {
 
@@ -463,6 +466,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 
     /**
      * returns the root node after deleting the maximum node.
+     * its complexity is O(N).
      *
      * @param      x     { root node x }
      *
@@ -481,6 +485,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 
     /**
      * This method will delete the given key.
+     * its complexity is O(N).
      *
      * @param      key   The key
      */
@@ -491,6 +496,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 
     /**
      * { will return the root node }.
+     * its complexity is O(N).
      *
      * @param      x     { root node }
      * @param      key   key to be deleted
