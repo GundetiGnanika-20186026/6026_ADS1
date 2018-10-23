@@ -502,12 +502,10 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 
         int cmp = key.compareTo(x.key);
         if      (cmp < 0) {
-              x.left  = delete(x.left,  key);
-        }
-        else if (cmp > 0) {
+            x.left  = delete(x.left,  key);
+        } else if (cmp > 0) {
             x.right = delete(x.right, key);
-        }
-        else {
+        } else {
             if (x.right == null) {
                 return x.left;
             }
