@@ -498,7 +498,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
      * @return     { Node }
      */
     private Node delete(final Node x, final Book key) {
-    	Node temp = x;
+        Node temp = x;
         if (x == null) {
             return null;
         }
