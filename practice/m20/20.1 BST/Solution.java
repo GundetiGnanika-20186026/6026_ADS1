@@ -442,7 +442,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
      *
      * @return     { node }
      */
-    private Node deleteMin(Node x) {
+    private Node deleteMin(final Node x) {
         if (x.left == null) {
             return x.right;
         }
@@ -468,7 +468,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
      *
      * @return     { node }
      */
-    private Node deleteMax(Node x) {
+    private Node deleteMax(final Node x) {
         if (x.right == null) {
             return x.left;
         }
@@ -484,7 +484,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
      *
      * @param      key   The key
      */
-    public void delete(Book key) {
+    public void delete(final Book key) {
 
         root = delete(root, key);
     }
@@ -497,8 +497,10 @@ class BinaryST<Key extends Comparable<Key>, Value> {
      *
      * @return     { Node }
      */
-    private Node delete(Node x, Book key) {
-        if (x == null) return null;
+    private Node delete(Node x, final Book key) {
+        if (x == null) {
+            return null;
+        }
 
         int cmp = key.compareTo(x.key);
         if      (cmp < 0) {

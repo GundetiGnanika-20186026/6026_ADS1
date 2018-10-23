@@ -1,9 +1,4 @@
 Starting audit...
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m20\20.1 BST\Solution.java:445:28: Parameter x should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m20\20.1 BST\Solution.java:471:28: Parameter x should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m20\20.1 BST\Solution.java:487:24: Parameter key should be final. [FinalParameters]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m20\20.1 BST\Solution.java:500:25: Parameter x should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m20\20.1 BST\Solution.java:500:33: Parameter key should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m20\20.1 BST\Solution.java:501: 'if' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 1 errors.
