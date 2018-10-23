@@ -6,6 +6,7 @@ import java.util.Scanner;
 public final class Solution {
     /**
      * Constructs the object.
+     * its complexity is O(NlogN)
      */
     private Solution() {
     }
