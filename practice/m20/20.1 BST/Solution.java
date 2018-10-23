@@ -492,7 +492,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
      */
     public String toString(final Book obj) {
         //System.out.println("came....");
-        if (obj == null){
+        if (obj == null) {
             return null;
         }
 
