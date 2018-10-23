@@ -426,29 +426,52 @@ class BinaryST<Key extends Comparable<Key>, Value> {
         }
     }
 
+    /**
+     * this method will delete the minimum node.
+     */
     public void deleteMin() {
-        //if (isEmpty()) throw new NoSuchElementException("Symbol table underflow");
+
         root = deleteMin(root);
-        //assert check();
+
     }
 
+    /**
+     * returns the root node after deleteing the minimum node.
+     *
+     * @param      x     { root node x }
+     *
+     * @return     { node }
+     */
     private Node deleteMin(Node x) {
-        if (x.left == null) return x.right;
+        if (x.left == null) {
+            return x.right;
+        }
         x.left = deleteMin(x.left);
         x.size = size(x.left) + size(x.right) + 1;
         return x;
     }
 
 
-
+    /**
+     * This method will delete the maximum node.
+     */
     public void deleteMax() {
-        //if (isEmpty()) throw new NoSuchElementException("Symbol table underflow");
+
         root = deleteMax(root);
-        //assert check();
+
     }
 
+    /**
+     * returns the root node after deleting the maximum node.
+     *
+     * @param      x     { root node x }
+     *
+     * @return     { node }
+     */
     private Node deleteMax(Node x) {
-        if (x.right == null) return x.left;
+        if (x.right == null) {
+            return x.left;
+        }
         x.right = deleteMax(x.right);
         x.size = size(x.left) + size(x.right) + 1;
         return x;
@@ -456,22 +479,41 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 
 
 
-
+    /**
+     * This method will delete the given key.
+     *
+     * @param      key   The key
+     */
     public void delete(Book key) {
-        //if (key == null) throw new IllegalArgumentException("calls delete() with a null key");
+
         root = delete(root, key);
-        //assert check();
     }
 
+    /**
+     * { will return the root node }.
+     *
+     * @param      x     { root node }
+     * @param      key   key to be deleted
+     *
+     * @return     { Node }
+     */
     private Node delete(Node x, Book key) {
         if (x == null) return null;
 
         int cmp = key.compareTo(x.key);
-        if      (cmp < 0) x.left  = delete(x.left,  key);
-        else if (cmp > 0) x.right = delete(x.right, key);
+        if      (cmp < 0) {
+              x.left  = delete(x.left,  key);
+        }
+        else if (cmp > 0) {
+            x.right = delete(x.right, key);
+        }
         else {
-            if (x.right == null) return x.left;
-            if (x.left  == null) return x.right;
+            if (x.right == null) {
+                return x.left;
+            }
+            if (x.left  == null) {
+                return x.right;
+            }
             Node t = x;
             x = min(t.right);
             x.right = deleteMin(t.right);
