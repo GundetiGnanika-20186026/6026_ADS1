@@ -20,5 +20,6 @@ Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m20\20.1 BST\Solution.java:471: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m20\20.1 BST\Solution.java:473: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m20\20.1 BST\Solution.java:474: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m20\20.1 BST\Solution.java:495:25: '{' is not preceded with whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 21 errors.
+Checkstyle ends with 22 errors.
