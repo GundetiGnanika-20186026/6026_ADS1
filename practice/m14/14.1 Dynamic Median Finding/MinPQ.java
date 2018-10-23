@@ -281,64 +281,7 @@ class MinPQ<Key> {//implements Iterable<Key> {
     }
 
 
-    // /**
-    //  * Returns an iterator that iterates over the keys on this priority queue
-    //  * in ascending order.
-    //  *
-    //  * @return     { description_of_the_return_value }
-    //  */
-    // public Iterator<Key> iterator() {
-    //     return new HeapIterator();
-    // }
 
-    // /**
-    //  * Class for heap iterator.
-    //  */
-    // private class HeapIterator implements Iterator<Key> {
-    //     /**
-    //      * create a new pq.
-    //      */
-    //     private MinPQ<Key> copy;
-
-    //     /**
-    //      * add all items to copy of heap.
-    //      * takes linear time since already in heap order so no keys move
-    //      */
-    //     HeapIterator() {
-    //         if (comparator == null) {
-    //             copy = new MinPQ<Key>(size());
-    //         } else {
-    //             copy = new MinPQ<Key>(size(), comparator);
-    //         }
-    //         for (int i = 1; i <= n; i++) {
-    //             copy.insert(pq[i]);
-    //         }
-    //     }
-    //     /**
-    //      * Determines if it has next.
-    //      *
-    //      * @return     True if has next, False otherwise.
-    //      */
-    //     public boolean hasNext() {
-    //         return !copy.isEmpty();
-    //     }
-
-    //     /**
-    //      * remove function.
-    //      */
-    //     public void remove() {
-    //         throw new UnsupportedOperationException();
-    //     }
-    //     /**
-    //      * next function.
-    //      *
-    //      * @return     { description_of_the_return_value }
-    //      */
-        // public Key next() {
-        //     if (!hasNext()) {
-        //         throw new NoSuchElementException();
-        //     }
-        //     return copy.delMin();
         }
 
 
