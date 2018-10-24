@@ -140,7 +140,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 
     /**
      * { This method will return the value of given key
-     * its complexity is O(logN) as we are
+     * its complexity is O(N) as we are
      *  not iterating through the entire list}.
      *
      * @param      key   The key
@@ -154,7 +154,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 
     /**
      * { This method will return the value of given key
-     * its complexity is O(logN) as we are
+     * its complexity is O(N) as we are
      *  not iterating through the entire list }.
      *
      * @param      node     { root node }.
