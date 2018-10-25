@@ -28,7 +28,7 @@ class HashST<Key, Value> {
     /**
      * Constructs the object.
      */
-    public HashST() {
+    HashST() {
         this(INIT_CAPACITY);
     }
 
@@ -38,11 +38,12 @@ class HashST<Key, Value> {
      * @param      m     { capacity of hash table }
      */
 
-    public HashST(final int m) {
+    HashST(final int m1) {
         this.m = m;
         st = (SequentialSearchST<Key, Value>[]) new SequentialSearchST[m];
-        for (int i = 0; i < m; i++)
+        for (int i = 0; i < m; i++) {
             st[i] = new SequentialSearchST<Key, Value>();
+        }
     }
 
     /**
@@ -54,7 +55,8 @@ class HashST<Key, Value> {
      * @return     { value where the node to be placed }
      */
     private int hash(final Key key) {
-        return (key.hashCode() & 0x7fffffff) % m;
+        final int num = 0x7fffffff;
+        return (key.hashCode() & num) % m;
     }
     /**
      * returns size.
