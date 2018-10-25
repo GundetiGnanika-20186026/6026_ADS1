@@ -146,7 +146,7 @@ class SequentialSearchST<Key, Value> {
          * @param      next  The next
          */
 
-        public Node(Key key, Value val, Node next)  {
+        public Node(final Key key, final Value val, final Node next)  {
             this.key  = key;
             this.val  = val;
             this.next = next;
