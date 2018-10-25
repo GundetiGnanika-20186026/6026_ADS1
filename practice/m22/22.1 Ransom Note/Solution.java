@@ -28,21 +28,22 @@ class HashST<Key, Value> {
     /**
      * Constructs the object.
      */
-    public HashST() {
+    HashST() {
         this(INIT_CAPACITY);
     }
 
     /**
      * Constructs the object.
      *
-     * @param      m     { capacity of hash table }
+     * @param      m1     { capacity of hash table }
      */
 
      HashST(final int m1) {
         this.m = m1;
         st = (SequentialSearchST<Key, Value>[]) new SequentialSearchST[m];
-        for (int i = 0; i < m; i++)
+        for (int i = 0; i < m; i++) {
             st[i] = new SequentialSearchST<Key, Value>();
+        }
     }
 
     /**
