@@ -101,7 +101,9 @@ class HashST<Key, Value> {
      */
     public void put(final Key key, final Value val) {
         int i = hash(key);
-        if (!st[i].contains(key)) n++;
+        if (!st[i].contains(key)) {
+            n++;
+        }
         st[i].put(key, val);
     }
 }
@@ -224,8 +226,9 @@ class SequentialSearchST<Key, Value> {
     public Value get(final Key key) {
 
         for (Node x = first; x != null; x = x.next) {
-            if (key.equals(x.key))
+            if (key.equals(x.key)) {
                 return x.val;
+            }
         }
         return null;
     }
