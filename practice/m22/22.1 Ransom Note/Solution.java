@@ -242,11 +242,11 @@ class SequentialSearchST<Key, Value> {
  * Class for solution.
  */
 
-class Solution {
+public class Solution {
     /**
      * Constructs the object.
      */
-    Solution(){
+    Solution() {
 
     }
     /**
