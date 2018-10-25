@@ -55,8 +55,8 @@ class HashST<Key, Value> {
      * @return     { value where the node to be placed }
      */
     private int hash(final Key key) {
-        final int num = 0x7fffffff;
-        return (key.hashCode() & num) % m;
+
+        return (key.hashCode() & 0x7fffffff) % m;
     }
     /**
      * returns size.
@@ -102,7 +102,9 @@ class HashST<Key, Value> {
      */
     public void put(final Key key, final Value val) {
         int i = hash(key);
-        if (!st[i].contains(key)) n++;
+        if (!st[i].contains(key)) {
+            n++;
+        }
         st[i].put(key, val);
     }
 }
@@ -148,10 +150,10 @@ class SequentialSearchST<Key, Value> {
          * @param      next  The next
          */
 
-        public Node(Key key, Value val, Node next)  {
-            this.key  = key;
-            this.val  = val;
-            this.next = next;
+        Node(final Key key1, final Value val1, final Node next1)  {
+            this.key  = key1;
+            this.val  = val1;
+            this.next = next1;
         }
     }
 
@@ -202,7 +204,7 @@ class SequentialSearchST<Key, Value> {
      * @param      key   The key
      * @param      val   The value
      */
-    public void put(final Key key,final Value val) {
+    public void put(final Key key, final Value val) {
 
         for (Node x = first; x != null; x = x.next) {
             if (key.equals(x.key)) {
