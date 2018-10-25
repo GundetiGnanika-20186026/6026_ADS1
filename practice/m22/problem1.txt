@@ -1,0 +1,5 @@
+Public int hashCode() {
+return 17;
+}
+
+This is legal but gives poor performance as all the keys inserted will have the same hash code.
