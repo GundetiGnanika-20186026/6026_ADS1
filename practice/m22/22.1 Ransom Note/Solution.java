@@ -160,7 +160,7 @@ class SequentialSearchST<Key, Value> {
      * Constructs the object.
      */
 
-    public SequentialSearchST() {
+    SequentialSearchST() {
     }
 
     /**
@@ -203,7 +203,7 @@ class SequentialSearchST<Key, Value> {
      * @param      key   The key
      * @param      val   The value
      */
-    public void put(final Key key,final Value val) {
+    public void put(final Key key, final Value val) {
 
         for (Node x = first; x != null; x = x.next) {
             if (key.equals(x.key)) {

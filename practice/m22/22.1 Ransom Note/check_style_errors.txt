@@ -1,8 +1,6 @@
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m22\22.1 Ransom Note\Solution.java:58:34: '0x7fffffff' is a magic number. [MagicNumber]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m22\22.1 Ransom Note\Solution.java:163:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m22\22.1 Ransom Note\Solution.java:206:35: ',' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m22\22.1 Ransom Note\Solution.java:245:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m22\22.1 Ransom Note\Solution.java:249:15: '{' is not preceded with whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 5 errors.
+Checkstyle ends with 3 errors.
