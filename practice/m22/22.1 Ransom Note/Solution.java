@@ -38,8 +38,8 @@ class HashST<Key, Value> {
      * @param      m     { capacity of hash table }
      */
 
-    public HashST(final int m) {
-        this.m = m;
+     HashST(final int m1) {
+        this.m = m1;
         st = (SequentialSearchST<Key, Value>[]) new SequentialSearchST[m];
         for (int i = 0; i < m; i++)
             st[i] = new SequentialSearchST<Key, Value>();
@@ -146,7 +146,7 @@ class SequentialSearchST<Key, Value> {
          * @param      next  The next
          */
 
-        public Node(final Key key, final Value val, final Node next)  {
+         Node(final Key key, final Value val, final Node next)  {
             this.key  = key;
             this.val  = val;
             this.next = next;
