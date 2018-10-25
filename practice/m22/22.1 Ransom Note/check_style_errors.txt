@@ -1,4 +1,4 @@
 Starting audit...
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m22\22.1 Ransom Note\Solution.java:58:34: '0x7fffffff' is a magic number. [MagicNumber]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m22\22.1 Ransom Note\Solution.java:4: Missing a Javadoc comment. [JavadocType]
 Audit done.
 Checkstyle ends with 1 errors.
