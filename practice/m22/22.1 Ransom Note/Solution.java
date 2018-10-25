@@ -142,15 +142,15 @@ class SequentialSearchST<Key, Value> {
         /**
          * Constructs the object.
          *
-         * @param      key   The key
-         * @param      val   The value
-         * @param      next  The next
+         * @param      key1   The key
+         * @param      val1   The value
+         * @param      next1  The next
          */
 
-         Node(final Key key, final Value val, final Node next)  {
-            this.key  = key;
-            this.val  = val;
-            this.next = next;
+         Node(final Key key1, final Value val1, final Node next1)  {
+            this.key  = key1;
+            this.val  = val1;
+            this.next = next1;
         }
     }
 

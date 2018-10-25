@@ -1,13 +1,10 @@
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m22\22.1 Ransom Note\Solution.java:58:34: '0x7fffffff' is a magic number. [MagicNumber]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m22\22.1 Ransom Note\Solution.java:104: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m22\22.1 Ransom Note\Solution.java:150:25: 'key' hides a field. [HiddenField]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m22\22.1 Ransom Note\Solution.java:150:42: 'val' hides a field. [HiddenField]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m22\22.1 Ransom Note\Solution.java:150:58: 'next' hides a field. [HiddenField]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m22\22.1 Ransom Note\Solution.java:161:5: Redundant 'public' modifier. [RedundantModifier]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m22\22.1 Ransom Note\Solution.java:204:35: ',' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m22\22.1 Ransom Note\Solution.java:227: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m22\22.1 Ransom Note\Solution.java:242:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m22\22.1 Ransom Note\Solution.java:246:15: '{' is not preceded with whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 10 errors.
+Checkstyle ends with 7 errors.
