@@ -154,6 +154,14 @@ class Solution {
                 break;
                 case "display" :
                     obj.display();
+                break;
+                case "get" :
+                    System.out.println(obj.get(command[1]));
+                break;
+                case "delete" :
+                    obj.delete(command[1]);
+                    obj.display();
+                break;
 
 
 
