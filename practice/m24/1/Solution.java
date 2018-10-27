@@ -93,6 +93,7 @@ final class Solution {
         Scanner scan = new Scanner(System.in);
         int num = Integer.parseInt(scan.nextLine());
         LinearProbingHashST obj = new LinearProbingHashST();
+       // LinearProbingHashST<Key, Value> obj = new LinearProbingHashST<Key, Value>();
         Student seperate = new Student();
         for (int i = 0; i < num; i++) {
             String[] student = scan.nextLine().split(",");
@@ -106,13 +107,14 @@ final class Solution {
             switch (command[0]) {
             case "get" :
 
-                if(Integer.parseInt(command[2]) == 1)
+                ///if(Integer.parseInt(command[2]) == 1)
                 ///seperate.toString(obj.get(command[1]),Integer.parseInt(command[2]));
                // System.out.println((obj.get(command[1])).getName());
-                if(Integer.parseInt(command[2]) == 2)
+                ///if(Integer.parseInt(command[2]) == 2)
                 //System.out.println((obj.get(command[1])).getMarks());
                /// seperate.toString(obj.get(command[1]),Integer.parseInt(command[2]));
                 System.out.println(obj.get(command[1]));
+
                 break;
             default:
                 break;

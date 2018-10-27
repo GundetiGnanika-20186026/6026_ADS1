@@ -111,6 +111,7 @@ class LinearProbingHashST<Key, Value> {
      * @param      val   The value
      */
     public void put(final Key key, final Value val) {
+        System.out.println("entered");
 
         if (n >= m / 2) {
             resize(2 * m);
