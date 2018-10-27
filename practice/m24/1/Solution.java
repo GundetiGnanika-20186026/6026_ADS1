@@ -30,10 +30,10 @@ class Student {
     // Stringrollno;
     String name;
     Double marks;
-    Student(){
+    Student() {
 
     }
-    Student(String name1, Double marks1) {
+    Student(final String name1, final  Double marks1) {
         // rollno = roll;
         name = name1;
         marks = marks1;
@@ -47,7 +47,7 @@ class Student {
     //     return marks;
     // }
 
-    public String toString(Student obj){
+    public String toString(final Student obj) {
         System.out.println("entered...");
 
         //System.out.println(obj.name);
@@ -61,7 +61,7 @@ class Student {
         // }
     }
 
-    }
+}
 
 
 
@@ -71,14 +71,20 @@ class Student {
 /**
  * Class for solution.
  */
-class Solution {
+final class Solution {
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+
+    }
     /**
      * main method.
      *
      * @param      args  The arguments
      */
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         int num = Integer.parseInt(scan.nextLine());
         LinearProbingHashST obj = new LinearProbingHashST();
@@ -90,16 +96,16 @@ class Solution {
 
         }
         int cmd = Integer.parseInt(scan.nextLine());
-        for(int i = 0; i < cmd; i++) {
+        for (int i = 0; i < cmd; i++) {
             String[] command = scan.nextLine().split(" ");
-            switch(command[0]){
-                case "get" :
-                    // seperate.toString(obj.get(command[1]),Integer.parseInt(command[2]));
-                    // if(Integer.parseInt(command[2]) == 1)
-                    // System.out.println((obj.get(command[1])).getName());
-                    // if(Integer.parseInt(command[2]) == 2)
-                    // System.out.println((obj.get(command[1])).getMarks());
-                    System.out.println(obj.get(command[1]));
+            switch (command[0]) {
+            case "get" :
+                // seperate.toString(obj.get(command[1]),Integer.parseInt(command[2]));
+                // if(Integer.parseInt(command[2]) == 1)
+                // System.out.println((obj.get(command[1])).getName());
+                // if(Integer.parseInt(command[2]) == 2)
+                // System.out.println((obj.get(command[1])).getMarks());
+                System.out.println(obj.get(command[1]));
                 break;
             }
         }
