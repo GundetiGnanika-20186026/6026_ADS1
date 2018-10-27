@@ -113,7 +113,7 @@ final class Solution {
                 ///if(Integer.parseInt(command[2]) == 2)
                 //System.out.println((obj.get(command[1])).getMarks());
                /// seperate.toString(obj.get(command[1]),Integer.parseInt(command[2]));
-                System.out.println(obj.get(command[1]));
+                System.out.println((obj.get(command[1])));
 
                 break;
             default:
