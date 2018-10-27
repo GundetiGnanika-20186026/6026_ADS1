@@ -1,8 +1,8 @@
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m24\1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m24\1\Solution.java:9: First sentence should end with a period. [JavadocStyle]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m24\1\Solution.java:13: First sentence should end with a period. [JavadocStyle]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m24\1\Solution.java:90: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m24\1\Solution.java:99: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m24\1\Solution.java:8: First sentence should end with a period. [JavadocStyle]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m24\1\Solution.java:12: First sentence should end with a period. [JavadocStyle]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m24\1\Solution.java:89: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m24\1\Solution.java:98: Line is longer than 80 characters (found 87). [LineLength]
 Audit done.
 Checkstyle ends with 5 errors.
