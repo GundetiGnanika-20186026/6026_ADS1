@@ -40,6 +40,13 @@ class Student {
     //     return marks;
     // }
 
+    /**
+     * Returns a string representation of the object.
+     *
+     * @param      obj   The object
+     *
+     * @return     String representation of the object.
+     */
     public String toString(final Student obj) {
         System.out.println("entered...");
 
@@ -55,10 +62,6 @@ class Student {
     }
 
 }
-
-
-
-
 
 
 /**
