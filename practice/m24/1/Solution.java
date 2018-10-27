@@ -31,13 +31,23 @@ class Student {
         marks = marks1;
     }
 
-    // public String getName(){
-    //     return name;
-    // }
+    /**
+     * Gets the name.
+     *
+     * @return     The name.
+     */
+    public String getName(){
+        return name;
+    }
 
-    // public Double getMarks(){
-    //     return marks;
-    // }
+    /**
+     * Gets the marks.
+     *
+     * @return     The marks.
+     */
+    public Double getMarks(){
+        return marks;
+    }
 
     /**
      * Returns a string representation of the object.
@@ -46,18 +56,18 @@ class Student {
      *
      * @return     String representation of the object.
      */
-    public String toString(final Student obj) {
+    public void toString(Student obj, int num) {
         System.out.println("entered...");
 
         //System.out.println(obj.name);
-        return obj.name;
+        //return obj.name;
 
-        // if(num == 1) {
-        //     System.out.println(obj.name);
-        // }
-        // if(num == 2) {
-        //     System.out.println(obj.marks);
-        // }
+        if(num == 1) {
+            System.out.println(obj.name);
+        }
+        if(num == 2) {
+            System.out.println(obj.marks);
+        }
     }
 
 }
@@ -95,11 +105,13 @@ final class Solution {
             String[] command = scan.nextLine().split(" ");
             switch (command[0]) {
             case "get" :
-                // seperate.toString(obj.get(command[1]),Integer.parseInt(command[2]));
-                // if(Integer.parseInt(command[2]) == 1)
-                // System.out.println((obj.get(command[1])).getName());
-                // if(Integer.parseInt(command[2]) == 2)
-                // System.out.println((obj.get(command[1])).getMarks());
+
+                if(Integer.parseInt(command[2]) == 1)
+                ///seperate.toString(obj.get(command[1]),Integer.parseInt(command[2]));
+               // System.out.println((obj.get(command[1])).getName());
+                if(Integer.parseInt(command[2]) == 2)
+                //System.out.println((obj.get(command[1])).getMarks());
+               /// seperate.toString(obj.get(command[1]),Integer.parseInt(command[2]));
                 System.out.println(obj.get(command[1]));
                 break;
             default:
