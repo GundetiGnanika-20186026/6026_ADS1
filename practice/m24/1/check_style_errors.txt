@@ -1,14 +1,9 @@
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m24\1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m24\1\Solution.java:31:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m24\1\Solution.java:31:12: Variable 'name' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m24\1\Solution.java:32:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m24\1\Solution.java:32:12: Variable 'marks' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m24\1\Solution.java:33:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m24\1\Solution.java:36:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m24\1\Solution.java:50:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m24\1\Solution.java:94: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m24\1\Solution.java:101: switch without "default" clause. [MissingSwitchDefault]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m24\1\Solution.java:103: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m24\1\Solution.java:9: First sentence should end with a period. [JavadocStyle]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m24\1\Solution.java:13: First sentence should end with a period. [JavadocStyle]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m24\1\Solution.java:43:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m24\1\Solution.java:87: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m24\1\Solution.java:96: Line is longer than 80 characters (found 87). [LineLength]
 Audit done.
-Checkstyle ends with 11 errors.
+Checkstyle ends with 6 errors.

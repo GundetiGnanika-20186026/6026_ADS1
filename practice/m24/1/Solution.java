@@ -1,26 +1,3 @@
-// class List {
-//     Student[] array;
-//     int size;
-//     List() {
-//         array = new array[50];
-//         size = 0;
-
-//     }
-
-//     public void put(Student obj) {
-//         array[size++] = obj;
-//     }
-
-//     public void get(String rollno, int Student) {
-//         if (Student == 1) {
-//             for (int i = 0; i < size; i++) {
-
-
-//             }
-
-//         }
-//     }
-// }
 import java.util.Scanner;
 /**
  * Class for student.
@@ -28,11 +5,27 @@ import java.util.Scanner;
 
 class Student {
     // Stringrollno;
-    String name;
-    Double marks;
+
+    /**
+     * student name
+     */
+    private String name;
+    /**
+     * Student marks
+     */
+    private Double marks;
+    /**
+     * Constructs the object.
+     */
     Student() {
 
     }
+    /**
+     * Constructs the object.
+     *
+     * @param      name1   The name 1
+     * @param      marks1  The marks 1
+     */
     Student(final String name1, final  Double marks1) {
         // rollno = roll;
         name = name1;
@@ -106,6 +99,8 @@ final class Solution {
                 // if(Integer.parseInt(command[2]) == 2)
                 // System.out.println((obj.get(command[1])).getMarks());
                 System.out.println(obj.get(command[1]));
+                break;
+            default:
                 break;
             }
         }
