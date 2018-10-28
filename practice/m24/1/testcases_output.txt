@@ -59,14 +59,14 @@ entered
 entered
 entered
 entered
-Student@e580929
-Student@1cd072a9
-Student@7c75222b
-Student@4c203ea1
-Student@27f674d
-Student@1d251891
-Student@48140564
-Student@58ceff1
+Clark
+Rivest
+Abegg
+Fred
+Wayne
+Alice
+Bob
+John
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -191,19 +191,19 @@ entered
 entered
 entered
 entered
-Student@e580929
-Student@1cd072a9
-Student@7c75222b
-Student@4c203ea1
-Student@27f674d
-Student@1d251891
-Student@48140564
-Student@58ceff1
-Student@7c30a502
-Student@27f674d
-Student@49e4cb85
-Student@2133c8f8
-Student@43a25848
+Knuth
+Bob
+Clark
+Rivest
+Abegg
+Access
+Wayne
+Alice
+John
+Abegg
+Hank
+Keith
+Jeannette Caines
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -332,23 +332,21 @@ entered
 entered
 entered
 entered
-Student@e580929
-Student@1cd072a9
-Student@7c75222b
-Student@4c203ea1
-Student@27f674d
-Student@1d251891
-Student@48140564
-Student@58ceff1
-Student@7c30a502
-Student@27f674d
-Student@49e4cb85
-Student@2133c8f8
-Student@43a25848
-null
-null
-null
-null
+Knuth
+Bob
+Clark
+Rivest
+Abegg
+Access
+Wayne
+Alice
+John
+Abegg
+Hank
+Deborah Cadbury
+Jeannette Caines
+Exception in thread "main" java.lang.NullPointerException
+	at Solution.main(Solution.java:117)
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -1663,504 +1661,337 @@ entered
 entered
 entered
 entered
-Student@e580929
-Student@1cd072a9
-Student@7c75222b
-Student@4c203ea1
-Student@27f674d
-Student@1d251891
-Student@48140564
-Student@58ceff1
-Student@7c30a502
-Student@1cd072a9
-Student@49e4cb85
-Student@2133c8f8
-Student@43a25848
-Student@3ac3fd8b
-Student@5594a1b5
-Student@6a5fc7f7
-Student@3b6eb2ec
-Student@1e643faf
-Student@6e8dacdf
-Student@7a79be86
-Student@34ce8af7
-Student@b684286
-Student@880ec60
-Student@3f3afe78
-Student@7f63425a
-Student@36d64342
-Student@39ba5a14
-Student@511baa65
-Student@340f438e
-Student@30c7da1e
-Student@5b464ce8
-Student@57829d67
-Student@19dfb72a
-Student@17c68925
-Student@7e0ea639
-Student@3d24753a
-Student@43a25848
-Student@59a6e353
-Student@7a0ac6e3
-Student@71be98f5
-Student@49e4cb85
-Student@1cd072a9
-Student@49e4cb85
-Student@6a5fc7f7
-Student@6fadae5d
-Student@17f6480
-Student@2d6e8792
-Student@2812cbfa
-Student@2acf57e3
-Student@506e6d5e
-Student@96532d6
-Student@3796751b
-Student@3f3afe78
-Student@49e4cb85
-Student@67b64c45
-Student@6fadae5d
-Student@4411d970
-Student@6442b0a6
-Student@19dfb72a
-Student@60f82f98
-Student@35f983a6
-Student@7f690630
-Student@edf4efb
-Student@2f7a2457
-Student@566776ad
-Student@6108b2d7
-Student@1554909b
-Student@6bf256fa
-Student@17f6480
-Student@6cd8737
-Student@1e643faf
-Student@58ceff1
-Student@22f71333
-Student@13969fbe
-Student@6aaa5eb0
-Student@3498ed
-Student@1a407d53
-Student@3d8c7aca
-Student@5ebec15
-Student@21bcffb5
-Student@7c75222b
-Student@380fb434
-Student@668bc3d5
-Student@3cda1055
-Student@7a5d012c
-Student@3fb6a447
-Student@79b4d0f
-Student@566776ad
-Student@6b2fad11
-Student@5594a1b5
-Student@79698539
-Student@7a0ac6e3
-Student@73f792cf
-Student@2ed94a8b
-Student@38082d64
-Student@dfd3711
-Student@1cd072a9
-Student@42d3bd8b
-Student@26ba2a48
-Student@71be98f5
-Student@5f2050f6
-Student@3b81a1bc
-Student@380fb434
-Student@71be98f5
-Student@48140564
-Student@79698539
-Student@64616ca2
-Student@13fee20c
-Student@4e04a765
-Student@783e6358
-Student@668bc3d5
-Student@17550481
-Student@34ce8af7
-Student@3b81a1bc
-Student@48140564
-Student@735f7ae5
-Student@2812cbfa
-Student@7a79be86
-Student@2812cbfa
-Student@3ac3fd8b
-Student@668bc3d5
-Student@180bc464
-Student@1324409e
-Student@2c6a3f77
-Student@246ae04d
-Student@246ae04d
-Student@13fee20c
-Student@3ac3fd8b
-Student@3cda1055
-Student@62043840
-Student@26ba2a48
-Student@7c30a502
-Student@6b2fad11
-Student@7c75222b
-Student@7a79be86
-Student@4c203ea1
-Student@5315b42e
-Student@735f7ae5
-Student@22f71333
-Student@7a0ac6e3
-Student@2ef9b8bc
-Student@6108b2d7
-Student@5d624da6
-Student@1e67b872
-Student@380fb434
-Student@60addb54
-Student@60addb54
-Student@3f2a3a5
-Student@4cb2c100
-Student@6fb554cc
-Student@1d251891
-Student@614c5515
-Student@77b52d12
-Student@2d554825
-Student@1a407d53
-Student@6fadae5d
-Student@6b2fad11
-Student@b684286
-Student@68837a77
-Student@6be46e8f
-Student@3567135c
-Student@1324409e
-Student@327471b5
-Student@4157f54e
-Student@3cda1055
-Student@42d3bd8b
-Student@2133c8f8
-Student@90f6bfd
-Student@47f6473
-Student@6cd8737
-Student@b684286
-Student@15975490
-Student@6b143ee9
-Student@3fb6a447
-Student@49e4cb85
-Student@1e643faf
-Student@3cda1055
-Student@1936f0f5
-Student@e580929
-Student@6615435c
-Student@4909b8da
-Student@3ac3fd8b
-Student@3a03464
-Student@2d3fcdbd
-Student@617c74e5
-Student@6aaa5eb0
-Student@6537cf78
-Student@735f7ae5
-Student@4411d970
-Student@1936f0f5
-Student@1cd072a9
-Student@17550481
-Student@6b143ee9
-Student@38082d64
-Student@e580929
-Student@7c30a502
-Student@4909b8da
-Student@735f7ae5
-Student@67b6d4ae
-Student@57829d67
-Student@34b7bfc0
-Student@366e2eef
-Student@6df97b55
-Student@3cbbc1e0
-Student@35fb3008
-Student@1324409e
-Student@7a0ac6e3
-Student@47f6473
-Student@22f71333
-Student@1936f0f5
-Student@3796751b
-Student@7225790e
-Student@6537cf78
-Student@54a097cc
-Student@7c30a502
-Student@dfd3711
-Student@6b2fad11
-Student@3f3afe78
-Student@36f6e879
-Student@5a61f5df
-Student@3551a94
-Student@668bc3d5
-Student@531be3c5
-Student@340f438e
-Student@783e6358
-Student@6108b2d7
-Student@3b6eb2ec
-Student@52af6cff
-Student@735b478
-Student@58ceff1
-Student@2c9f9fb0
-Student@36f6e879
-Student@3cda1055
-Student@b684286
-Student@327471b5
-Student@566776ad
-Student@2096442d
-Student@2ed94a8b
-Student@9f70c54
-Student@234bef66
-Student@2acf57e3
-Student@737996a0
-Student@2096442d
-Student@61dc03ce
-Student@50f8360d
-Student@42d3bd8b
-Student@3f2a3a5
-Student@380fb434
-Student@3796751b
-Student@6be46e8f
-Student@2d6e8792
-Student@17f6480
-Student@2cb4c3ab
-Student@64616ca2
-Student@5f2050f6
-Student@13c78c0b
-Student@67b6d4ae
-Student@4411d970
-Student@2cb4c3ab
-Student@3796751b
-Student@12843fce
-Student@17f6480
-Student@35f983a6
-Student@35fb3008
-Student@edf4efb
-Student@1936f0f5
-Student@380fb434
-Student@3dd3bcd
-Student@30c7da1e
-Student@6615435c
-Student@6a5fc7f7
-Student@3567135c
-Student@77b52d12
-Student@3d8c7aca
-Student@97e1986
-Student@4c203ea1
-Student@4157f54e
-Student@6e8dacdf
-Student@26f67b76
-Student@3796751b
-Student@6a5fc7f7
-Student@96532d6
-Student@50f8360d
-Student@7c30a502
-Student@153f5a29
-Student@1cd072a9
-Student@3fb6a447
-Student@b684286
-Student@6aaa5eb0
-Student@3cbbc1e0
-Student@e580929
-Student@7f560810
-Student@1cd072a9
-Student@3ac3fd8b
-Student@22f71333
-Student@1e67b872
-Student@6aaa5eb0
-Student@2c6a3f77
-Student@7f63425a
-Student@69d9c55
-Student@6a5fc7f7
-Student@26ba2a48
-Student@54a097cc
-Student@13a57a3b
-Student@2ed94a8b
-Student@2133c8f8
-Student@1324409e
-Student@90f6bfd
-Student@735b478
-Student@7ca48474
-Student@3ac3fd8b
-Student@337d0578
-Student@79b4d0f
-Student@59e84876
-Student@614c5515
-Student@3498ed
-Student@6a5fc7f7
-Student@60f82f98
-Student@96532d6
-Student@77b52d12
-Student@49e4cb85
-Student@61a485d2
-Student@39fb3ab6
-Student@6cd8737
-Student@71be98f5
-Student@34ce8af7
-Student@97e1986
-Student@2096442d
-Student@7ca48474
-Student@246ae04d
-Student@6276ae34
-null
-Student@7946e1f4
-Student@54a097cc
-Student@3cda1055
-Student@506e6d5e
-Student@234bef66
-Student@48140564
-Student@327471b5
-Student@880ec60
-Student@3c09711b
-Student@1d251891
-Student@3cbbc1e0
-Student@3d8c7aca
-Student@2ed94a8b
-Student@71be98f5
-Student@5cc7c2a6
-Student@2ef9b8bc
-Student@b97c004
-Student@4590c9c3
-Student@4590c9c3
-Student@67b6d4ae
-Student@27f674d
-Student@6fadae5d
-Student@340f438e
-Student@26f67b76
-Student@6276ae34
-Student@19dfb72a
-Student@17550481
-Student@3ac3fd8b
-Student@32e6e9c3
-Student@7a0ac6e3
-Student@7f560810
-Student@180bc464
-Student@13969fbe
-Student@5056dfcb
-Student@e580929
-Student@337d0578
-Student@60f82f98
-Student@6574b225
-Student@17f6480
-Student@17550481
-null
-Student@617c74e5
-Student@34b7bfc0
-Student@26ba2a48
-Student@17550481
-Student@3b81a1bc
-Student@3fb6a447
-Student@17f6480
-Student@7c75222b
-Student@57829d67
-Student@62043840
-Student@3d8c7aca
-Student@61dc03ce
-Student@2812cbfa
-Student@7a5d012c
-Student@2669b199
-Student@34ce8af7
-Student@68837a77
-Student@2344fc66
-Student@3f3afe78
-Student@458ad742
-Student@5afa04c
-Student@3551a94
-Student@735f7ae5
-Student@3cda1055
-Student@458ad742
-Student@5d624da6
-Student@50f8360d
-Student@6ea12c19
-Student@50f8360d
-Student@2133c8f8
-Student@6fadae5d
-Student@4e04a765
-Student@6442b0a6
-Student@67b6d4ae
-Student@3a03464
-Student@7946e1f4
-Student@dfd3711
-Student@6a024a67
-Student@19dfb72a
-Student@22f71333
-Student@32e6e9c3
-Student@7921b0a2
-Student@2133c8f8
-Student@506e6d5e
-Student@174d20a
-Student@66d2e7d9
-Student@2812cbfa
-Student@180bc464
-Student@1efbd816
-Student@97e1986
-Student@7225790e
-Student@43a25848
-Student@34ce8af7
-Student@39fb3ab6
-Student@3ac3fd8b
-Student@15975490
-Student@3f3afe78
-Student@57829d67
-Student@6442b0a6
-Student@7ca48474
-Student@42d3bd8b
-Student@3dd3bcd
-Student@13c78c0b
-Student@3551a94
-Student@1d251891
-Student@35f983a6
-Student@3d8c7aca
-Student@6a024a67
-Student@79698539
-Student@34b7bfc0
-Student@77b52d12
-Student@1936f0f5
-Student@62043840
-Student@96532d6
-Student@7c30a502
-Student@1936f0f5
-Student@6a2bcfcb
-Student@2344fc66
-Student@4de8b406
-null
-Student@6df97b55
-Student@34ce8af7
-Student@6aaa5eb0
-Student@3c756e4d
-Student@90f6bfd
-Student@6a5fc7f7
-Student@7c0e2abd
-Student@6cd8737
-Student@3c756e4d
-Student@340f438e
-Student@880ec60
-Student@e580929
-Student@617c74e5
-Student@26ba2a48
-Student@5315b42e
-Student@6b2fad11
-Student@2133c8f8
-Student@4411d970
-Student@4157f54e
-Student@48eff760
-Student@614c5515
-Student@402f32ff
-Student@573f2bb1
-Student@71be98f5
-Student@3dd3bcd
-Student@2d554825
-Student@38082d64
-Student@6df97b55
-Student@48eff760
-Student@5ae9a829
-Student@2812cbfa
-Student@4c203ea1
-Student@dfd3711
-Student@6615435c
-Student@340f438e
-Student@3fb6a447
-Student@90f6bfd
-Student@5b464ce8
-Student@3d24753a
-Student@5056dfcb
-Student@39fb3ab6
-Student@7a0ac6e3
-Student@5056dfcb
-Student@617c74e5
-Student@6d8a00e3
-Student@e580929
-Student@2d6e8792
+John Hale
+Michael Hale
+Steph Jagger
+Bradley Jackson
+Shannon Hale
+Madhur Jaffrey
+Ann-Marie MacDonald
+Ruth H. Jacobs
+Mary MacCracken
+Michael Hale
+Taylor Hackford
+Richard Jacoby
+Kady MacDonald Denton
+Kate Jacoby
+Charles B. Macdonald
+Laura Holmes Haddad
+David H. Hackworth
+Debra W. Haffner
+John Jacobs
+Richard Jackson
+Catherine Macaulay
+M MacCallum
+Ellie Macdonald
+Sophie Jaff
+Auston Habershaw
+Kathryn Jacobi
+Brad Haddin
+Gerry Hadden
+Kathryn Ma
+Charlie Haas
+T. T. Macan
+Simon Jacobson
+Carla Jablonski
+Stuart MacBride
+Keith Habersberger
+Meredith L. Jacobs
+Kady MacDonald Denton
+Sammy Hagar
+Tony Macaulay
+Ellen Jackson
+Taylor Hackford
+Michael Hale
+Taylor Hackford
+Laura Holmes Haddad
+Katharina Hagena
+Marilyn Hagerty
+Gracie MacGregor
+David Halberstam
+Michael Haag
+Norm MacDonald
+Chuck Hagel
+Gene Hackman
+Sophie Jaff
+Taylor Hackford
+Jenna Bush Hager
+Katharina Hagena
+Keach Hagey
+Colin Jack
+Carla Jablonski
+Margaret Peterson Haddix
+Bethany Hagen
+Aparna Jain
+Pamela Haag
+H3CZ
+Carrington MacDuffie
+Olivia Mace
+Alan Jacobs
+Alex James
+Marilyn Hagerty
+Kristin Halbrook
+Debra W. Haffner
+Ruth H. Jacobs
+Tracey Jackson
+Steve Hagen
+Kinley MacGregor
+Yossi Klein Halevi
+Nafisa Haji
+David Haig
+Mary Downing Hahn
+Roger Lea MacBride
+Steph Jagger
+Ian Jackman
+Peter Jackson
+Al Jaffee
+Guru Jagat
+William Hague
+Melissa Jacobs
+Carrington MacDuffie
+Nasim Marie Jafry
+Charles B. Macdonald
+Jane MacDougall
+Tony Macaulay
+Jeff MacGregor
+Cynthia Jabar
+Jerome A. Jackson
+Carla Hall
+Michael Hale
+James Macdonald
+A.N.D Haksar
+Ellen Jackson
+David Jacobs
+John Hornor Jacobs
+Ian Jackman
+Ellen Jackson
+Ann-Marie MacDonald
+Jane MacDougall
+Mark Haddon
+Amanda Hall
+Shaili Jain M.D.
+W. G. Hale
+Peter Jackson
+Dana C. Jack
+Catherine Macaulay
+John Hornor Jacobs
+Ann-Marie MacDonald
+Namita Jain
+David Halberstam
+Richard Jackson
+David Halberstam
+Kate Jacoby
+Peter Jackson
+Kellie Hailes
+Andrew Macdonald
+Howard Jacobson
+Bernie Mac
+Bernie Mac
+Amanda Hall
+Kate Jacoby
+Al Jaffee
+Tessa Hadley
+A.N.D Haksar
+Mary MacCracken
+Nasim Marie Jafry
+Steph Jagger
+Richard Jackson
+Bradley Jackson
+Michele Jaffe
+Namita Jain
+Tracey Jackson
+Tony Macaulay
+Jennifer Haigh
+Olivia Mace
+Shane Jacobson
+Don Hagen
+Ian Jackman
+Thomas Hackett
+Thomas Hackett
+Merle Haggard
+Mick Jackson
+Sarah Jacoby
+Madhur Jaffrey
+Vicky Hales-Dutton
+Philip MacDonald
+Derek Jacobi
+Nafisa Haji
+Katharina Hagena
+Nasim Marie Jafry
+M MacCallum
+Jeannette Haien
+Betty MacDonald
+Jessie Haas
+Andrew Macdonald
+Lynn F. Jacobs
+Robert Jackson
+Al Jaffee
+James Macdonald
+Richard Jacoby
+Daniel Hahn
+John W. Jacobs M.D.
+Kristin Halbrook
+M MacCallum
+Roger O.M.D. Jahnke
+Tracy Hafen
+William Hague
+Taylor Hackford
+Debra W. Haffner
+Al Jaffee
+Heather Hach
+John Hale
+Kathleen Hale
+Terrence J
+Kate Jacoby
+Andrew Jacobson
+Julie Mac
+Elaine Hall
+Kinley MacGregor
+Kennell Jackson
+Namita Jain
+Keach Hagey
+Heather Hach
+Michael Hale
+Dana C. Jack
+Tracy Hafen
+Jerome A. Jackson
+John Hale
+Mary MacCracken
+Terrence J
+Namita Jain
+Kevin MacAllister
+Simon Jacobson
+Bonnie MacBird
+Sheila Hale
+Mary Curran Hackett
+Ruby Jackson
+Sara MacDonald
+Andrew Macdonald
+Tony Macaulay
+John W. Jacobs M.D.
+Tracey Jackson
+Heather Hach
+Gene Hackman
+James B. Maas
+Kennell Jackson
+Rawi Hage
+Mary MacCracken
+Carla Hall
+Nasim Marie Jafry
+Sophie Jaff
+Bonnie MacBird
+Joie Jager-Hyman
+Emma Jackson
+Peter Jackson
+Jeremy Jackson
+Kathryn Ma
+W. G. Hale
+Olivia Mace
+David H. Hackworth
+Stuart B. MacBride
+Rachel Jacobs
+Ruth H. Jacobs
+Dana Jacobi
+Bonnie MacBird
+Al Jaffee
+M MacCallum
+Lynn F. Jacobs
+Carrington MacDuffie
+Annie Maccoby
+Cynthia Jabar
+Albert Jack
+William Haefeli
+Michael Haag
+Marylin Hafner
+Annie Maccoby
+Myla Jackson
+Baby Halder
+James Macdonald
+Merle Haggard
+Ian Jackman
+Gene Hackman
+Betty MacDonald
+Gracie MacGregor
+Marilyn Hagerty
+Araminta Hall
+Mark Haddon
+David Jacobs
+Libby Jackson
+Kevin MacAllister
+Keach Hagey
+Araminta Hall
+Gene Hackman
+Allan Hall
+Marilyn Hagerty
+Bethany Hagen
+Sara MacDonald
+Pamela Haag
+Heather Hach
+Ian Jackman
+Richard Mabey
+Charlie Haas
+Kathleen Hale
+Laura Holmes Haddad
+Jessie Haas
+Philip MacDonald
+David Haig
+Peter Haining
+Bradley Jackson
+Robert Jackson
+John Jacobs
+Shvetha Jaishankar
+Gene Hackman
+Laura Holmes Haddad
+Chuck Hagel
+Baby Halder
+Mary MacCracken
+Nate Jackson
+Michael Hale
+William Hague
+M MacCallum
+Kinley MacGregor
+Ruby Jackson
+John Hale
+Saskia Maarleveld
+Michael Hale
+Kate Jacoby
+Tracey Jackson
+Don Hagen
+Kinley MacGregor
+Howard Jacobson
+Auston Habershaw
+Bruce Hale
+Laura Holmes Haddad
+A.N.D Haksar
+Rawi Hage
+Jo Jackson King
+Cynthia Jabar
+Richard Jacoby
+Andrew Macdonald
+Daniel Hahn
+Rachel Jacobs
+David Macfarlane
+Kate Jacoby
+Korey Jackson
+Melissa Jacobs
+James Graham Hale
+Vicky Hales-Dutton
+Yossi Klein Halevi
+Laura Holmes Haddad
+Margaret Peterson Haddix
+Chuck Hagel
+Philip MacDonald
+Taylor Hackford
+Simcha Jacobovici
+Fiona MacDonald
+Kristin Halbrook
+Ellen Jackson
+Catherine Macaulay
+Peter Haining
+Annie Maccoby
+David Macfarlane
+Bernie Mac
+Margaret Read MacDonald
+Exception in thread "main" java.lang.NullPointerException
+	at Solution.main(Solution.java:117)
 ----------------------------------------

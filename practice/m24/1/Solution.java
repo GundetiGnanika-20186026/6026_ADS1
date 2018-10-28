@@ -8,7 +8,7 @@ class Student {
     /**
      * student name
      */
-    private String name;
+    String name;
     /**
      * Student marks
      */
@@ -92,7 +92,7 @@ final class Solution {
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         int num = Integer.parseInt(scan.nextLine());
-        LinearProbingHashST obj = new LinearProbingHashST();
+        LinearProbingHashST<Integer, Student> obj = new LinearProbingHashST<>();
        // LinearProbingHashST<Key, Value> obj = new LinearProbingHashST<Key, Value>();
         Student seperate = new Student();
         for (int i = 0; i < num; i++) {
@@ -113,7 +113,8 @@ final class Solution {
                 ///if(Integer.parseInt(command[2]) == 2)
                 //System.out.println((obj.get(command[1])).getMarks());
                /// seperate.toString(obj.get(command[1]),Integer.parseInt(command[2]));
-                System.out.println(obj.get(Integer.parseInt(command[1])));
+               int key = Integer.parseInt(command[1]);
+                System.out.println(obj.get(key).name);
 
                 break;
             default:
