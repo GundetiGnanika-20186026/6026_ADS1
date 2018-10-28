@@ -98,7 +98,7 @@ final class Solution {
         for (int i = 0; i < num; i++) {
             String[] student = scan.nextLine().split(",");
             Student object = new Student(student[1], Double.parseDouble(student[2]));
-            obj.put(student[0], object);
+            obj.put(Integer.parseInt(student[0]), object);
 
         }
         int cmd = Integer.parseInt(scan.nextLine());
@@ -113,7 +113,7 @@ final class Solution {
                 ///if(Integer.parseInt(command[2]) == 2)
                 //System.out.println((obj.get(command[1])).getMarks());
                /// seperate.toString(obj.get(command[1]),Integer.parseInt(command[2]));
-                System.out.println((obj.get(command[1])));
+                System.out.println(obj.get(Integer.parseInt(command[1])));
 
                 break;
             default:
