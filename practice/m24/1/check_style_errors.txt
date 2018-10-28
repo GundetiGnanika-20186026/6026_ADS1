@@ -1,7 +1,6 @@
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m24\1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m24\1\Solution.java:8: First sentence should end with a period. [JavadocStyle]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m24\1\Solution.java:11:12: Variable 'name' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m24\1\Solution.java:12: First sentence should end with a period. [JavadocStyle]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m24\1\Solution.java:39:28: '{' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m24\1\Solution.java:48:29: '{' is not preceded with whitespace. [WhitespaceAround]
@@ -9,11 +8,17 @@ Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m24\1\Solution.java:59:26: Parameter obj should be final. [FinalParameters]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m24\1\Solution.java:59:39: Parameter num should be final. [FinalParameters]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m24\1\Solution.java:59:43: Expected @param tag for 'num'. [JavadocMethod]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m24\1\Solution.java:65:11: 'if' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m24\1\Solution.java:68:11: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m24\1\Solution.java:65:11: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m24\1\Solution.java:68:11: 'if' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m24\1\Solution.java:96: Line is longer than 80 characters (found 86). [LineLength]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m24\1\Solution.java:100: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m24\1\Solution.java:111: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m24\1\Solution.java:115: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m24\1\Solution.java:110: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m24\1\Solution.java:110:19: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m24\1\Solution.java:111: Line is longer than 80 characters (found 102). [LineLength]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m24\1\Solution.java:111:73: ',' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m24\1\Solution.java:113: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m24\1\Solution.java:113:19: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m24\1\Solution.java:115: Line is longer than 80 characters (found 102). [LineLength]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS1\practice\m24\1\Solution.java:115:73: ',' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
-Checkstyle ends with 16 errors.
+Checkstyle ends with 21 errors.

@@ -191,19 +191,19 @@ entered
 entered
 entered
 entered
-Knuth
-Bob
-Clark
-Rivest
-Abegg
-Access
-Wayne
-Alice
-John
-Abegg
-Hank
-Keith
-Jeannette Caines
+100.1
+100.0
+76.4
+78.2
+65.7
+85.6
+98.3
+88.3
+56.7
+65.7
+11.2
+45.4
+99.3
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -333,20 +333,21 @@ entered
 entered
 entered
 Knuth
-Bob
+100.0
 Clark
-Rivest
+78.2
 Abegg
-Access
+85.6
 Wayne
-Alice
+88.3
 John
-Abegg
+65.7
 Hank
-Deborah Cadbury
+13.3
 Jeannette Caines
 Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:117)
+	at Student.toString(Solution.java:69)
+	at Solution.main(Solution.java:115)
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -1661,81 +1662,81 @@ entered
 entered
 entered
 entered
-John Hale
+7.213
 Michael Hale
-Steph Jagger
+59.62
 Bradley Jackson
-Shannon Hale
+57.53
 Madhur Jaffrey
-Ann-Marie MacDonald
+86.65
 Ruth H. Jacobs
-Mary MacCracken
-Michael Hale
-Taylor Hackford
+90.69
+74.62
+62.17
 Richard Jacoby
 Kady MacDonald Denton
 Kate Jacoby
 Charles B. Macdonald
 Laura Holmes Haddad
-David H. Hackworth
+36.4
 Debra W. Haffner
-John Jacobs
-Richard Jackson
-Catherine Macaulay
-M MacCallum
-Ellie Macdonald
-Sophie Jaff
-Auston Habershaw
+98.13
+17.86
+21.24
+76.56
+50.75
+63.33
+35.14
 Kathryn Jacobi
 Brad Haddin
 Gerry Hadden
 Kathryn Ma
-Charlie Haas
+30.97
 T. T. Macan
 Simon Jacobson
 Carla Jablonski
-Stuart MacBride
-Keith Habersberger
-Meredith L. Jacobs
-Kady MacDonald Denton
+24.51
+99.46
+27.87
+84.78
 Sammy Hagar
-Tony Macaulay
-Ellen Jackson
+87.26
+53.48
 Taylor Hackford
 Michael Hale
 Taylor Hackford
-Laura Holmes Haddad
+36.24
 Katharina Hagena
-Marilyn Hagerty
+35.6
 Gracie MacGregor
 David Halberstam
 Michael Haag
-Norm MacDonald
+51.43
 Chuck Hagel
-Gene Hackman
+87.16
 Sophie Jaff
-Taylor Hackford
-Jenna Bush Hager
+62.17
+6.627
 Katharina Hagena
-Keach Hagey
+92.85
 Colin Jack
-Carla Jablonski
+88.48
 Margaret Peterson Haddix
 Bethany Hagen
 Aparna Jain
 Pamela Haag
 H3CZ
-Carrington MacDuffie
+18.28
 Olivia Mace
-Alan Jacobs
-Alex James
-Marilyn Hagerty
-Kristin Halbrook
+45.32
+68.0
+35.6
+79.87
 Debra W. Haffner
-Ruth H. Jacobs
+40.95
 Tracey Jackson
 Steve Hagen
-Kinley MacGregor
+79.49
 Yossi Klein Halevi
 Nafisa Haji
 David Haig
@@ -1743,152 +1744,152 @@ Mary Downing Hahn
 Roger Lea MacBride
 Steph Jagger
 Ian Jackman
-Peter Jackson
-Al Jaffee
+17.2
+35.74
 Guru Jagat
-William Hague
-Melissa Jacobs
+4.893
+74.05
 Carrington MacDuffie
-Nasim Marie Jafry
-Charles B. Macdonald
-Jane MacDougall
+35.81
+66.2
+72.2
 Tony Macaulay
-Jeff MacGregor
+74.64
 Cynthia Jabar
-Jerome A. Jackson
+24.84
 Carla Hall
 Michael Hale
-James Macdonald
-A.N.D Haksar
-Ellen Jackson
+72.19
+54.45
+53.48
 David Jacobs
 John Hornor Jacobs
-Ian Jackman
-Ellen Jackson
+17.5
+53.48
 Ann-Marie MacDonald
 Jane MacDougall
-Mark Haddon
+71.85
 Amanda Hall
 Shaili Jain M.D.
-W. G. Hale
+43.91
 Peter Jackson
 Dana C. Jack
 Catherine Macaulay
 John Hornor Jacobs
-Ann-Marie MacDonald
+86.65
 Namita Jain
 David Halberstam
 Richard Jackson
-David Halberstam
-Kate Jacoby
+46.81
+45.39
 Peter Jackson
 Kellie Hailes
 Andrew Macdonald
 Howard Jacobson
 Bernie Mac
-Bernie Mac
-Amanda Hall
-Kate Jacoby
+10.42
+11.09
+45.39
 Al Jaffee
 Tessa Hadley
 A.N.D Haksar
 Mary MacCracken
-Nasim Marie Jafry
+35.81
 Steph Jagger
-Richard Jackson
+17.86
 Bradley Jackson
 Michele Jaffe
 Namita Jain
 Tracey Jackson
-Tony Macaulay
-Jennifer Haigh
+87.26
+48.84
 Olivia Mace
 Shane Jacobson
 Don Hagen
-Ian Jackman
+17.5
+3.391
 Thomas Hackett
-Thomas Hackett
-Merle Haggard
+55.34
 Mick Jackson
 Sarah Jacoby
-Madhur Jaffrey
-Vicky Hales-Dutton
-Philip MacDonald
-Derek Jacobi
+11.58
+39.78
+14.77
+8.36
 Nafisa Haji
 Katharina Hagena
 Nasim Marie Jafry
 M MacCallum
-Jeannette Haien
+69.73
 Betty MacDonald
 Jessie Haas
 Andrew Macdonald
-Lynn F. Jacobs
+87.6
 Robert Jackson
-Al Jaffee
-James Macdonald
-Richard Jacoby
+35.74
+72.19
+48.67
 Daniel Hahn
-John W. Jacobs M.D.
+1.603
 Kristin Halbrook
 M MacCallum
-Roger O.M.D. Jahnke
-Tracy Hafen
+59.63
+15.56
 William Hague
 Taylor Hackford
 Debra W. Haffner
-Al Jaffee
+35.74
 Heather Hach
-John Hale
+7.213
 Kathleen Hale
 Terrence J
-Kate Jacoby
+45.39
 Andrew Jacobson
 Julie Mac
-Elaine Hall
+3.876
 Kinley MacGregor
-Kennell Jackson
+17.55
 Namita Jain
-Keach Hagey
+92.85
 Heather Hach
 Michael Hale
 Dana C. Jack
-Tracy Hafen
-Jerome A. Jackson
-John Hale
+15.56
+24.84
+7.213
 Mary MacCracken
-Terrence J
-Namita Jain
+93.95
+99.9
 Kevin MacAllister
 Simon Jacobson
-Bonnie MacBird
+8.108
 Sheila Hale
-Mary Curran Hackett
-Ruby Jackson
+5.41
+65.06
 Sara MacDonald
 Andrew Macdonald
-Tony Macaulay
+87.26
 John W. Jacobs M.D.
-Tracey Jackson
+52.12
 Heather Hach
 Gene Hackman
-James B. Maas
+76.93
 Kennell Jackson
-Rawi Hage
+40.1
 Mary MacCracken
 Carla Hall
-Nasim Marie Jafry
+35.81
 Sophie Jaff
-Bonnie MacBird
+26.54
 Joie Jager-Hyman
 Emma Jackson
-Peter Jackson
+17.2
 Jeremy Jackson
-Kathryn Ma
-W. G. Hale
+50.88
+43.91
 Olivia Mace
 David H. Hackworth
-Stuart B. MacBride
+96.83
 Rachel Jacobs
 Ruth H. Jacobs
 Dana Jacobi
@@ -1897,101 +1898,102 @@ Al Jaffee
 M MacCallum
 Lynn F. Jacobs
 Carrington MacDuffie
-Annie Maccoby
+82.63
 Cynthia Jabar
-Albert Jack
-William Haefeli
-Michael Haag
+24.34
+48.77
+90.74
 Marylin Hafner
-Annie Maccoby
-Myla Jackson
-Baby Halder
-James Macdonald
-Merle Haggard
-Ian Jackman
+82.63
+84.43
+79.38
+72.19
+55.34
+17.5
 Gene Hackman
-Betty MacDonald
-Gracie MacGregor
+26.33
+53.79
 Marilyn Hagerty
 Araminta Hall
-Mark Haddon
+71.85
 David Jacobs
-Libby Jackson
-Kevin MacAllister
+79.58
+28.06
 Keach Hagey
 Araminta Hall
-Gene Hackman
-Allan Hall
+87.16
+48.28
 Marilyn Hagerty
 Bethany Hagen
 Sara MacDonald
-Pamela Haag
-Heather Hach
-Ian Jackman
-Richard Mabey
-Charlie Haas
+10.31
+83.43
+17.5
+79.09
+30.97
 Kathleen Hale
 Laura Holmes Haddad
 Jessie Haas
-Philip MacDonald
+14.77
 David Haig
-Peter Haining
-Bradley Jackson
-Robert Jackson
+11.63
+63.57
+89.61
 John Jacobs
-Shvetha Jaishankar
+15.89
 Gene Hackman
-Laura Holmes Haddad
-Chuck Hagel
-Baby Halder
+36.24
+19.32
+79.38
 Mary MacCracken
 Nate Jackson
-Michael Hale
+74.62
 William Hague
-M MacCallum
-Kinley MacGregor
+76.56
+79.49
 Ruby Jackson
-John Hale
+7.213
 Saskia Maarleveld
-Michael Hale
-Kate Jacoby
+74.62
+45.39
 Tracey Jackson
-Don Hagen
-Kinley MacGregor
-Howard Jacobson
+42.81
+79.49
+28.71
 Auston Habershaw
 Bruce Hale
-Laura Holmes Haddad
-A.N.D Haksar
+36.24
+54.45
 Rawi Hage
 Jo Jackson King
 Cynthia Jabar
 Richard Jacoby
 Andrew Macdonald
 Daniel Hahn
-Rachel Jacobs
-David Macfarlane
-Kate Jacoby
-Korey Jackson
-Melissa Jacobs
-James Graham Hale
+24.4
+91.38
+45.39
+7.065
+74.05
+54.82
 Vicky Hales-Dutton
 Yossi Klein Halevi
-Laura Holmes Haddad
+36.24
 Margaret Peterson Haddix
-Chuck Hagel
-Philip MacDonald
-Taylor Hackford
-Simcha Jacobovici
-Fiona MacDonald
-Kristin Halbrook
+19.32
+14.77
+62.17
+85.84
+75.0
+79.87
 Ellen Jackson
 Catherine Macaulay
 Peter Haining
 Annie Maccoby
 David Macfarlane
-Bernie Mac
-Margaret Read MacDonald
+10.42
+88.39
 Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:117)
+	at Student.toString(Solution.java:66)
+	at Solution.main(Solution.java:111)
 ----------------------------------------

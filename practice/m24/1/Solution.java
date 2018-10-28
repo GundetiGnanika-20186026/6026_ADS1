@@ -8,7 +8,7 @@ class Student {
     /**
      * student name
      */
-    String name;
+    private String name;
     /**
      * Student marks
      */
@@ -57,7 +57,7 @@ class Student {
      * @return     String representation of the object.
      */
     public void toString(Student obj, int num) {
-        System.out.println("entered...");
+        //System.out.println("entered...");
 
         //System.out.println(obj.name);
         //return obj.name;
@@ -107,14 +107,14 @@ final class Solution {
             switch (command[0]) {
             case "get" :
 
-                ///if(Integer.parseInt(command[2]) == 1)
-                ///seperate.toString(obj.get(command[1]),Integer.parseInt(command[2]));
+                if(Integer.parseInt(command[2]) == 1)
+                seperate.toString(obj.get(Integer.parseInt(command[1])),Integer.parseInt(command[2]));
                // System.out.println((obj.get(command[1])).getName());
-                ///if(Integer.parseInt(command[2]) == 2)
+                if(Integer.parseInt(command[2]) == 2)
                 //System.out.println((obj.get(command[1])).getMarks());
-               /// seperate.toString(obj.get(command[1]),Integer.parseInt(command[2]));
-               int key = Integer.parseInt(command[1]);
-                System.out.println(obj.get(key).name);
+                seperate.toString(obj.get(Integer.parseInt(command[1])),Integer.parseInt(command[2]));
+               // int key = Integer.parseInt(command[1]);
+               //  System.out.println(obj.get(key).toString());
 
                 break;
             default:
