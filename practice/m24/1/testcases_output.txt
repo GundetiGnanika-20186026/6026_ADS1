@@ -8,6 +8,7 @@ Wayne
 Alice
 Bob
 John
+
 Your Output: 
 Clark
 Rivest
@@ -18,6 +19,7 @@ Alice
 Bob
 John
 ----------------------------------------
+
 ########## Testcase 1: Passed ##########
 Expected Output: 
 100.1
@@ -33,6 +35,7 @@ Expected Output:
 11.2
 45.4
 99.3
+
 Your Output: 
 100.1
 100.0
@@ -48,6 +51,7 @@ Your Output:
 45.4
 99.3
 ----------------------------------------
+
 ########## Testcase 2: Failed ##########
 Expected Output: 
 Knuth
@@ -67,6 +71,7 @@ Student doesn't exists...
 Student doesn't exists...
 Student doesn't exists...
 Student doesn't exists...
+
 Your Output: 
 Knuth
 100.0
@@ -85,6 +90,7 @@ Exception in thread "main" java.lang.NullPointerException
 	at Student.toString(Solution.java:69)
 	at Solution.main(Solution.java:115)
 ----------------------------------------
+
 ########## Testcase 3: Failed ##########
 Expected Output: 
 7.213
@@ -587,6 +593,7 @@ Elaine Hall
 Robert Macfarlane
 John Hale
 53.79
+
 Your Output: 
 7.213
 Michael Hale
@@ -923,3 +930,4 @@ Exception in thread "main" java.lang.NullPointerException
 	at Student.toString(Solution.java:66)
 	at Solution.main(Solution.java:111)
 ----------------------------------------
+
